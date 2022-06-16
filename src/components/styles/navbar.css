@@ -1,0 +1,48 @@
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00114c;
+    color: #ffffff;
+    padding: 12px 25px;
+}
+.topBar a{
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.topBar .topDetails span{
+    margin: 0 8px;
+}
+.topBar .topDetails span:first-child{
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+.topBar .topDetails .icon{
+    margin-right: 10px;
+    color: #ff6060;
+}
+.navBar .navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.navBar .logoContainer{
+    margin-right: 50px;
+}
+.navBar img{
+    width: 250px;
+}
+.navBar .navItem , #basic-nav-dropdown{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 700px;
+    color: #000;
+}
+.navBar .navItem:hover , #basic-nav-dropdown:hover{
+    color: #ff6060;
+}
+.navItem.active{
+    color: #ff6060;
+}
