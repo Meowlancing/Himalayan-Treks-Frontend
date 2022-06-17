@@ -68,13 +68,14 @@ function NavbarCompo() {
             </Nav>
 
             <Nav className="socials">
-            {/* social media links if any */}
+              {/* social media links if any */}
               <Nav.Link href="#"></Nav.Link>
               <Nav.Link href="#"></Nav.Link>
               <Nav.Link href="#"></Nav.Link>
 
-              <Button className="bookBtn">Book Now
-              <FontAwesomeIcon icon={faShoppingBag} className="icon"/>
+              <Button className="bookBtn">
+                Book Now
+                <FontAwesomeIcon icon={faShoppingBag} className="icon" />
               </Button>
             </Nav>
           </Navbar.Collapse>

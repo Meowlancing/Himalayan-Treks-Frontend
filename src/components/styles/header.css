@@ -16,18 +16,37 @@
   color: #ffbe00;
   font-weight: 800;
 }
-.whyUs{
-    padding: 50px 120px;
-    text-align: center;
+.whyUs {
+  padding: 50px 120px;
+  text-align: center;
 }
-.whyUs span{
-    font-size: 50px;
-    text-align: center;
-    font-weight: 500;
+.whyUs span {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
 }
-.whyUs .duo{
-    color: var(--base-color);
+.whyUs .duo {
+  color: var(--base-color);
 }
-.whyUs .duo1{
-    color: var(--red);
+.whyUs .duo1 {
+  color: var(--red);
+}
+.whyUs .cards {
+  margin: 70px 0;
+  padding: 20px 0;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+}
+.whyUs .icon {
+  font-size: 20px;
+  background-color: var(--red);
+  color: #fff;
+  padding: 18px 15px;
+  border-radius: 50px;
+}
+.whyUs .icon:hover {
+  background-color: var(--base-color);
+}
+.whyUs h4 {
+  margin-top: 10px;
+  color: var(--base-color);
 }
