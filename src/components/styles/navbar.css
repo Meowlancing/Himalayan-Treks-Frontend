@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #00114c;
+  background-color: var(--base-color);
   color: #ffffff;
   padding: 12px 25px;
 }
@@ -20,7 +20,7 @@
 }
 .topBar .topDetails .icon {
   margin-right: 10px;
-  color: #ff6060;
+  color: var(--red);
 }
 .navBar .navContainer {
   display: flex;
@@ -36,32 +36,33 @@
 }
 .navBar .navItem,
 #basic-nav-dropdown {
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 10px;
-  font-weight: 700px;
-  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--base-color);
 }
 .navBar .navItem:hover,
 #basic-nav-dropdown:hover {
-  color: #ff6060;
+  color: var(--red);
 }
 .navItem.active {
-  color: #ff6060;
+  color: var(--red);
 }
 .navbar-toggler {
-  border: 2px solid #00114c;
+  border: 2px solid  var(--base-color);
 }
 .navbar-toggler-icon {
-  color: #00114c;
+  color:  var(--base-color);
 }
 #basic-navbar-nav {
   flex-direction: row;
 }
 .socials {
-  margin-left: 250px;
+  margin-left: 200px;
 }
 .bookBtn {
-  background-color: #00114c;
+  background-color:  var(--base-color);
   padding: 10px 40px;
   border: none;
   border-radius: 50px;
@@ -69,7 +70,7 @@
   box-shadow: 0px 5px 15px 0px rgba(112, 74, 39, 0.51);
 }
 .bookBtn:hover{
-  background-color: #ff6060;
+  background-color: var(--red);
   border: none;
 }
 .bookBtn .icon {
