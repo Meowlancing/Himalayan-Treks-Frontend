@@ -1,0 +1,20 @@
+.header {
+  background-image: url("https://himalayandreamtreks.in/wp-content/uploads/2021/02/silhouette-person-standing-top-hill-beautiful-colorful-sky-morning-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header div {
+  padding: 218px 70px 200px;
+  line-height: 1px;
+}
+.header .text {
+  font-size: 70px;
+  color: #fff;
+  line-height: 35px;
+}
+.header .text1 {
+  font-size: 97px;
+  color: #ffbe00;
+  font-weight: 800;
+}
