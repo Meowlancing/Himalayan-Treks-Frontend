@@ -1,48 +1,82 @@
-.topBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00114c;
-    color: #ffffff;
-    padding: 12px 25px;
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00114c;
+  color: #ffffff;
+  padding: 12px 25px;
 }
-.topBar a{
-    color: #fff;
-    margin: 0 5px;
-    text-decoration: none;
+.topBar a {
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
 }
-.topBar .topDetails span{
-    margin: 0 8px;
+.topBar .topDetails span {
+  margin: 0 8px;
 }
-.topBar .topDetails span:first-child{
-    padding-right: 10px;
-    border-right: 1px solid #fff;
+.topBar .topDetails span:first-child {
+  padding-right: 10px;
+  border-right: 1px solid #fff;
 }
-.topBar .topDetails .icon{
-    margin-right: 10px;
-    color: #ff6060;
+.topBar .topDetails .icon {
+  margin-right: 10px;
+  color: #ff6060;
 }
-.navBar .navContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
+.navBar .navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 }
-.navBar .logoContainer{
-    margin-right: 50px;
+.navBar .logoContainer {
+  margin-right: 50px;
 }
-.navBar img{
-    width: 250px;
+.navBar img {
+  width: 250px;
 }
-.navBar .navItem , #basic-nav-dropdown{
-    font-size: 20px;
-    margin-right: 10px;
-    font-weight: 700px;
-    color: #000;
+.navBar .navItem,
+#basic-nav-dropdown {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: 700px;
+  color: #000;
 }
-.navBar .navItem:hover , #basic-nav-dropdown:hover{
-    color: #ff6060;
+.navBar .navItem:hover,
+#basic-nav-dropdown:hover {
+  color: #ff6060;
 }
-.navItem.active{
-    color: #ff6060;
+.navItem.active {
+  color: #ff6060;
+}
+.navbar-toggler {
+  border: 2px solid #00114c;
+}
+.navbar-toggler-icon {
+  color: #00114c;
+}
+#basic-navbar-nav {
+  flex-direction: row;
+}
+.socials {
+  margin-left: 250px;
+}
+.bookBtn {
+  background-color: #00114c;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(112, 74, 39, 0.51);
+}
+.bookBtn:hover{
+  background-color: #ff6060;
+  border: none;
+}
+.bookBtn .icon {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .topBar {
+    display: none;
+  }
 }

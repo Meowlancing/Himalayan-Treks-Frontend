@@ -1,11 +1,10 @@
 import React from "react";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { fa2, faPhone, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/navbar.css";
-import { Navbar, Container, Nav, NavDropdown} from "react-bootstrap";
-import Logo from "../Assets/logo.png"
-
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import Logo from "../Assets/logo.png";
 
 function NavbarCompo() {
   return (
@@ -35,10 +34,18 @@ function NavbarCompo() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/" className="navItem active">Home</Nav.Link>
-              <Nav.Link href="#link" className="navItem">About Us</Nav.Link>
+              <Nav.Link href="/" className="navItem active">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#link" className="navItem">
+                About Us
+              </Nav.Link>
 
-              <NavDropdown title="Treks" id="basic-nav-dropdown" className="navItem">
+              <NavDropdown
+                title="Treks"
+                id="basic-nav-dropdown"
+                className="navItem"
+              >
                 <NavDropdown.Item href="#action/3.1">items</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -52,8 +59,23 @@ function NavbarCompo() {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="/blogs" className="navItem">Blogs</Nav.Link>
-              <Nav.Link href="/contact" className="navItem">Contact Us</Nav.Link>
+              <Nav.Link href="/blogs" className="navItem">
+                Blogs
+              </Nav.Link>
+              <Nav.Link href="/contact" className="navItem">
+                Contact Us
+              </Nav.Link>
+            </Nav>
+
+            <Nav className="socials">
+            {/* social media links if any */}
+              <Nav.Link href="#"></Nav.Link>
+              <Nav.Link href="#"></Nav.Link>
+              <Nav.Link href="#"></Nav.Link>
+
+              <Button className="bookBtn">Book Now
+              <FontAwesomeIcon icon={faShoppingBag} className="icon"/>
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </div>
