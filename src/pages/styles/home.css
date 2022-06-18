@@ -22,6 +22,6 @@
   width: 300px;
   box-shadow: 10px 10px 100px 0px rgba(63, 63, 67, 0.79);
 }
-.treksBtn:hover {
+.treksBtn:hover, .treksBtn:focus {
   background-color: var(--red);
 }
