@@ -1,0 +1,27 @@
+.treksSection {
+  text-align: center;
+}
+.treksSection span {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+}
+.treksSection .duo {
+  color: var(--base-color);
+}
+.treksSection .duo1 {
+  color: var(--red);
+}
+.treksBtn {
+  font-size: 14px;
+  background-color: var(--base-color);
+  border: none;
+  border-radius: 0;
+  margin: 30px 0;
+  padding: 10px 0;
+  width: 300px;
+  box-shadow: 10px 10px 100px 0px rgba(63, 63, 67, 0.79);
+}
+.treksBtn:hover {
+  background-color: var(--red);
+}
