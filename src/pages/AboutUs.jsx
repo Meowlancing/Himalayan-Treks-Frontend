@@ -6,6 +6,13 @@ import Explore from "../Assets/EXPLORE.png"
 import { Card, Button, } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHiking } from '@fortawesome/free-solid-svg-icons'
+import Img1 from "../Assets/Kedarkantha1.jpg"
+import Img2 from "../Assets/Kedarkantha12.jpg"
+import Img3 from "../Assets/Kedarkantha7.jpg"
+import Img4 from "../Assets/KEDARTAL2.jpg"
+import Img5 from "../Assets/KEDARTAL4.jpg"
+
+
 
 const AboutUs = () => {
   return (
@@ -65,9 +72,13 @@ const AboutUs = () => {
 
             <div className='Moments'>
                 <h2>Memorable <span style={{color:"#ff6060"}}>Moments</span></h2>
-                <div className='ImgGallery'>
-                     
-                </div>
+                <section className='ImgGallery'>
+                     <div className='images'><img src={Img1} style={{width:"20vw", height:"50vh"}}/></div>
+                     <div className='images'><img src={Img2} style={{width:"20vw", height:"50vh"}}/></div>
+                     <div className='images'><img src={Img3} style={{width:"20vw", height:"50vh"}}/></div>
+                     <div className='images'><img src={Img4} style={{width:"20vw", height:"50vh"}}/></div>
+                     <div className='images'><img src={Img5} style={{width:"20vw", height:"50vh"}}/></div>
+                </section>
             </div>
         </div>
     </div>

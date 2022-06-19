@@ -102,3 +102,15 @@ margin-left: 50px;
 .CardSec{
   box-shadow: 20px 20px 100px 0px rgba(0, 0, 0, 0.15);
 }
+
+.ImgGallery{
+  display: flex;
+  flex-direction: row;
+}
+.images{
+  transition: transform 0.25s, visibility 0.25s ease-in;
+}
+.images:hover{
+  transform: scaleY(1.5);
+  transform: scaleX(1.8); 
+}
