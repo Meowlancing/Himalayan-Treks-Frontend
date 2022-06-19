@@ -37,7 +37,7 @@ function NavbarCompo() {
               <Nav.Link href="/" className="navItem active">
                 Home
               </Nav.Link>
-              <Nav.Link href="#link" className="navItem">
+              <Nav.Link to="/about-us" className="navItem">
                 About Us
               </Nav.Link>
 
