@@ -1,3 +1,5 @@
+/* -------------------------------------------treks section----------------------------------------- */
+
 .treksSection {
   text-align: center;
 }
@@ -26,6 +28,7 @@
   background-color: var(--red);
 }
 
+/* ---------------------------------------discounted treks section----------------------------------------s */
 .discountedtreksSection {
   text-align: center;
   margin: 40px 0;
@@ -40,4 +43,43 @@
 }
 .discountedtreksSection .duo1 {
   color: var(--red);
+}
+
+/* -------------------------------------------about us section----------------------------------------- */
+.aboutHero{
+  margin: 90px 0;
+  position: relative;
+  background-image: url("https://himalayandreamtreks.in/wp-content/uploads/2021/03/silhouette-photographer-with-camera-milky-way-blackground-min.jpg");
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+.aboutHero .aboutDetails{
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  align-items: center;
+}
+.aboutHero .aboutDetails p{
+  color: #fff;
+  text-transform: uppercase ;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.aboutHero .aboutDetails h3{
+  color: #fff;
+  font-size: 42px;
+}
+
+.aboutHero .aboutBtn{
+  margin-top: 30px;
+  background-color: transparent;
+  color: #fff;
+  border:  2px solid #fff;
+  border-radius: 50px;
+  padding: 10px 15px;
 }
