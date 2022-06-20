@@ -4,7 +4,7 @@ import { fa2, faPhone, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/navbar.css";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
-import Logo from "../Assets/logo.png";
+import Logo from "../Assets/himalayan_exploration-Logo.png";
 
 function NavbarCompo() {
   return (
@@ -37,7 +37,7 @@ function NavbarCompo() {
               <Nav.Link href="/" className="navItem active">
                 Home
               </Nav.Link>
-              <Nav.Link to="/about-us" className="navItem">
+              <Nav.Link href="/about-us" className="navItem">
                 About Us
               </Nav.Link>
 

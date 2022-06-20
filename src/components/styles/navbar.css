@@ -32,7 +32,7 @@
   margin-right: 50px;
 }
 .navBar img {
-  width: 250px;
+  width: 50px;
 }
 .navBar .navItem,
 #basic-nav-dropdown {
@@ -59,7 +59,7 @@
   flex-direction: row;
 }
 .socials {
-  margin-left: 200px;
+  margin-left: 390px;
 }
 .bookBtn {
   background-color: var(--base-color);
