@@ -7,71 +7,14 @@ function DiscountedTreks() {
     <div className="distreks">
       <div className="distrekCard">
         <a href="#">
-          <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-min-1.jpg" />
+          <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/04/Kedartal01-1.jpg" />
         </a>
-        <div className="topLeft">
-          <span>05 </span>
-          <span>Days</span>
-        </div>
-        <div className="topRight">
-          <span>Rs. </span>
-          <span>7999</span>
-        </div>
-        <div className="bottom">
-          <button className="distrekName">Kedarkantha Trek </button>
+        <div>
+          <button className="distrekName">View More </button>
         </div>
       </div>
 
-      <div className="distrekCard">
-        <a href="#">
-          <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-min-1.jpg" />
-        </a>
-        <div className="topLeft">
-          <span>05 </span>
-          <span>Days</span>
-        </div>
-        <div className="topRight">
-          <span>Rs. </span>
-          <span>7999</span>
-        </div>
-        <div className="bottom">
-          <button className="distrekName">Kedarkantha Trek </button>
-        </div>
-      </div>
-
-      <div className="distrekCard">
-        <a href="#">
-          <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-min-1.jpg" />
-        </a>
-        <div className="topLeft">
-          <span>05 </span>
-          <span>Days</span>
-        </div>
-        <div className="topRight">
-          <span>Rs. </span>
-          <span>7999</span>
-        </div>
-        <div className="bottom">
-          <button className="distrekName">Kedarkantha Trek </button>
-        </div>
-      </div>
-
-      <div className="distrekCard">
-        <a href="#">
-          <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-min-1.jpg" />
-        </a>
-        <div className="topLeft">
-          <span>05 </span>
-          <span>Days</span>
-        </div>
-        <div className="topRight">
-          <span>Rs. </span>
-          <span>7999</span>
-        </div>
-        <div className="bottom">
-          <button className="distrekName">Kedarkantha Trek </button>
-        </div>
-      </div>
+      
     </div>
   );
 }

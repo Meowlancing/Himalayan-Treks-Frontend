@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import NavbarCompo from "../components/Navbar";
 import DiscountedTreks from "../components/DiscountedTreks";
 import TrekCards from "../components/TrekCards";
+import ClientTestimonials from "../components/ClientTestimonials";
 
 function Home() {
   return (
@@ -34,13 +35,13 @@ function Home() {
       {/* about us section */}
       <div className="aboutHero">
         <div className="aboutDetails">
-          <div style={{width: "100%"}}>
+          <div style={{ width: "100%" }}>
             <p>About Us</p>
             <h3>Himalyan Dreamtreks</h3>
             <span>
-              We organized treks that belong in the Indian Himalayas. Our main aim
-              is to provide a comfortable atmosphere with the highest degree of
-              protection. All treks are led by a certified mountaineer and
+              We organized treks that belong in the Indian Himalayas. Our main
+              aim is to provide a comfortable atmosphere with the highest degree
+              of protection. All treks are led by a certified mountaineer and
               carefully planned to give trekkers the best possible experience.
             </span>
             <br />
@@ -48,9 +49,15 @@ function Home() {
               <button className="aboutBtn">Learn More</button>
             </a>
           </div>
-
-
         </div>
+      </div>
+      {/* testimonial section */}
+      <div style={{ textAlign: "center" }}>
+        <div className="discountedtreksSection">
+          <span className="duo">Client </span>
+          <span className="duo1">Testimonials</span>
+        </div>
+        <ClientTestimonials />
       </div>
     </div>
   );
