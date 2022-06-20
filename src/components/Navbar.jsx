@@ -41,23 +41,24 @@ function NavbarCompo() {
                 About Us
               </Nav.Link>
 
-              <NavDropdown
-                title="Treks"
-                id="basic-nav-dropdown"
-                className="navItem"
-              >
-                <NavDropdown.Item href="#action/3.1">items</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="/treks" className="navItem dropMenu">
+                Treks
+                <NavDropdown
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item href="#action/3.1">items</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Something
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav.Link>
 
               <Nav.Link href="/blogs" className="navItem">
                 Blogs
