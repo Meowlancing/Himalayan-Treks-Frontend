@@ -6,6 +6,7 @@ import NavbarCompo from "../components/Navbar";
 import DiscountedTreks from "../components/DiscountedTreks";
 import TrekCards from "../components/TrekCards";
 import ClientTestimonials from "../components/ClientTestimonials";
+import BlogsCard from "../components/BlogsCard";
 
 function Home() {
   return (
@@ -58,6 +59,18 @@ function Home() {
           <span className="duo1">Testimonials</span>
         </div>
         <ClientTestimonials />
+      </div>
+
+      <div style={{ textAlign: "center" }}>
+        <div className="discountedtreksSection">
+          <span className="duo">Recent </span>
+          <span className="duo1">Blogs</span>
+        </div>
+        {/* display 3 blogs only by slice method */}
+        <BlogsCard />
+        <a href="/blogs">
+          <Button className="treksBtn">View More</Button>
+        </a>
       </div>
     </div>
   );
