@@ -1,0 +1,19 @@
+.TestimonialSection{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.TestCardComponent{
+    width: 18vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+}
+.CardImages{
+    height: 10vh;
+    width: 5vw;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
