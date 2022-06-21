@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
 import React from "react";
 import "./styles/home.css";
 import Header from "../components/Header";
@@ -7,6 +7,7 @@ import DiscountedTreks from "../components/DiscountedTreks";
 import TrekCards from "../components/TrekCards";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlogsCard from "../components/BlogsCard";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -72,6 +73,43 @@ function Home() {
           <Button className="treksBtn">View More</Button>
         </a>
       </div>
+      {/* certificate section */}
+      <div style={{ textAlign: "center" }}>
+        <div className="discountedtreksSection">
+          <span className="duo">Our </span>
+          <span className="duo1">Certification</span>
+        </div>
+        <div className="certificate">
+          <Row>
+            <Col lg="3" md="4" className="certificateContainer">
+              <img
+                src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/msme-min.jpg"
+                alt="certificates"
+              />
+            </Col>
+            <Col lg="3" md="4" className="certificateContainer">
+              <img
+                src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/startupindia-min.jpg"
+                alt="certificates"
+              />
+            </Col>
+            <Col lg="3" md="4" className="certificateContainer">
+              <img
+                src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/TC-Winner1-min.gif"
+                alt="certificates"
+              />
+            </Col>
+            <Col lg="3" md="4" className="certificateContainer">
+              <img
+                src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/UK-Logo-min.jpg"
+                alt="certificates"
+              />
+            </Col>
+          </Row>
+        </div>
+      </div>
+      {/* footer section */}
+      <Footer/>
     </div>
   );
 }

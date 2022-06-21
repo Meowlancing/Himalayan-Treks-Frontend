@@ -24,7 +24,8 @@
   width: 300px;
   box-shadow: 10px 10px 100px 0px rgba(63, 63, 67, 0.79);
 }
-.treksBtn:hover, .treksBtn:focus {
+.treksBtn:hover,
+.treksBtn:focus {
   background-color: var(--red);
 }
 
@@ -46,7 +47,7 @@
 }
 
 /* -------------------------------------------about us section----------------------------------------- */
-.aboutHero{
+.aboutHero {
   margin: 90px 0;
   position: relative;
   background-image: url("https://himalayandreamtreks.in/wp-content/uploads/2021/03/silhouette-photographer-with-camera-milky-way-blackground-min.jpg");
@@ -55,7 +56,7 @@
   background-position: center;
   background-size: cover;
 }
-.aboutHero .aboutDetails{
+.aboutHero .aboutDetails {
   color: #fff;
   width: 50%;
   height: 100%;
@@ -64,22 +65,42 @@
   display: flex;
   align-items: center;
 }
-.aboutHero .aboutDetails p{
+.aboutHero .aboutDetails p {
   color: #fff;
-  text-transform: uppercase ;
+  text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 20px;
 }
-.aboutHero .aboutDetails h3{
+.aboutHero .aboutDetails h3 {
   color: #fff;
   font-size: 42px;
 }
 
-.aboutHero .aboutBtn{
+.aboutHero .aboutBtn {
   margin-top: 30px;
   background-color: transparent;
   color: #fff;
-  border:  2px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50px;
   padding: 10px 15px;
+}
+
+/* ---------------------------------------Certification------------------------------------------------ */
+
+.certificate {
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.certificate img {
+  width: 100%;
+  height: 100%;
+}
+.certificate .certificateContainer {
+  margin: 10px;
+  width: 250px;
+  height: 160px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
