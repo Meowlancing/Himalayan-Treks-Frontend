@@ -4,16 +4,31 @@
     display: flex;
     flex-direction: row;
 }
-.TestCardComponent{
-    width: 18vw;
+.TestimonialSection .TestCardComponent{
+    padding: 1rem;
+    width: 18rem;
     align-items: center;
     justify-content: center;
-    margin-left: 4%;
+    margin-left: 15px;
+    border: none;
+    border-radius: 15px;
+    box-shadow:  9px 11px 14px 0px rgba(0, 0, 0, 0.1);
 }
-.CardImages{
+.TestimonialSection .title{
+    color: var(--red);
+    font-size: 22px;
+}
+.TestimonialSection .stars{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.TestimonialSection .CardImages{
     height: 10vh;
     width: 5vw;
     border-radius: 50%;
     align-self: center;
     justify-self: center;
+}
+.TestimonialSection span{
+    color: var(--base-color);
 }
