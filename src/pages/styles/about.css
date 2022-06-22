@@ -1,116 +1,126 @@
-.AboutHeader img {
+.AboutUs .AboutHeader img {
   height: 80vh;
   width: 100vw;
 }
-.AbtUsContainer {
+.AboutUs .AbtUsContainer {
   display: flex;
   flex-direction: row;
-  margin: 6rem 0 0 15rem;
+  margin: 100px;
 }
-.ExploreImg img {
+.AboutUs .ExploreImg img {
   height: 50vh;
   width: 35vw;
 }
-.ExploreImg {
+.AboutUs .ExploreImg {
   margin-left: 5rem;
 }
-.bar1 {
-  height: 2px;
-  width: 4rem;
-  background-color: #ff6060;
-}
-h3 {
-  color: #110729;
+.AboutUs h3 {
+  color: var(--base-color);
   font-family: "Montserrat", Sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0px 0px 15px 0px;
+  text-decoration: underline;
+  text-decoration-color: var(--red);
 }
-p {
-  color: #110729;
+.AboutUs p {
+  color: var(--base-color);
   font-family: "Poppins", Sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 27px;
-  margin: 0px 50px 0px 0px;
 }
-h2 {
+.AboutUs h2 {
   color: #110729;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-  margin: 0px 0px 20px 0px;
   font-family: "Lato", Sans-serif;
   font-size: 51px;
   font-weight: 800;
   line-height: 60px;
 }
-.trekspan {
+.AboutUs .trekspan {
   color: #ff6060;
   font-family: "Lato", Sans-serif;
   font-size: 48px;
   font-weight: 800;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
-.AbtUs {
+.AboutUs .AbtUs {
   height: 70vh;
   width: 50vw;
 }
-
-.WhyUs h2 {
-  color: #00114c;
-  font-family: "Poppins", Sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+.AboutUs .WhyUs {
+  text-align: center;
 }
 
-.WhyUs span {
+.AboutUs .WhyUs h2 {
+  color: var(--base-color);
+  font-family: "Poppins", Sans-serif;
+  font-size: 50px;
+  font-weight: 30;
+  margin-bottom: 30px;
+}
+
+.AboutUs .WhyUs span {
   color: #ff6060;
   font-family: "Poppins", Sans-serif;
   font-weight: 700;
 }
 
-.icons{
+.AboutUs .WhyUs .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   align-self: center;
-  height: 10vh;
-  width: 5vw;
   background-color: #ff6060;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.WhyUs .icon{
-  position: relative;
-  font-size: 3rem;
+.AboutUs .WhyUs .icon {
+  font-size: 3.4rem;
   margin-top: 10px;
   color: #fff;
+  border-radius: 50px;
+  padding: 20px 30px;
 }
-.WhyUs .purpose{
-color: #000000;
-font-family: "Poppins", Sans-serif;
-font-weight: 400;
-line-height: 1.2em;
-margin-left: 50px;
+.AboutUs .WhyUs .purpose {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+.AboutUs .WhyUs .title {
+  color: var(--base-color);
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.WhyUs .cards{
+.AboutUs .WhyUs .cards {
   display: flex;
   flex-direction: row;
-  margin:0 15vw;
+  margin: 0 100px 60px;
   align-items: center;
   justify-content: space-between;
-  
 }
-.CardSec{
+.AboutUs .CardSec {
   box-shadow: 20px 20px 100px 0px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  text-align: center;
+  width: 24rem;
+  padding: 1rem;
 }
 
-.ImgGallery{
+.AboutUs .ImgGallery {
   display: flex;
   flex-direction: row;
 }
-.images{
+.AboutUs .images {
   transition: transform 0.25s, visibility 0.25s ease-in;
 }
-.images:hover{
+.AboutUs .images:hover {
   transform: scaleY(1.5);
-  transform: scaleX(1.8); 
+  transform: scaleX(1.8);
 }
