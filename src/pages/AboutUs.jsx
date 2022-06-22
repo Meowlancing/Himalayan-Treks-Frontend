@@ -95,7 +95,7 @@ const AboutUs = () => {
 
         <div className="Moments">
           <h2>
-            Memorable <span style={{ color: "#ff6060" }}>Moments</span>
+            Memorable <span style={{ color: "#DA0037" }}>Moments</span>
           </h2>
           <section className="ImgGallery">
             <div className="images">
