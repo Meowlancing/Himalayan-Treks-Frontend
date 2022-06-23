@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarCompo from "../components/Navbar";
 import "./styles/about.css";
-import AboutHeaderImg from "../Assets/AboutHeader.jpg";
+import AboutHeaderImg from "../Assets/AboutHeader.jpeg";
 import Explore from "../Assets/EXPLORE.png";
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
