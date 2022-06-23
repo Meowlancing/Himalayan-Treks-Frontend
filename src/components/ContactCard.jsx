@@ -24,7 +24,7 @@ function ContactCard() {
               </span>
             </Card.Body>
           </Col>
-          <Col>
+          <Col lg="4">
             <Card.Body>
               <div className="iconContainer">
                 <FontAwesomeIcon icon={faMessage} className="icon" />

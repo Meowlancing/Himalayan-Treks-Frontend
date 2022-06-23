@@ -14,7 +14,7 @@ function BlogsCard() {
             />
           </a>
           <h3>Covid-19 Report is Mandatory in Uttarakhand</h3>
-          <a href="/blogs/:id">
+          <a href="/id">
             <button>Read More</button>
           </a>
           <span className="muted-text">April 9, 2021</span>

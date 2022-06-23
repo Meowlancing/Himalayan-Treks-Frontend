@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
+import BlogPage from "./pages/BlogPage";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -15,6 +16,7 @@ function App() {
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/:id" element={<BlogPage />} />
      </Routes>
      </>
   );
