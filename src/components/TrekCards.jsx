@@ -5,7 +5,7 @@ function TrekCards() {
   return (
     <div className="treks">
       <div className="trekCard">
-        <a href="#">
+        <a href="/treks-id">
           <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-min-1.jpg" />
         </a>
         <div className="topLeft">
@@ -17,7 +17,9 @@ function TrekCards() {
           <span>7999</span>
         </div>
         <div className="bottom">
-          <button className="trekName">Kedarkantha Trek </button>
+          <a href="/treks-id">
+            <button className="trekName">Kedarkantha Trek </button>
+          </a>
         </div>
       </div>
     </div>

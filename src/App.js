@@ -6,6 +6,7 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Treks from "./pages/Treks";
+import TreksPage from "./pages/TreksPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/:id" element={<BlogPage />} />
+      <Route path="/treks:type" element={<TreksPage/>} />
      </Routes>
      </>
   );
