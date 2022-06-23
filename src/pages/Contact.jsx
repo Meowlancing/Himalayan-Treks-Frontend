@@ -1,4 +1,5 @@
 import React from "react";
+import ContactCard from "../components/ContactCard";
 import NavbarCompo from "../components/Navbar";
 import "./styles/treks.css";
 function Contact() {
@@ -7,11 +8,11 @@ function Contact() {
       <NavbarCompo />
       <div className="trekHeader">
         <div className="layer">
-          <span>Feel Free To</span>
-          <span className="duo">Contact Us!</span>
+          <h2>Feel Free To <span className="duo">Contact Us!</span></h2>
+          
         </div>
       </div>
-      
+      <ContactCard/>
     </div>
   );
 }

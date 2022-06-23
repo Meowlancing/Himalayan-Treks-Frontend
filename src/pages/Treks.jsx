@@ -8,8 +8,10 @@ function Treks() {
       <NavbarCompo />
       <div className="trekHeader">
         <div className="layer">
-          <span >Our </span>
-          <span className="duo">Treks</span>
+          <h2>
+            Our
+            <span className="duo">Treks</span>{" "}
+          </h2>
         </div>
       </div>
       <TrekCards />

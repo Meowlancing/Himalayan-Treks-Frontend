@@ -8,9 +8,11 @@ function Blogs() {
       <NavbarCompo />
       <div className="trekHeader">
         <div className="layer">
-          <span>Our</span>
-          <span className="duo">Recent</span>
-          <span>Blogs</span>
+          <h2>
+            Our
+            <span className="duo">Recent</span>
+            Blogs
+          </h2>
         </div>
       </div>
       <BlogsCard />

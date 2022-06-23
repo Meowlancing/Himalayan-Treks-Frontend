@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
 }
-.trekHeader span {
+.trekHeader h2 {
   font-size: 50px;
   color: #fff;
   font-weight: 700;
@@ -29,4 +29,11 @@
 .trekHeader .duo{
   color: var(--red);
   margin: 0 15px;
+}
+
+@media only screen and (max-width: 500px){
+  .trekHeader h2 , .duo{
+    text-align: center;
+    font-size: 35px;
+  }
 }

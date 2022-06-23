@@ -4,7 +4,7 @@ import "./styles/blogsCard.css";
 
 function BlogsCard() {
   return (
-    <div style={{ padding: "10px 100px" }}>
+    <div className="blogContainer">
       <Card className="blogCard">
         <Card.Body className="blogCardBody">
           <a href="/blogs/:id">
