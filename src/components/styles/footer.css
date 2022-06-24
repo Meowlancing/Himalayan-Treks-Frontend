@@ -1,0 +1,25 @@
+.Footer{
+    width: 100vw;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://himalayandreamtreks.in/wp-content/uploads/2021/02/Untitled-design-39-min.png');
+}
+
+.Footer .cards{
+        display: flex;
+        flex-direction: row;
+        margin: 0 100px 60px;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.Footer .CardSec{
+    box-shadow: 20px 20px 100px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+    width: 24rem;
+    padding: 1rem;
+}
