@@ -18,7 +18,7 @@
     border: none;
     box-shadow: 20px 20px 100px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
-    color: #fff;
+    color: rgb(255, 255, 255);
     margin: 10px;
     text-align: center;
     width: 24rem;
@@ -37,4 +37,13 @@
 }
 .Footer .CardSec span:hover{
     color: #fff;
+}
+.caption{
+    font-weight: 700;
+    color: rgb(230, 61, 10);
+    margin-left: 5rem;
+}
+
+.caption p{
+    margin-left: 15rem;
 }

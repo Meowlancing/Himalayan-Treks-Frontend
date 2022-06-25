@@ -2,7 +2,7 @@ import React from 'react'
 import "./styles/footer.css"
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHiking, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faMobile, faArrowRight, faMobileAndroid, faMailBulk, faLocation,} from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <div className='Footer'>
@@ -21,12 +21,14 @@ function Footer() {
               standard maps available to <br/> 
               people who enjoy visiting new <br/>
               locations.
+              <div className='socialsicons'>
+              </div>
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="CardSec">
             <div className="icons">
-              <FontAwesomeIcon icon={faHiking} className="icon" />
+              <FontAwesomeIcon  className="icon" />
             </div>
             <Card.Body>
               <Card.Title className="title">Important Links </Card.Title>
@@ -42,33 +44,34 @@ function Footer() {
           </Card>
           <Card className="CardSec">
             <div className="icons">
-              <FontAwesomeIcon icon={faHiking} className="icon" />
+              <FontAwesomeIcon  className="icon" />
             </div>
             <Card.Body>
               <Card.Title className="title">Contact Details</Card.Title>
               <Card.Text className="purpose">
-                    <h5>Phone No.</h5>
+                    <h5><span><FontAwesomeIcon style={{color:"#fff"}} icon={faMobileAndroid} /></span>Phone No.</h5>
                     <p>+91-8089693825 <br/>
                        +91-6395932971
                     </p>
-                    <h5>Email</h5>
+                    <h5><span><FontAwesomeIcon style={{color:"#fff"}} icon={faMailBulk} /></span>Email</h5>
                     <p>info@himalayandreamtreks.in</p>
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="CardSec">
             <div className="icons">
-              <FontAwesomeIcon icon={faHiking} className="icon" />
+              <FontAwesomeIcon  className="icon" />
             </div>
             <Card.Body>
               <Card.Title className="title">Office Address</Card.Title>
               <Card.Text className="purpose">
-                <h5>Address</h5>
+                <h5><span><FontAwesomeIcon style={{color:"#fff"}} icon={faLocation} /></span>Address</h5>
                 <p>Adarsh Cyber Cafe, near Nagar <br/> Palika Office, Chinyalisour, <br/> Uttarakhand 249196</p>
               </Card.Text>
             </Card.Body>
           </Card>
         </section>
+        <div className='caption' style={{display:"flex", flexDirection:"row"}}><h4>© All rights reserved 2021 @ Himalayan Dreamtreks</h4>  <p>Designed By PracharMore</p></div>   
     </div>
   )
 }
