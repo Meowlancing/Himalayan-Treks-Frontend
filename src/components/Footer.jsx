@@ -2,7 +2,7 @@ import React from 'react'
 import "./styles/footer.css"
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHiking } from "@fortawesome/free-solid-svg-icons";
+import { faHiking, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <div className='Footer'>
@@ -29,13 +29,14 @@ function Footer() {
               <FontAwesomeIcon icon={faHiking} className="icon" />
             </div>
             <Card.Body>
-              <Card.Title className="title">Affordable Rates </Card.Title>
+              <Card.Title className="title">Important Links </Card.Title>
               <Card.Text className="purpose">
-                We believe in affordable trekking, not money-making. Our founder
-                Sobhinder Singh believes in making relationships, not gaining
-                profit. Due to in-house equipment & an in-house team, we are
-                able to provide affordable rates to our clients. Due to these
-                reason clients love us.
+                  <a href='' style={{textDecoration:"none"}}><span><FontAwesomeIcon icon={faArrowRight} /></span> Sahastra Tal Trek</a> <br/>
+                  <a href='' style={{textDecoration:"none"}}><span><FontAwesomeIcon icon={faArrowRight} /></span> Kedartal Trek</a> <br/>
+                  <a href='' style={{textDecoration:"none"}}><span><FontAwesomeIcon icon={faArrowRight} /></span> Kedarkantha Trek</a> <br/>
+                  <a href='' style={{textDecoration:"none"}}><span><FontAwesomeIcon icon={faArrowRight} /></span> Bali Pass Trek</a> <br/>
+                  <a href='' style={{textDecoration:"none"}}><span><FontAwesomeIcon icon={faArrowRight} /></span> Dayara Bugyal Trek</a> <br/>
+                  <a href='' style={{textDecoration:"none"}}><span><FontAwesomeIcon icon={faArrowRight} /></span> Kuari Pass Trek</a> <br/>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -44,13 +45,14 @@ function Footer() {
               <FontAwesomeIcon icon={faHiking} className="icon" />
             </div>
             <Card.Body>
-              <Card.Title className="title">Best Equipments</Card.Title>
+              <Card.Title className="title">Contact Details</Card.Title>
               <Card.Text className="purpose">
-                To ensure great delivery, our team is ably supported by our
-                infrastructure. We have a large fleet of rafts, service
-                vehicles, imported cycles, top-of-the-line camping and climbing
-                equipment, as well as offices to assist you in planning and
-                booking your trips.
+                    <h5>Phone No.</h5>
+                    <p>+91-8089693825 <br/>
+                       +91-6395932971
+                    </p>
+                    <h5>Email</h5>
+                    <p>info@himalayandreamtreks.in</p>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -59,13 +61,10 @@ function Footer() {
               <FontAwesomeIcon icon={faHiking} className="icon" />
             </div>
             <Card.Body>
-              <Card.Title className="title">Best Equipments</Card.Title>
+              <Card.Title className="title">Office Address</Card.Title>
               <Card.Text className="purpose">
-                To ensure great delivery, our team is ably supported by our
-                infrastructure. We have a large fleet of rafts, service
-                vehicles, imported cycles, top-of-the-line camping and climbing
-                equipment, as well as offices to assist you in planning and
-                booking your trips.
+                <h5>Address</h5>
+                <p>Adarsh Cyber Cafe, near Nagar <br/> Palika Office, Chinyalisour, <br/> Uttarakhand 249196</p>
               </Card.Text>
             </Card.Body>
           </Card>

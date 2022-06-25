@@ -15,6 +15,7 @@
 }
 
 .Footer .CardSec{
+    border: none;
     box-shadow: 20px 20px 100px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     color: #fff;
@@ -22,4 +23,18 @@
     text-align: center;
     width: 24rem;
     padding: 1rem;
+}
+
+.Footer .CardSec a{
+    color: #fff;
+}
+.Footer .CardSec a:hover{
+    color: rgb(230, 69, 10);
+}
+.Footer .CardSec span{
+    cursor: pointer;
+    color: rgb(230, 61, 10);
+}
+.Footer .CardSec span:hover{
+    color: #fff;
 }
