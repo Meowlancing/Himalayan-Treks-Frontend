@@ -1,15 +1,14 @@
 .Footer{
-    width: 100vw;
-    height: 60vh;
+    background:linear-gradient(0deg, rgba(0, 17, 76, 0.6), rgba(0, 17, 76, 0.6)), url(https://himalayandreamtreks.in/wp-content/uploads/2021/02/Untitled-design-39-min.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background:linear-gradient(0deg, rgba(0, 17, 76, 0.6), rgba(0, 17, 76, 0.6)), url(https://himalayandreamtreks.in/wp-content/uploads/2021/02/Untitled-design-39-min.png);
+    background-position: center;
 }
 
 .Footer .cards{
         display: flex;
         flex-direction: row;
-        margin: 0 100px 60px;
+        padding: 40px;
         align-items: center;
         justify-content: space-between;
 }

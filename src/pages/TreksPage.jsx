@@ -1,12 +1,7 @@
-import React from 'react'
-import NavbarCompo from '../components/Navbar'
+import React from "react";
 
 function TreksPage() {
-  return (
-    <div>
-        <NavbarCompo />
-    </div>
-  )
+  return <div>trek page</div>;
 }
 
-export default TreksPage
+export default TreksPage;

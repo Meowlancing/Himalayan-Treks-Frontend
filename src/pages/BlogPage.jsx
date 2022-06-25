@@ -1,13 +1,11 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import BlogsCard from "../components/BlogsCard";
-import NavbarCompo from "../components/Navbar";
 import "./styles/blogPage.css";
 
 function BlogPage() {
   return (
     <>
-      <NavbarCompo />
       <div className="blogPage">
         <div className="blogImg">
           <img

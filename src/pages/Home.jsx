@@ -12,7 +12,6 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <div>
-      <NavbarCompo />
       <Header />
       {/* treksection */}
       <div style={{ textAlign: "center" }}>
@@ -108,8 +107,6 @@ function Home() {
           </Row>
         </div>
       </div>
-      {/* footer section */}
-      <Footer/>
     </div>
   );
 }

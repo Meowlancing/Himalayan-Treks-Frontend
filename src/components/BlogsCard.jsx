@@ -7,7 +7,7 @@ function BlogsCard() {
     <div className="blogContainer">
       <Card className="blogCard">
         <Card.Body className="blogCardBody">
-          <a href="/blogs/:id">
+          <a href="/id">
             <img
               src="https://himalayandreamtreks.in/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-09-at-16.20.08-min-1-768x432.jpeg"
               alt="banner"
