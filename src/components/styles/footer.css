@@ -35,15 +35,18 @@
     cursor: pointer;
     color: rgb(230, 61, 10);
 }
+.Footer .CardSec p{
+    color: #fff;
+}
 .Footer .CardSec span:hover{
     color: #fff;
 }
-.caption{
+.Footer .caption{
     font-weight: 700;
     color: rgb(255, 255, 255);
     margin-left: 5rem;
 }
 
-.caption p{
+.Footer .caption p{
     margin-left: 25rem;
 }

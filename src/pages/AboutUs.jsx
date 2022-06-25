@@ -1,5 +1,6 @@
 import React from "react";
 import NavbarCompo from "../components/Navbar";
+import Footer from "../components/Footer"
 import "./styles/about.css";
 import AboutHeaderImg from "../Assets/AboutHeader.jpeg";
 import Explore from "../Assets/EXPLORE.png";
@@ -116,6 +117,7 @@ const AboutUs = () => {
           </section>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
