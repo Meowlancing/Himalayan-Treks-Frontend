@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 10px 0 30px;
 }
 
 .Footer .cards{
@@ -28,11 +29,11 @@
     color: #fff;
 }
 .Footer .CardSec a:hover{
-    color: rgb(230, 69, 10);
+    color: var(--red);
 }
 .Footer .CardSec span{
     cursor: pointer;
-    color: rgb(230, 61, 10);
+    color: var(--red);
 }
 .Footer .CardSec p{
     color: #fff;
@@ -43,9 +44,12 @@
 .Footer .caption{
     font-weight: 700;
     color: rgb(255, 255, 255);
-    margin-left: 5rem;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Footer .caption p{
+    font-weight: 300;
 }
 
-.Footer .caption p{
-    margin-left: 25rem;
-}

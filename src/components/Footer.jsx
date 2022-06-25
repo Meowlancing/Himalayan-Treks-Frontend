@@ -4,6 +4,8 @@ import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobile, faArrowRight, faMobileAndroid, faMailBulk, faLocation,} from "@fortawesome/free-solid-svg-icons";
 function Footer() {
+
+  var date = new Date();
   return (
     <div className='Footer'>
       <section className="cards">
@@ -71,7 +73,7 @@ function Footer() {
             </Card.Body>
           </Card>
         </section>
-        <div className='caption' style={{display:"flex", flexDirection:"row"}}><h4>© All rights reserved 2021 @ Himalayan Dreamtreks</h4>  <p>Designed By PracharMore</p></div>   
+        <div className='caption' style={{display:"flex", flexDirection:"row"}}><h4>©All rights reserved {date.getFullYear()} @Himalyan Explorations</h4>  <p>Designed and Developed By PracharMore</p></div>   
     </div>
   )
 }
