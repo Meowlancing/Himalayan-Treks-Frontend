@@ -124,3 +124,26 @@
   transform: scaleY(1.5);
   transform: scaleX(1.8);
 }
+.AboutUs .FounderCards{
+  margin: 4rem 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.AboutUs .FounderCards .FounderImg img{
+  margin-left: 15vw;
+  height: 45vh;
+  width: 33vw;
+}
+.AboutUs .FounderInfo{
+  margin-left: 3rem;
+}
+.AboutUs .ChefCards{
+  margin: 9rem 16rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.AboutUs .ChefCards .ChefImg img{
+  margin-left: 5vw;
+  height: 50vh;
+  width: 28vw;
+}

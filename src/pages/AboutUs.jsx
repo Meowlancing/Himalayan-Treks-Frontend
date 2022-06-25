@@ -117,6 +117,18 @@ const AboutUs = () => {
           </section>
         </div>
       </div>
+        <div className="FounderCards">
+          <div className="FounderImg"><img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/1614603112788-min-1-1-min.jpeg"/></div>
+          <div className="FounderInfo">
+            <span></span> <p>Founder</p> <br/> <h2>SOBENDRA SINGH</h2> <br/> <p>Our founder Mr. Sobendra Singh is an outdoor enthusiast & wanderlust <br/> nature person. Continuously working hard for the growth of <br/> Himalayan Dreamtreks. He had dreamed of showing people the <br/>beauty of the Himalayas. That's why after graduation, he learned <br/> about the mountains & how to climb them. He had complete both <br/> Basic & Advanced mountaineering course from Nehru Institute Of <br/> Mountaineering</p>
+          </div>
+        </div>
+        <div className="ChefCards">
+          <div className="ChefImg"><img src="https://himalayandreamtreks.in/wp-content/uploads/elementor/thumbs/IMG-20210301-WA0013-min-1-1-pdteyd0v7vqcy1vrfq0dcuk0q6e2umzztj2omk858o.jpg"/></div>
+          <div className="ChefInfo">
+            <span></span> <p>Chef</p> <br/> <h2>VIRENDRA RANA</h2> <br/> <p>A native of Uttarkashi, Uttarakhand, Virendra Rana is a small town <br/> men with a big city attitude. <br/> Our chef Virendra Rana is a talented & experienced chef. He had exp. <br/> of more than 10+ years in cooking. Already worked for many hotels & <br/> reputed trekking agency. <br/> He is well qualified in making all types of cuisine. </p>
+          </div>
+        </div>
       <Footer/>
     </div>
   );
