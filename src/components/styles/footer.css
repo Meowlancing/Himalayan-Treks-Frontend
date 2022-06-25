@@ -3,7 +3,7 @@
     height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('https://himalayandreamtreks.in/wp-content/uploads/2021/02/Untitled-design-39-min.png');
+    background:linear-gradient(0deg, rgba(0, 17, 76, 0.6), rgba(0, 17, 76, 0.6)), url(https://himalayandreamtreks.in/wp-content/uploads/2021/02/Untitled-design-39-min.png);
 }
 
 .Footer .cards{
@@ -40,10 +40,10 @@
 }
 .caption{
     font-weight: 700;
-    color: rgb(230, 61, 10);
+    color: rgb(255, 255, 255);
     margin-left: 5rem;
 }
 
 .caption p{
-    margin-left: 15rem;
+    margin-left: 25rem;
 }
