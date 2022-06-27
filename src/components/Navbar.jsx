@@ -43,9 +43,7 @@ function NavbarCompo() {
 
               <Nav.Link href="/treks" className="navItem dropMenu">
                 Treks
-                <NavDropdown
-                  id="basic-nav-dropdown"
-                >
+                <NavDropdown id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">items</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
                     Another action
@@ -73,11 +71,12 @@ function NavbarCompo() {
               <Nav.Link href="#"></Nav.Link>
               <Nav.Link href="#"></Nav.Link>
               <Nav.Link href="#"></Nav.Link>
-
-              <Button className="bookBtn">
-                Book Now
-                <FontAwesomeIcon icon={faShoppingBag} className="icon" />
-              </Button>
+              <a href="/contact">
+                <Button className="bookBtn">
+                  Book Now
+                  <FontAwesomeIcon icon={faShoppingBag} className="icon" />
+                </Button>
+              </a>
             </Nav>
           </Navbar.Collapse>
         </div>

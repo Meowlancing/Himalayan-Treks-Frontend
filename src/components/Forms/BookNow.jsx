@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import GoogleMapReact from 'google-map-react';
 import "./styles/bookNow.css";
+import axios from "axios";
 
 function BookNow() {
   const [formData, setFormData] = useState({
@@ -24,6 +25,24 @@ function BookNow() {
     console.log(value);
     console.log(formData);
   };
+ 
+  async function postData(){
+    try{
+      const res = await axios({
+        method:"POST",
+        url:"http://localhost:8000/api/bookNow",
+        data: formData,
+      });
+      console.log(res);
+      alert("Form submitted successfully");
+    }
+    catch(err){
+      alert("Opps something went wrong");
+      return [];
+    }
+
+  }
+
 
   return (
     <>
@@ -75,7 +94,7 @@ function BookNow() {
                 />
               </Form.Group>
               <div style={{ textAlign: "center" }}>
-                <Button className="formBtn">Submit</Button>
+                <Button className="formBtn" onClick={postData}>Submit</Button>
               </div>
             </Form>
           </Col>
