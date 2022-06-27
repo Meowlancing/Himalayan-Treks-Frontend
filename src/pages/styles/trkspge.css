@@ -1,0 +1,33 @@
+.TrkHeader{
+    background-image: url(https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh; width: 100vw;
+    text-align: center;
+}
+
+.headerH2{
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+    font-family: "Poppins", Sans-serif;
+    font-size: 65px;
+    padding: 70px 0 0 0;
+}
+.headerH3{
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 5.2px;
+    margin: 26px 0px 0px 0px;
+}
+
+.trekDets{
+    background:linear-gradient(0deg, rgba(2, 2, 80, 0.782), rgba(4, 16, 77, 0.766));
+    display: flex;
+    align-items: center;
+}
+.trekDets div{
+    margin: 0 15px;
+}
