@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
+import GoogleMapReact from 'google-map-react';
 import "./styles/bookNow.css";
 
 function BookNow() {
@@ -7,6 +8,7 @@ function BookNow() {
     name: "",
     email: "",
     mobile: "",
+    no_of_people: "",
     message: "",
   });
 
@@ -34,7 +36,7 @@ function BookNow() {
               </h2>
               <Form.Group className="mb-4">
                 <Form.Control
-                  placeholder="Name"
+                  placeholder="Name*"
                   className="inputs"
                   onChange={handleFormData("name")}
                 />
@@ -42,7 +44,7 @@ function BookNow() {
 
               <Form.Group className="mb-4">
                 <Form.Control
-                  placeholder="Email"
+                  placeholder="Email*"
                   type="email"
                   className="inputs"
                   onChange={handleFormData("email")}
@@ -51,12 +53,18 @@ function BookNow() {
 
               <Form.Group className="mb-4">
                 <Form.Control
-                  placeholder="Phone No"
+                  placeholder="Phone No*"
                   className="inputs"
                   onChange={handleFormData("mobile")}
                 />
               </Form.Group>
-
+              <Form.Group className="mb-4">
+                <Form.Control
+                  placeholder="No of people*"
+                  className="inputs"
+                  onChange={handleFormData("no_of_people")}
+                />
+              </Form.Group>
               <Form.Group className="mb-4">
                 <Form.Control
                   placeholder="Message"
@@ -66,17 +74,19 @@ function BookNow() {
                   onChange={handleFormData("message")}
                 />
               </Form.Group>
-              <div style={{textAlign: "center"}}>
+              <div style={{ textAlign: "center" }}>
                 <Button className="formBtn">Submit</Button>
               </div>
             </Form>
           </Col>
 
-          <Col>{/* google map integration  */}</Col>
+          <Col>{/* google map integration  */}
+          <GoogleMapReact  />
+          </Col>
         </Row>
       </div>
     </>
-  );
+  ); 
 }
 
 export default BookNow;
