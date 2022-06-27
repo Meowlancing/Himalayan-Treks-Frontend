@@ -20,3 +20,14 @@
     text-align: justify;
     padding: 10px 100px;
 }
+@media only screen and (max-width: 500px){
+    .blogPage .paragraph{
+        padding: 10px 30px;
+    }
+    .blogPage .title h2{
+        font-size: 30px;
+    }
+    .blogPage .title .duo{
+        font-size: 23px;
+    }
+}

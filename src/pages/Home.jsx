@@ -2,12 +2,10 @@ import { Button, Row, Col } from "react-bootstrap";
 import React from "react";
 import "./styles/home.css";
 import Header from "../components/Header";
-import NavbarCompo from "../components/Navbar";
 import DiscountedTreks from "../components/DiscountedTreks";
 import TrekCards from "../components/TrekCards";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlogsCard from "../components/BlogsCard";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
