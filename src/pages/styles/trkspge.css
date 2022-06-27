@@ -31,3 +31,13 @@
 .trekDets div{
     margin: 0 15px;
 }
+.Collapsible span{
+    background-color: rgb(227, 93, 16);
+}
+.Collapsible div{
+    background-color: rgb(229, 169, 113);
+}
+.BookingForm{
+    display: flex;
+    flex-direction: column;
+}

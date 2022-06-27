@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/trkspge.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Collapsible from "react-collapsible";
 import { Card } from "react-bootstrap";
 import {
   faLocation,
@@ -8,6 +9,7 @@ import {
   faBuilding,
   faCalendarDay,
   faArrowRight,
+  faSquarePhoneFlip,
 } from "@fortawesome/free-solid-svg-icons";
 
 function TreksPage() {
@@ -47,8 +49,8 @@ function TreksPage() {
           <p style={{ color: "#fff" }}>Feet - 12.500</p>
         </div>
       </section>
-      <section style={{display:"flex"}}>
-        <div style={{width:"50vw"}} className="">
+      <section style={{ display: "flex" }}>
+        <div style={{ width: "50vw" }} className="">
           <h1>Brief Description</h1>
           <p>
             The Kedarkantha trek is the best option for winter trekking because
@@ -226,32 +228,125 @@ function TreksPage() {
           </p>
         </div>
         <div className="SidebarBook">
-          <h1>7,999 INR/per Person</h1> <br/>
+          <h1>7,999 INR/per Person</h1> <br />
           <p>5% GST EXTRA</p>
           <button>Book Now</button>
-          <Card style={{backgroundColor:"#00114C"}}>
-            <div className="icons">
-            </div>
+          <Card style={{ backgroundColor: "#00114C" }}>
+            <div className="icons"></div>
             <Card.Body>
               <Card.Title className="title"></Card.Title>
               <Card.Text className="purpose">
-                <FontAwesomeIcon style={{color:"crimson"}} icon={faArrowRight}/> <a style={{color:"#ffff",textDecoration:"underline"}} href="">Brief Description</a> <br/> 
-                <FontAwesomeIcon style={{color:"crimson"}} icon={faArrowRight}/> <a style={{color:"#ffff",textDecoration:"underline"}} href="">Short Itinerary</a> <br/>
-                <FontAwesomeIcon style={{color:"crimson"}} icon={faArrowRight}/> <a style={{color:"#ffff",textDecoration:"underline"}} href="">Detailed Itinerary</a> <br/> 
-                <FontAwesomeIcon style={{color:"crimson"}} icon={faArrowRight}/> <a style={{color:"#ffff",textDecoration:"underline"}} href="">Price Inclusion</a> <br/> 
-                <FontAwesomeIcon style={{color:"crimson"}} icon={faArrowRight}/> <a style={{color:"#ffff",textDecoration:"underline"}} href="">Price Exclusion</a> <br/> 
-                <FontAwesomeIcon style={{color:"crimson"}} icon={faArrowRight}/> <a style={{color:"#ffff",textDecoration:"underline"}} href="">Departure Date</a> <br/> 
-                <FontAwesomeIcon style={{color:"crimson"}} icon={faArrowRight}/> <a style={{color:"#ffff",textDecoration:"underline"}} href="">Gallery</a> <br/>
-              <div className='socialsicons'>
-              </div>
+                <FontAwesomeIcon
+                  style={{ color: "crimson" }}
+                  icon={faArrowRight}
+                />{" "}
+                <a
+                  style={{ color: "#ffff", textDecoration: "underline" }}
+                  href=""
+                >
+                  Brief Description
+                </a>{" "}
+                <br />
+                <FontAwesomeIcon
+                  style={{ color: "crimson" }}
+                  icon={faArrowRight}
+                />{" "}
+                <a
+                  style={{ color: "#ffff", textDecoration: "underline" }}
+                  href=""
+                >
+                  Short Itinerary
+                </a>{" "}
+                <br />
+                <FontAwesomeIcon
+                  style={{ color: "crimson" }}
+                  icon={faArrowRight}
+                />{" "}
+                <a
+                  style={{ color: "#ffff", textDecoration: "underline" }}
+                  href=""
+                >
+                  Detailed Itinerary
+                </a>{" "}
+                <br />
+                <FontAwesomeIcon
+                  style={{ color: "crimson" }}
+                  icon={faArrowRight}
+                />{" "}
+                <a
+                  style={{ color: "#ffff", textDecoration: "underline" }}
+                  href=""
+                >
+                  Price Inclusion
+                </a>{" "}
+                <br />
+                <FontAwesomeIcon
+                  style={{ color: "crimson" }}
+                  icon={faArrowRight}
+                />{" "}
+                <a
+                  style={{ color: "#ffff", textDecoration: "underline" }}
+                  href=""
+                >
+                  Price Exclusion
+                </a>{" "}
+                <br />
+                <FontAwesomeIcon
+                  style={{ color: "crimson" }}
+                  icon={faArrowRight}
+                />{" "}
+                <a
+                  style={{ color: "#ffff", textDecoration: "underline" }}
+                  href=""
+                >
+                  Departure Date
+                </a>{" "}
+                <br />
+                <FontAwesomeIcon
+                  style={{ color: "crimson" }}
+                  icon={faArrowRight}
+                />{" "}
+                <a
+                  style={{ color: "#ffff", textDecoration: "underline" }}
+                  href=""
+                >
+                  Gallery
+                </a>{" "}
+                <br />
+                <div className="socialsicons"></div>
               </Card.Text>
             </Card.Body>
           </Card>
+          <h3>
+            <button>
+              <FontAwesomeIcon icon={faSquarePhoneFlip} />{" "}
+            </button>{" "}
+            TALK TO AN EXPERT <br /> +91-8089693825{" "}
+          </h3>{" "}
+          <br />
+          <h3>OR</h3> <br /> <button>Email Us</button>
+          <span>Departure Date</span>
+          <Collapsible trigger="April 2021">
+            <p>
+              Call for booking-
+              <br />
+              +91 80896 93825 / +91 6395 932 971
+            </p>
+          </Collapsible>
+          <Collapsible trigger="May 2021">
+            <p>Call for booking- +91 80896 93825 / +91 6395 932 971</p>
+          </Collapsible>
+          <form className="BookingForm">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="number" placeholder="Contact Number" />
+            <input type="text" name="people" placeholder="No. of People" />
+            <input type="text" name="trekname" placeholder="Trek Name" />
+            <input type="submit" value="Reserve Your Slot Now" />
+          </form>
         </div>
       </section>
-      <section className="TrekGallery">
-
-      </section>
+      <section className="TrekGallery"></section>
     </div>
   );
 }
