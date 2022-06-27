@@ -73,7 +73,7 @@ function Footer() {
             </Card.Body>
           </Card>
         </section>
-        <div className='caption' style={{display:"flex", flexDirection:"row"}}><h4>©All rights reserved {date.getFullYear()} @Himalyan Explorations</h4>  <p>Designed and Developed By PracharMore</p></div>   
+        <div className='caption'><h4>©All rights reserved {date.getFullYear()} @Himalyan Explorations</h4>  <p>Designed and Developed By PracharMore</p></div>   
     </div>
   )
 }
