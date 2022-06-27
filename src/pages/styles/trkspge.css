@@ -31,6 +31,14 @@
 .trekDets div{
     margin: 0 15px;
 }
+.Panel{
+    display: flex;
+    
+}
+.LeftPane{
+    margin: 0 5vw 0 10vw;
+    width: 50vw;
+}
 .Collapsible span{
     background-color: rgb(227, 93, 16);
 }
@@ -40,4 +48,23 @@
 .BookingForm{
     display: flex;
     flex-direction: column;
+}
+.TrekGallery{
+    margin-bottom: 3rem;
+}
+.GalleryImages img{
+    margin: 0 10px;
+    height: 250px;
+    width: 350px;
+}
+
+@media (max-width:430px) {
+    .GalleryImages img{
+        height: 150px;
+        width: 250px;
+    }
+    .TrekGallery{
+        display: flex;
+        flex-direction: row;
+    }
 }

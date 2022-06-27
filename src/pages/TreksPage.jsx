@@ -49,8 +49,8 @@ function TreksPage() {
           <p style={{ color: "#fff" }}>Feet - 12.500</p>
         </div>
       </section>
-      <section style={{ display: "flex" }}>
-        <div style={{ width: "50vw" }} className="">
+      <section className="Panel">
+        <div className="LeftPane">
           <h1>Brief Description</h1>
           <p>
             The Kedarkantha trek is the best option for winter trekking because
@@ -346,7 +346,21 @@ function TreksPage() {
           </form>
         </div>
       </section>
-      <section className="TrekGallery"></section>
+      <section className="TrekGallery">
+      <h1>Gallery</h1>
+        <div className="GalleryImages">
+          <img src="https://cdn.kapwing.com/collections/video_image--ksRh0WJQI.jpeg"/>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cetmYEv9DLBbaEDtMnWhqVSgF9ea-al_Uw&usqp=CAU"/>
+          <img src="https://i.imgflip.com/6aejt6.jpg"/>
+          <img src="https://preview.redd.it/1eyjsftl4bh81.jpg?auto=webp&s=6f6cc7cc4fbbd9af6bd61ef2685ad8159787e989"/>
+          <img src="https://pics.me.me/profile-picture-vs-tagged-photo-35181553.png"/>
+          <img src="https://www.meme-arsenal.com/memes/79b9c47e1e429d61d99571a7198da21c.jpg"/>
+          <img src="https://pics.me.me/when-someone-with-an-anime-profile-pic-says-they-hate-45710100.png"/>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPF7yGFuS2tmg0Qo37SBJYEYOjokI5tFw9lg&usqp=CAU"/>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUiJGO8fkOEVx8_865f7j2ODqLhHVe8ncM-wN2P22iT_YituBYS7_31pnAUdTNseePzj4&usqp=CAU"/>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSID6um_qUCdyZ57sqfJoBbqJBQTxV4Rc1Glg&usqp=CAU"/>
+        </div>
+      </section>
     </div>
   );
 }
