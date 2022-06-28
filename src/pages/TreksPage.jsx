@@ -13,6 +13,7 @@ import {
   faMapMarked,
   faCheck,
   faTimes,
+  faShoppingBag
 } from "@fortawesome/free-solid-svg-icons";
 
 function TreksPage() {
@@ -239,10 +240,10 @@ function TreksPage() {
           </p>
         </div>
         <div className="SidebarBook">
-          <h1>7,999 INR/per Person</h1> <br />
+          <h1>7,999 INR<span style={{fontSize:"18px",color:"crimson"}}>/per person</span></h1>
           <p>5% GST EXTRA</p>
-          <button>Book Now</button>
-          <Card style={{ backgroundColor: "#00114C" }}>
+          <button className="BookNowBtn">Book Now <FontAwesomeIcon icon={faShoppingBag}/> </button>
+          <Card className="DescCards">
             <div className="icons"></div>
             <Card.Body>
               <Card.Title className="title"></Card.Title>
@@ -330,14 +331,15 @@ function TreksPage() {
           </Card>
           <h3>
             <button>
-              <FontAwesomeIcon icon={faSquarePhoneFlip} />{" "}
+              <FontAwesomeIcon style={{color:"red"}} icon={faSquarePhoneFlip} />{" "}
             </button>{" "}
             TALK TO AN EXPERT <br /> +91-8089693825{" "}
           </h3>{" "}
           <br />
-          <h3>OR</h3> <br /> <button>Email Us</button>
-          <span>Departure Date</span>
-          <Collapsible trigger="April 2021">
+          <div style={{borderRadius:"50%",backgroundColor:"#000",color:"#fff",width:"3.7rem",height:"3rem",fontSize:"24px",textAlign:"center"}}>OR</div> <br /> 
+          <button className="BarsBook">Email Us</button> <br/>
+          <button className="BarsBook">Departure Date</button>
+          <Collapsible className="BarsBook" trigger="April 2021">
             <p>
               Call for booking-
               <br />
@@ -345,7 +347,8 @@ function TreksPage() {
             </p>
           </Collapsible>
           <Collapsible trigger="May 2021">
-            <p>Call for booking- +91 80896 93825 / +91 6395 932 971</p>
+            <p>Call for booking-
+            <br /> +91 80896 93825 / +91 6395 932 971</p>
           </Collapsible>
           <form className="BookingForm">
             <input type="text" name="name" placeholder="Name" />
@@ -353,7 +356,7 @@ function TreksPage() {
             <input type="text" name="number" placeholder="Contact Number" />
             <input type="text" name="people" placeholder="No. of People" />
             <input type="text" name="trekname" placeholder="Trek Name" />
-            <input type="submit" value="Reserve Your Slot Now" />
+            <input className="BookNowBtn" style={{width:"15rem"}} type="submit" value="Reserve Your Slot Now" />
           </form>
         </div>
       </section>
