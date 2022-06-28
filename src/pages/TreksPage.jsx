@@ -10,6 +10,8 @@ import {
   faCalendarDay,
   faArrowRight,
   faSquarePhoneFlip,
+  faMapMarked,
+  faCheck
 } from "@fortawesome/free-solid-svg-icons";
 
 function TreksPage() {
@@ -51,7 +53,7 @@ function TreksPage() {
       </section>
       <section className="Panel">
         <div className="LeftPane">
-          <h1>Brief Description</h1>
+          <h1>Brief <span style={{color:"#FF6060"}}>Description</span></h1>
           <p>
             The Kedarkantha trek is the best option for winter trekking because
             it features new powder-soft sparkling snow. It's a year-round hike,
@@ -81,19 +83,19 @@ function TreksPage() {
             this national park. The route begins in a dense pine forest and
             continues through it.
           </p>
-          <h1>Short Itinerary</h1>
+          <h1>Short <span style={{color:"#FF6060"}}>Itinerary</span></h1>
           <p>
-            Day 1: Dehradun - Sankri (nine-hour drive) <br />
-            Day 2: Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
-            Day 3: Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs) <br />
-            Day 4: Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "}
+           <strong>Day 1:</strong> Dehradun - Sankri (nine-hour drive) <br />
+           <strong>Day 2:</strong> Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
+           <strong>Day 3:</strong> Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs) <br />
+           <strong>Day 4:</strong> Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "}
             <br />
-            Day 5: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8 hours
+            <strong>Day 5:</strong> Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8 hours
             driving) <br />
           </p>
-          <h1>Detail Itinerary</h1>
+          <h1>Detail <span style={{color:"#FF6060"}}>Itinerary</span></h1>
           <p>
-            Day 1: Dehradun - Sankri (nine-hour drive) <br />
+           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 1: Dehradun - Sankri (nine-hour drive) </span><br />
             <span>
               Early in the morning, meet us in Dehradun. From here, we'll embark
               on a scenic drive to Sankri, where we'll set up camp at 6,400
@@ -109,7 +111,7 @@ function TreksPage() {
             </span>
           </p>
           <p>
-            Day 02 : Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
+           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 02 : Sankri – Shepherd Camp (Trek/3-4 Hrs) <br /></span>
             <span>
               After breakfast, we'll go on a short hike that will mostly take us
               through the forest. We'll walk to Saur village and then ascend to
@@ -125,7 +127,7 @@ function TreksPage() {
             </span>
           </p>
           <p>
-            Day 3: Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs) <br />
+           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 3: Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs) </span> <br />
             <span>
               Begin your day early to catch a glimpse of the brilliant sunrise.
               We will begin our journey to the Kedarkantha foundation, which is
@@ -152,7 +154,7 @@ function TreksPage() {
             </span>
           </p>
           <p>
-            Day 4: Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "}
+           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 4: Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "} </span>
             <br />
             <span>
               Consider the view from the summit if the Kedar Kantha base is as
@@ -166,8 +168,8 @@ function TreksPage() {
             </span>
           </p>
           <p>
-            Day 05: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8
-            hours driving) <br />
+           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"24px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060",}}/> Day 05: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8
+            hours driving)</span> <br />
             <span>
               Today we'll go on a short hike before driving straight to
               Dehradun. In the splendour of the Himalayas, rise with the sun and
@@ -180,27 +182,32 @@ function TreksPage() {
           <h1>Price Inclusion</h1>
           <p>
             <span>
+            <FontAwesomeIcon icon={faCheck}/>
               For the duration of your trek, you will be staying in hotels and
               camps from day one to day five.
             </span>{" "}
             <br />
             <span>
+            <FontAwesomeIcon icon={faCheck}/>
               Meals: From the first supper to the fifth morning, all meals are
               included. We offer easy, nutritious vegetarian food on all days of
               the trek.
             </span>
             <br />
             <span>
+            <FontAwesomeIcon icon={faCheck}/>
               Transportation: We will provide round-trip transportation from
               Dehradun to Dehradun.
             </span>
             <br />
             <span>
+            <FontAwesomeIcon icon={faCheck}/>
               Camping fees: Both trekking permits and woodland camping fees are
               included in the price.
             </span>
             <br />
             <span>
+            <FontAwesomeIcon icon={faCheck}/>
               All of the camps will provide you with high-quality tents and
               sleeping bags for your trek. We have high-altitude sleeping bags
               that can withstand temperatures as low as -10°C. Ropes,

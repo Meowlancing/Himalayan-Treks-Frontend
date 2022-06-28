@@ -33,7 +33,10 @@
 }
 .Panel{
     display: flex;
-    
+}
+.Panel h1{
+    color: #3254ce ;
+    font-size: 30px;
 }
 .LeftPane{
     margin: 0 5vw 0 10vw;
