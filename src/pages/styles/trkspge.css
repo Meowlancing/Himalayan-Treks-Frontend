@@ -6,14 +6,14 @@
     text-align: center;
 }
 
-.headerH2{
+.TrkHeader .headerH2{
     color: #FFFFFF;
     text-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
     font-family: "Poppins", Sans-serif;
     font-size: 65px;
     padding: 70px 0 0 0;
 }
-.headerH3{
+.TrkHeader .headerH3{
     color: #FFFFFF;
     font-family: "Poppins", Sans-serif;
     font-size: 20px;
@@ -26,7 +26,18 @@
 .trekDets{
     background:linear-gradient(0deg, rgba(2, 2, 80, 0.782), rgba(4, 16, 77, 0.766));
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+.trekDets .icon{
+    font-size: 20px;
+    color: var(--red);
+    margin-right: 5px;
+}
+.trekDets .trekHeadDetails{
+    color: #fff;
+    margin-bottom: 0;
 }
 .trekDets div{
     margin: 0 15px;

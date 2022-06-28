@@ -13,7 +13,7 @@ import {
   faMapMarked,
   faCheck,
   faTimes,
-  faShoppingBag
+  faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
 
 function TreksPage() {
@@ -26,36 +26,38 @@ function TreksPage() {
       <section className="trekDets">
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon
-            style={{ fontSize: "20px", color: "crimson" }}
+            className="icon"
             icon={faLocation}
           />
-          <p style={{ color: "#fff" }}>Region-Uttarkhand</p>
+          <p className="trekHeadDetails">Region-Uttarkhand</p>
         </div>
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon
-            style={{ fontSize: "20px", color: "crimson" }}
+            className="icon"
             icon={faCampground}
           />
-          <p style={{ color: "#fff" }}>Base Camp-SANKRI</p>
+          <p className="trekHeadDetails">Base Camp-SANKRI</p>
         </div>
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon
-            style={{ fontSize: "20px", color: "crimson" }}
+            className="icon"
             icon={faCalendarDay}
           />
-          <p style={{ color: "#fff" }}>Days - 5</p>
+          <p className="trekHeadDetails">Days - 5</p>
         </div>
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon
-            style={{ fontSize: "20px", color: "crimson" }}
+            className="icon"
             icon={faBuilding}
           />
-          <p style={{ color: "#fff" }}>Feet - 12.500</p>
+          <p className="trekHeadDetails">Feet - 12.500</p>
         </div>
       </section>
       <section className="Panel">
         <div className="LeftPane">
-          <h1>Brief <span style={{color:"#FF6060"}}>Description</span></h1>
+          <h1>
+            Brief <span style={{ color: "#FF6060" }}>Description</span>
+          </h1>
           <p>
             The Kedarkantha trek is the best option for winter trekking because
             it features new powder-soft sparkling snow. It's a year-round hike,
@@ -85,19 +87,33 @@ function TreksPage() {
             this national park. The route begins in a dense pine forest and
             continues through it.
           </p>
-          <h1>Short <span style={{color:"#FF6060"}}>Itinerary</span></h1>
+          <h1>
+            Short <span style={{ color: "#FF6060" }}>Itinerary</span>
+          </h1>
           <p>
-           <strong>Day 1:</strong> Dehradun - Sankri (nine-hour drive) <br />
-           <strong>Day 2:</strong> Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
-           <strong>Day 3:</strong> Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs) <br />
-           <strong>Day 4:</strong> Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "}
-            <br />
-            <strong>Day 5:</strong> Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8 hours
-            driving) <br />
+            <strong>Day 1:</strong> Dehradun - Sankri (nine-hour drive) <br />
+            <strong>Day 2:</strong> Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
+            <strong>Day 3:</strong> Shepherd Camp – Kedarkantha Base Camp (Trek
+            4-5 Hrs) <br />
+            <strong>Day 4:</strong> Kedar Kantha Peak from Base Camp (3800m) -
+            Juda Ka Talab <br />
+            <strong>Day 5:</strong> Juda Ka Talab – Sankri – Dehradun (2 hours
+            trekking / 8 hours driving) <br />
           </p>
-          <h1>Detail <span style={{color:"#FF6060"}}>Itinerary</span></h1>
+          <h1>
+            Detail <span style={{ color: "#FF6060" }}>Itinerary</span>
+          </h1>
           <p>
-           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 1: Dehradun - Sankri (nine-hour drive) </span><br />
+            <span
+              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
+            >
+              <FontAwesomeIcon
+                icon={faMapMarked}
+                style={{ color: "#FF6060", fontSize: "24px" }}
+              />{" "}
+              Day 1: Dehradun - Sankri (nine-hour drive){" "}
+            </span>
+            <br />
             <span>
               Early in the morning, meet us in Dehradun. From here, we'll embark
               on a scenic drive to Sankri, where we'll set up camp at 6,400
@@ -113,7 +129,15 @@ function TreksPage() {
             </span>
           </p>
           <p>
-           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 02 : Sankri – Shepherd Camp (Trek/3-4 Hrs) <br /></span>
+            <span
+              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
+            >
+              <FontAwesomeIcon
+                icon={faMapMarked}
+                style={{ color: "#FF6060", fontSize: "24px" }}
+              />{" "}
+              Day 02 : Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
+            </span>
             <span>
               After breakfast, we'll go on a short hike that will mostly take us
               through the forest. We'll walk to Saur village and then ascend to
@@ -129,7 +153,16 @@ function TreksPage() {
             </span>
           </p>
           <p>
-           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 3: Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs) </span> <br />
+            <span
+              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
+            >
+              <FontAwesomeIcon
+                icon={faMapMarked}
+                style={{ color: "#FF6060", fontSize: "24px" }}
+              />{" "}
+              Day 3: Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs){" "}
+            </span>{" "}
+            <br />
             <span>
               Begin your day early to catch a glimpse of the brilliant sunrise.
               We will begin our journey to the Kedarkantha foundation, which is
@@ -156,7 +189,15 @@ function TreksPage() {
             </span>
           </p>
           <p>
-           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 4: Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "} </span>
+            <span
+              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
+            >
+              <FontAwesomeIcon
+                icon={faMapMarked}
+                style={{ color: "#FF6060", fontSize: "24px" }}
+              />{" "}
+              Day 4: Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "}
+            </span>
             <br />
             <span>
               Consider the view from the summit if the Kedar Kantha base is as
@@ -170,8 +211,17 @@ function TreksPage() {
             </span>
           </p>
           <p>
-           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 05: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8
-            hours driving)</span> <br />
+            <span
+              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18" }}
+            >
+              <FontAwesomeIcon
+                icon={faMapMarked}
+                style={{ color: "#FF6060", fontSize: "24px" }}
+              />{" "}
+              Day 05: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8
+              hours driving)
+            </span>{" "}
+            <br />
             <span>
               Today we'll go on a short hike before driving straight to
               Dehradun. In the splendour of the Himalayas, rise with the sun and
@@ -184,32 +234,32 @@ function TreksPage() {
           <h1>Price Inclusion</h1>
           <p>
             <span>
-            <FontAwesomeIcon icon={faCheck}/>
+              <FontAwesomeIcon icon={faCheck} />
               For the duration of your trek, you will be staying in hotels and
               camps from day one to day five.
             </span>{" "}
             <br />
             <span>
-            <FontAwesomeIcon icon={faCheck}/>
+              <FontAwesomeIcon icon={faCheck} />
               Meals: From the first supper to the fifth morning, all meals are
               included. We offer easy, nutritious vegetarian food on all days of
               the trek.
             </span>
             <br />
             <span>
-            <FontAwesomeIcon icon={faCheck}/>
+              <FontAwesomeIcon icon={faCheck} />
               Transportation: We will provide round-trip transportation from
               Dehradun to Dehradun.
             </span>
             <br />
             <span>
-            <FontAwesomeIcon icon={faCheck}/>
+              <FontAwesomeIcon icon={faCheck} />
               Camping fees: Both trekking permits and woodland camping fees are
               included in the price.
             </span>
             <br />
             <span>
-            <FontAwesomeIcon icon={faCheck}/>
+              <FontAwesomeIcon icon={faCheck} />
               All of the camps will provide you with high-quality tents and
               sleeping bags for your trek. We have high-altitude sleeping bags
               that can withstand temperatures as low as -10°C. Ropes,
@@ -220,19 +270,19 @@ function TreksPage() {
           <h1>Price Exclusion</h1>
           <p>
             <span>
-            <FontAwesomeIcon icon={faTimes}/>
+              <FontAwesomeIcon icon={faTimes} />
               Expenses for personal reasons: For instance, during the trek,
               personal bags must be transported.
             </span>{" "}
             <br />
             <span>
-            <FontAwesomeIcon icon={faTimes}/>
+              <FontAwesomeIcon icon={faTimes} />
               Emergency Costs: Any expense arises as a result of any kind of
               emergency.
             </span>{" "}
             <br />
             <span>
-            <FontAwesomeIcon icon={faTimes}/>
+              <FontAwesomeIcon icon={faTimes} />
               Water in a Bottle: Throughout the trek, no bottled water will be
               provided.
             </span>{" "}
@@ -240,9 +290,16 @@ function TreksPage() {
           </p>
         </div>
         <div className="SidebarBook">
-          <h1>7,999 INR<span style={{fontSize:"18px",color:"crimson"}}>/per person</span></h1>
+          <h1>
+            7,999 INR
+            <span style={{ fontSize: "18px", color: "crimson" }}>
+              /per person
+            </span>
+          </h1>
           <p>5% GST EXTRA</p>
-          <button className="BookNowBtn">Book Now <FontAwesomeIcon icon={faShoppingBag}/> </button>
+          <button className="BookNowBtn">
+            Book Now <FontAwesomeIcon icon={faShoppingBag} />{" "}
+          </button>
           <Card className="DescCards">
             <div className="icons"></div>
             <Card.Body>
@@ -331,13 +388,29 @@ function TreksPage() {
           </Card>
           <h3>
             <button>
-              <FontAwesomeIcon style={{color:"red"}} icon={faSquarePhoneFlip} />{" "}
+              <FontAwesomeIcon
+                style={{ color: "red" }}
+                icon={faSquarePhoneFlip}
+              />{" "}
             </button>{" "}
             TALK TO AN EXPERT <br /> +91-8089693825{" "}
           </h3>{" "}
           <br />
-          <div style={{borderRadius:"50%",backgroundColor:"#000",color:"#fff",width:"3.7rem",height:"3rem",fontSize:"24px",textAlign:"center"}}>OR</div> <br /> 
-          <button className="BarsBook">Email Us</button> <br/>
+          <div
+            style={{
+              borderRadius: "50%",
+              backgroundColor: "#000",
+              color: "#fff",
+              width: "3.7rem",
+              height: "3rem",
+              fontSize: "24px",
+              textAlign: "center",
+            }}
+          >
+            OR
+          </div>{" "}
+          <br />
+          <button className="BarsBook">Email Us</button> <br />
           <button className="BarsBook">Departure Date</button>
           <Collapsible className="BarsBook" trigger="April 2021">
             <p>
@@ -347,8 +420,10 @@ function TreksPage() {
             </p>
           </Collapsible>
           <Collapsible trigger="May 2021">
-            <p>Call for booking-
-            <br /> +91 80896 93825 / +91 6395 932 971</p>
+            <p>
+              Call for booking-
+              <br /> +91 80896 93825 / +91 6395 932 971
+            </p>
           </Collapsible>
           <form className="BookingForm">
             <input type="text" name="name" placeholder="Name" />
@@ -356,23 +431,28 @@ function TreksPage() {
             <input type="text" name="number" placeholder="Contact Number" />
             <input type="text" name="people" placeholder="No. of People" />
             <input type="text" name="trekname" placeholder="Trek Name" />
-            <input className="BookNowBtn" style={{width:"15rem"}} type="submit" value="Reserve Your Slot Now" />
+            <input
+              className="BookNowBtn"
+              style={{ width: "15rem" }}
+              type="submit"
+              value="Reserve Your Slot Now"
+            />
           </form>
         </div>
       </section>
       <section className="TrekGallery">
-      <h1 style={{color:"#3254ce",fontSize:"30px"}}>Gallery</h1>
+        <h1 style={{ color: "#3254ce", fontSize: "30px" }}>Gallery</h1>
         <div className="GalleryImages">
-          <img src="https://cdn.kapwing.com/collections/video_image--ksRh0WJQI.jpeg"/>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cetmYEv9DLBbaEDtMnWhqVSgF9ea-al_Uw&usqp=CAU"/>
-          <img src="https://i.imgflip.com/6aejt6.jpg"/>
-          <img src="https://preview.redd.it/1eyjsftl4bh81.jpg?auto=webp&s=6f6cc7cc4fbbd9af6bd61ef2685ad8159787e989"/>
-          <img src="https://pics.me.me/profile-picture-vs-tagged-photo-35181553.png"/>
-          <img src="https://www.meme-arsenal.com/memes/79b9c47e1e429d61d99571a7198da21c.jpg"/>
-          <img src="https://pics.me.me/when-someone-with-an-anime-profile-pic-says-they-hate-45710100.png"/>
+          <img src="https://cdn.kapwing.com/collections/video_image--ksRh0WJQI.jpeg" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cetmYEv9DLBbaEDtMnWhqVSgF9ea-al_Uw&usqp=CAU" />
+          <img src="https://i.imgflip.com/6aejt6.jpg" />
+          <img src="https://preview.redd.it/1eyjsftl4bh81.jpg?auto=webp&s=6f6cc7cc4fbbd9af6bd61ef2685ad8159787e989" />
+          <img src="https://pics.me.me/profile-picture-vs-tagged-photo-35181553.png" />
+          <img src="https://www.meme-arsenal.com/memes/79b9c47e1e429d61d99571a7198da21c.jpg" />
+          {/* <img src="https://pics.me.me/when-someone-with-an-anime-profile-pic-says-they-hate-45710100.png"/>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPF7yGFuS2tmg0Qo37SBJYEYOjokI5tFw9lg&usqp=CAU"/>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUiJGO8fkOEVx8_865f7j2ODqLhHVe8ncM-wN2P22iT_YituBYS7_31pnAUdTNseePzj4&usqp=CAU"/>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSID6um_qUCdyZ57sqfJoBbqJBQTxV4Rc1Glg&usqp=CAU"/>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSID6um_qUCdyZ57sqfJoBbqJBQTxV4Rc1Glg&usqp=CAU"/> */}
         </div>
       </section>
     </div>
