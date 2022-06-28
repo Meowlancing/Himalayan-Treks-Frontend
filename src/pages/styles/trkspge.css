@@ -43,7 +43,8 @@
     width: 50vw;
 }
 .Collapsible span{
-    background-color: rgb(227, 93, 16);
+    background-color: rgb(33, 16, 227);
+    border-radius: 10px;
 }
 .Collapsible div{
     background-color: rgb(229, 169, 113);
