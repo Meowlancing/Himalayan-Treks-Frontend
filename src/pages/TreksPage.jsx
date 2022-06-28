@@ -25,38 +25,26 @@ function TreksPage() {
       </section>
       <section className="trekDets">
         <div style={{ display: "flex" }}>
-          <FontAwesomeIcon
-            className="icon"
-            icon={faLocation}
-          />
+          <FontAwesomeIcon className="icon" icon={faLocation} />
           <p className="trekHeadDetails">Region-Uttarkhand</p>
         </div>
         <div style={{ display: "flex" }}>
-          <FontAwesomeIcon
-            className="icon"
-            icon={faCampground}
-          />
+          <FontAwesomeIcon className="icon" icon={faCampground} />
           <p className="trekHeadDetails">Base Camp-SANKRI</p>
         </div>
         <div style={{ display: "flex" }}>
-          <FontAwesomeIcon
-            className="icon"
-            icon={faCalendarDay}
-          />
+          <FontAwesomeIcon className="icon" icon={faCalendarDay} />
           <p className="trekHeadDetails">Days - 5</p>
         </div>
         <div style={{ display: "flex" }}>
-          <FontAwesomeIcon
-            className="icon"
-            icon={faBuilding}
-          />
+          <FontAwesomeIcon className="icon" icon={faBuilding} />
           <p className="trekHeadDetails">Feet - 12.500</p>
         </div>
       </section>
       <section className="Panel">
         <div className="LeftPane">
           <h1>
-            Brief <span style={{ color: "#FF6060" }}>Description</span>
+            Brief <span className="duo">Description</span>
           </h1>
           <p>
             The Kedarkantha trek is the best option for winter trekking because
@@ -88,7 +76,7 @@ function TreksPage() {
             continues through it.
           </p>
           <h1>
-            Short <span style={{ color: "#FF6060" }}>Itinerary</span>
+            Short <span className="duo">Itinerary</span>
           </h1>
           <p>
             <strong>Day 1:</strong> Dehradun - Sankri (nine-hour drive) <br />
@@ -101,7 +89,7 @@ function TreksPage() {
             trekking / 8 hours driving) <br />
           </p>
           <h1>
-            Detail <span style={{ color: "#FF6060" }}>Itinerary</span>
+            Detail <span className="duo">Itinerary</span>
           </h1>
           <p>
             <span
@@ -309,79 +297,37 @@ function TreksPage() {
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
                 />{" "}
-                <a
-                  style={{ color: "#ffff", textDecoration: "underline" }}
-                  href=""
-                >
-                  Brief Description
-                </a>{" "}
-                <br />
+                <a href="">Brief Description</a> <br />
                 <FontAwesomeIcon
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
                 />{" "}
-                <a
-                  style={{ color: "#ffff", textDecoration: "underline" }}
-                  href=""
-                >
-                  Short Itinerary
-                </a>{" "}
-                <br />
+                <a href="">Short Itinerary</a> <br />
                 <FontAwesomeIcon
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
                 />{" "}
-                <a
-                  style={{ color: "#ffff", textDecoration: "underline" }}
-                  href=""
-                >
-                  Detailed Itinerary
-                </a>{" "}
-                <br />
+                <a href="">Detailed Itinerary</a> <br />
                 <FontAwesomeIcon
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
                 />{" "}
-                <a
-                  style={{ color: "#ffff", textDecoration: "underline" }}
-                  href=""
-                >
-                  Price Inclusion
-                </a>{" "}
-                <br />
+                <a href="">Price Inclusion</a> <br />
                 <FontAwesomeIcon
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
                 />{" "}
-                <a
-                  style={{ color: "#ffff", textDecoration: "underline" }}
-                  href=""
-                >
-                  Price Exclusion
-                </a>{" "}
-                <br />
+                <a href="">Price Exclusion</a> <br />
                 <FontAwesomeIcon
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
                 />{" "}
-                <a
-                  style={{ color: "#ffff", textDecoration: "underline" }}
-                  href=""
-                >
-                  Departure Date
-                </a>{" "}
-                <br />
+                <a href="">Departure Date</a> <br />
                 <FontAwesomeIcon
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
                 />{" "}
-                <a
-                  style={{ color: "#ffff", textDecoration: "underline" }}
-                  href=""
-                >
-                  Gallery
-                </a>{" "}
-                <br />
+                <a href="">Gallery</a> <br />
                 <div className="socialsicons"></div>
               </Card.Text>
             </Card.Body>

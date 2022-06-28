@@ -24,11 +24,12 @@
 }
 
 .trekDets{
-    background:linear-gradient(0deg, rgba(2, 2, 80, 0.782), rgba(4, 16, 77, 0.766));
+    background:linear-gradient(0deg, rgba(3, 67, 104, 0.782), rgba(9, 55, 153, 0.766));
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-bottom: 40px;
 }
 .trekDets .icon{
     font-size: 20px;
@@ -46,8 +47,11 @@
     display: flex;
 }
 .Panel h1{
-    color: #3254ce ;
+    color: var(--base-color) ;
     font-size: 30px;
+}
+.Panel .duo{
+    color: var(--red);
 }
 .LeftPane{
     margin: 0 5vw 0 10vw;
@@ -72,13 +76,11 @@
     height: 250px;
     width: 350px;
 }
-.SidebarBook{
-    margin-top: 4rem;
-}
+
 .SidebarBook .BookNowBtn{
     border-radius: 10px;
     border: none;
-    background-color: #3254ce;
+    background-color: var(--base-color);
     color: #FFFFFF;
     width: 9rem;
     height: 3rem;
@@ -88,7 +90,7 @@
 .SidebarBook .BarsBook{
     border-radius: 10px;
     border: none;
-    background-color: #3254ce;
+    background-color: var(--base-color);
     color: #FFFFFF;
     width: 15rem;
     height: 3rem;
@@ -104,6 +106,10 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-bottom: 2rem;
+}
+.SidebarBook .DescCards a{
+    color: #fff;
+    text-decoration: underline;
 }
 @media (max-width:430px) {
     .GalleryImages img{
