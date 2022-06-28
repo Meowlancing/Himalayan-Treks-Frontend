@@ -11,7 +11,8 @@ import {
   faArrowRight,
   faSquarePhoneFlip,
   faMapMarked,
-  faCheck
+  faCheck,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 
 function TreksPage() {
@@ -168,7 +169,7 @@ function TreksPage() {
             </span>
           </p>
           <p>
-           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"24px"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060",}}/> Day 05: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8
+           <span style={{fontWeight:"bold",color:"#3254ce", fontSize:"18"}}><FontAwesomeIcon icon={faMapMarked} style={{color:"#FF6060", fontSize:"24px"}}/> Day 05: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8
             hours driving)</span> <br />
             <span>
               Today we'll go on a short hike before driving straight to
@@ -218,16 +219,19 @@ function TreksPage() {
           <h1>Price Exclusion</h1>
           <p>
             <span>
+            <FontAwesomeIcon icon={faTimes}/>
               Expenses for personal reasons: For instance, during the trek,
               personal bags must be transported.
             </span>{" "}
             <br />
             <span>
+            <FontAwesomeIcon icon={faTimes}/>
               Emergency Costs: Any expense arises as a result of any kind of
               emergency.
             </span>{" "}
             <br />
             <span>
+            <FontAwesomeIcon icon={faTimes}/>
               Water in a Bottle: Throughout the trek, no bottled water will be
               provided.
             </span>{" "}
@@ -354,7 +358,7 @@ function TreksPage() {
         </div>
       </section>
       <section className="TrekGallery">
-      <h1>Gallery</h1>
+      <h1 style={{color:"#3254ce",fontSize:"30px"}}>Gallery</h1>
         <div className="GalleryImages">
           <img src="https://cdn.kapwing.com/collections/video_image--ksRh0WJQI.jpeg"/>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cetmYEv9DLBbaEDtMnWhqVSgF9ea-al_Uw&usqp=CAU"/>
