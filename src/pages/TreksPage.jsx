@@ -332,7 +332,7 @@ function TreksPage() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <h3>
+          <h3 className="call">
             <button>
               <FontAwesomeIcon
                 style={{ color: "red" }}
@@ -343,17 +343,15 @@ function TreksPage() {
           </h3>{" "}
           <br />
           <div
+            className="divOr"
             style={{
-              borderRadius: "50%",
-              backgroundColor: "#000",
               color: "#fff",
-              width: "3.7rem",
-              height: "3rem",
-              fontSize: "24px",
+              fontSize: "20px",
               textAlign: "center",
+              marginBottom: "10px",
             }}
           >
-            OR
+            <span style={{backgroundColor: "#000", padding: "10px", borderRadius: "50%",}}>OR</span>
           </div>{" "}
           <br />
           <button className="BarsBook">Email Us</button> <br />
