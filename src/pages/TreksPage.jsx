@@ -354,16 +354,16 @@ function TreksPage() {
             <span style={{backgroundColor: "#000", padding: "10px", borderRadius: "50%",}}>OR</span>
           </div>{" "}
           <br />
-          <button className="BarsBook">Email Us</button> <br />
+          <button className="BarsBook email">Email Us</button> <br />
           <button className="BarsBook">Departure Date</button>
-          <Collapsible className="BarsBook" trigger="April 2021">
+          <Collapsible className="collapseBar" trigger="April 2021">
             <p>
               Call for booking-
               <br />
               +91 80896 93825 / +91 6395 932 971
             </p>
           </Collapsible>
-          <Collapsible trigger="May 2021">
+          <Collapsible className="collapseBar" trigger="May 2021">
             <p>
               Call for booking-
               <br /> +91 80896 93825 / +91 6395 932 971

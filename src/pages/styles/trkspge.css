@@ -63,12 +63,33 @@
 .LeftPane {
   width: 60%;
 }
-.Collapsible span {
-  background-color: rgb(33, 16, 227);
+.SidebarBook .collapseBar {
   border-radius: 10px;
+  border: none;
+  background-color: var(--red);
+  color: #ffffff;
+  width: 20rem;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.Collapsible__trigger {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--red);
+  width: 20rem;
+  padding: 10px 116px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .Collapsible div {
+  padding: 8px;
   background-color: rgb(229, 169, 113);
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
 }
 .BookingForm {
   display: flex;
@@ -98,11 +119,18 @@
   border: none;
   background-color: var(--base-color);
   color: #ffffff;
-  width: 15rem;
-  height: 3rem;
+  width: 20rem;
+  padding: 10px 0;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
 }
+
+.SidebarBook .BarsBook.email {
+  margin-bottom: 50px;
+}
+
 .SidebarBook .DescCards {
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPzn6ib9ZdtFEH55aywkYpQX_IVcivDj7JEw&usqp=CAU);
   background-size: cover;
@@ -112,6 +140,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   margin-bottom: 2rem;
+  width: 18rem;
 }
 .SidebarBook .DescCards a {
   color: #fff;
