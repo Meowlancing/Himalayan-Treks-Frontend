@@ -477,7 +477,7 @@ function TreksPage() {
         </div>
       </section>
       <section className="TrekGallery">
-        <h1 style={{ color: "#3254ce", fontSize: "30px" }}>Gallery</h1>
+        <h1 style={{ color: "#064663", fontSize: "30px", }} className="mb-4">Gallery</h1>
         <div className="GalleryImages">
           <img src="https://cdn.kapwing.com/collections/video_image--ksRh0WJQI.jpeg" />
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cetmYEv9DLBbaEDtMnWhqVSgF9ea-al_Uw&usqp=CAU" />

@@ -91,12 +91,12 @@
   border-radius: 0 0 10px 10px;
   margin-bottom: 20px;
 }
-.BookingForm {
-  display: flex;
-  flex-direction: column;
-}
 .TrekGallery {
   margin-bottom: 3rem;
+  padding: 0 100px;
+}
+.GalleryImages{
+  text-align: center;
 }
 .GalleryImages img {
   margin: 0 10px;
