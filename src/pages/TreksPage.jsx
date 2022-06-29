@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/trkspge.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Collapsible from "react-collapsible";
-import { Card } from "react-bootstrap";
+import { Button, Card, Form } from "react-bootstrap";
 import {
   faLocation,
   faCampground,
@@ -15,8 +15,53 @@ import {
   faTimes,
   faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
+
+
+
+
+
 
 function TreksPage() {
+
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    no_of_people: "",
+    message: "",
+  });
+
+  const handleFormData = (input) => (e) => {
+    // input value from the form
+    const { value } = e.target;
+
+    //updating for data state taking previous state and then adding new value to create new object
+    setFormData((prevState) => ({
+      ...prevState,
+      [input]: value,
+    }));
+    console.log(value);
+    console.log(formData);
+  };
+
+  async function postData(){
+    try{
+      const res = await axios({
+        method:"POST",
+        url:"http://localhost:8000/api/bookNow",
+        data: formData,
+      });
+      console.log(res);
+      alert("Form submitted successfully");
+    }
+    catch(err){
+      alert("Opps something went wrong");
+      return [];
+    }
+
+  }
   return (
     <div>
       <section className="TrkHeader">
@@ -351,7 +396,15 @@ function TreksPage() {
               marginBottom: "10px",
             }}
           >
-            <span style={{backgroundColor: "#000", padding: "10px", borderRadius: "50%",}}>OR</span>
+            <span
+              style={{
+                backgroundColor: "#000",
+                padding: "10px",
+                borderRadius: "50%",
+              }}
+            >
+              OR
+            </span>
           </div>{" "}
           <br />
           <button className="BarsBook email">Email Us</button> <br />
@@ -369,19 +422,58 @@ function TreksPage() {
               <br /> +91 80896 93825 / +91 6395 932 971
             </p>
           </Collapsible>
-          <form className="BookingForm">
-            <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="email" placeholder="Email" />
-            <input type="text" name="number" placeholder="Contact Number" />
-            <input type="text" name="people" placeholder="No. of People" />
-            <input type="text" name="trekname" placeholder="Trek Name" />
-            <input
-              className="BookNowBtn"
-              style={{ width: "15rem" }}
-              type="submit"
-              value="Reserve Your Slot Now"
-            />
-          </form>
+          <div className="BookNow">
+            <Form>
+              <h2 className="mt-4 mb-3" style={{color: "#064663"}}>
+                Booking<span className="duo">Form</span>
+              </h2>
+              <Form.Group className="mb-4">
+                <Form.Control
+                  placeholder="Name*"
+                  className="inputs"
+                  onChange={handleFormData("name")}
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Control
+                  placeholder="Email*"
+                  type="email"
+                  className="inputs"
+                  onChange={handleFormData("email")}
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Control
+                  placeholder="Phone No*"
+                  className="inputs"
+                  onChange={handleFormData("mobile")}
+                />
+              </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Control
+                  placeholder="No of people*"
+                  className="inputs"
+                  onChange={handleFormData("no_of_people")}
+                />
+              </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Control
+                  placeholder="Message"
+                  as="textarea"
+                  rows={6}
+                  className="inputs"
+                  onChange={handleFormData("message")}
+                />
+              </Form.Group>
+              <div style={{ textAlign: "center" }}>
+                <Button className="formBtn" onClick={postData}>
+                  Reserve Your Slot Now
+                </Button>
+              </div>
+            </Form>
+          </div>
         </div>
       </section>
       <section className="TrekGallery">
