@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 function TrekCards() {
-  const [data, setData] = useState("");
+  const [data, setData] = useState([]);
   async function getData() {
     try {
       const resp = await axios({
@@ -21,13 +21,12 @@ function TrekCards() {
     getData();
   }, []);
 
-
-  return data.map((item) => {
+  return data.map(item => {
     return (
       <div className="treks">
         <div className="trekCard">
           <a href="/treks-id">
-            <img src={item.img != "" ? `$(item.img)` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" } />
+            <img src= {item.img != "" ? `${item.img}` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" } />
           </a>
           <div className="topLeft">
             <span>{item.days} </span>
@@ -45,7 +44,8 @@ function TrekCards() {
         </div>
       </div>
     );
-  });
+  })
+
 }
 
 export default TrekCards;

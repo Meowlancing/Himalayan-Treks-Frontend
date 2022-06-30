@@ -4,7 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 function BlogsCard() {
-  const [data, setData] = useState("");
+  const [data, setData] = useState([]);
   async function getData() {
     try {
       const resp = await axios({
@@ -22,14 +22,14 @@ function BlogsCard() {
     getData();
   }, []);
 
-  return data.map((item) => {
+  return data.map(item => {
     return (
       <div className="blogContainer">
         <Card className="blogCard">
           <Card.Body className="blogCardBody">
             <a href="/id">
               <img
-                src={item.banner != "" ? `$(item.banner)` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" }
+                src={item.banner != "" ? `${item.banner}` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" }
                 alt="banner"
               />
             </a>
