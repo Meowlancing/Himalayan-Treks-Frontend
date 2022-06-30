@@ -27,7 +27,7 @@ function TrekCards() {
       <div className="treks">
         <div className="trekCard">
           <a href="/treks-id">
-            <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-min-1.jpg" />
+            <img src={item.img != "" ? `$(item.img)` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" } />
           </a>
           <div className="topLeft">
             <span>{item.days} </span>
