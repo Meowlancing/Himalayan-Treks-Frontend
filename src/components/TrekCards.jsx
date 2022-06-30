@@ -30,12 +30,12 @@ function TrekCards() {
             <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-min-1.jpg" />
           </a>
           <div className="topLeft">
-            <span>05 </span>
+            <span>{item.days} </span>
             <span>Days</span>
           </div>
           <div className="topRight">
             <span>Rs. </span>
-            <span>8,999</span>
+            <span>{item.price}</span>
           </div>
           <div className="bottom">
             <a href="/treks-id">
