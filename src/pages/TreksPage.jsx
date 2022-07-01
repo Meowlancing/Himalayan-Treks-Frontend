@@ -17,14 +17,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
-
-
-
-
-
+import Item from "antd/lib/list/Item";
 
 function TreksPage(props) {
-
   const dataValue = useLocation().state.prop;
   console.log(dataValue);
   const [formData, setFormData] = useState({
@@ -48,44 +43,42 @@ function TreksPage(props) {
     console.log(formData);
   };
 
-  async function postData(){
-    try{
+  async function postData() {
+    try {
       const res = await axios({
-        method:"POST",
-        url:"http://localhost:8000/api/bookNow",
+        method: "POST",
+        url: "http://localhost:8000/api/bookNow",
         data: formData,
       });
       console.log(res);
       alert("Form submitted successfully");
-    }
-    catch(err){
+    } catch (err) {
       alert("Opps something went wrong");
       return [];
     }
-
   }
   return (
     <div>
       <section className="TrkHeader">
-        <h2 className="headerH2">KEDARKANTHA TREK</h2>
+        <h2 className="headerH2">{dataValue.title}</h2>
         <h3 className="headerH3">Best Winter Treks In The Himalayas</h3>
       </section>
       <section className="trekDets">
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon className="icon" icon={faLocation} />
-          <p className="trekHeadDetails">Region-Uttarkhand</p>
+          <p className="trekHeadDetails">Region-{dataValue.location}</p>
         </div>
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon className="icon" icon={faCampground} />
-          <p className="trekHeadDetails">Base Camp-SANKRI</p>
+          <p className="trekHeadDetails">Base Camp-{dataValue.camp_location}</p>
         </div>
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon className="icon" icon={faCalendarDay} />
-          <p className="trekHeadDetails">Days - 5</p>
+          <p className="trekHeadDetails">Days - {dataValue.days}</p>
         </div>
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon className="icon" icon={faBuilding} />
-          <p className="trekHeadDetails">Feet - 12.500</p>
+          <p className="trekHeadDetails">Feet - {dataValue.height}</p>
         </div>
       </section>
       <section className="Panel">
@@ -94,7 +87,7 @@ function TreksPage(props) {
             Brief <span className="duo">Description</span>
           </h1>
           <p>
-            The Kedarkantha trek is the best option for winter trekking because
+            {/* The Kedarkantha trek is the best option for winter trekking because
             it features new powder-soft sparkling snow. It's a year-round hike,
             but it's especially well-known and popular during the winter months.
             For trekkers who want to blend adventure with a simple approach, it
@@ -120,25 +113,28 @@ function TreksPage(props) {
             Park. The snow leopard, Golden Eagle, Brown Bear, Moschus, Western
             Tragopan, and other endangered Himalayan species are protected in
             this national park. The route begins in a dense pine forest and
-            continues through it.
+            continues through it. */}
+            {dataValue.desp}
           </p>
           <h1>
             Short <span className="duo">Itinerary</span>
           </h1>
           <p>
-            <strong>Day 1:</strong> Dehradun - Sankri (nine-hour drive) <br />
+            {/* <strong>Day 1:</strong> Dehradun - Sankri (nine-hour drive) <br />
             <strong>Day 2:</strong> Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
             <strong>Day 3:</strong> Shepherd Camp – Kedarkantha Base Camp (Trek
             4-5 Hrs) <br />
             <strong>Day 4:</strong> Kedar Kantha Peak from Base Camp (3800m) -
             Juda Ka Talab <br />
             <strong>Day 5:</strong> Juda Ka Talab – Sankri – Dehradun (2 hours
-            trekking / 8 hours driving) <br />
+            trekking / 8 hours driving) <br /> */}
+            {dataValue.iternery}
           </p>
           <h1>
             Detail <span className="duo">Itinerary</span>
           </h1>
-          <p>
+          <div>
+            {/* <p>
             <span
               style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
             >
@@ -265,10 +261,12 @@ function TreksPage(props) {
               you can arrive in Dehradun. This is the point at which the
               fantastic journey comes to an end.
             </span>
-          </p>
+          </p> */}
+          {dataValue.iternery_days}
+          </div>
           <h1>Price Inclusion</h1>
           <p>
-            <span>
+            {/* <span>
               <FontAwesomeIcon icon={faCheck} />
               For the duration of your trek, you will be staying in hotels and
               camps from day one to day five.
@@ -299,12 +297,13 @@ function TreksPage(props) {
               sleeping bags for your trek. We have high-altitude sleeping bags
               that can withstand temperatures as low as -10°C. Ropes,
               microspikes, and gaiters are all available.
-            </span>
+            </span> */}
+            {dataValue.price_inclusion}
             <br />
           </p>
           <h1>Price Exclusion</h1>
           <p>
-            <span>
+            {/* <span>
               <FontAwesomeIcon icon={faTimes} />
               Expenses for personal reasons: For instance, during the trek,
               personal bags must be transported.
@@ -320,13 +319,14 @@ function TreksPage(props) {
               <FontAwesomeIcon icon={faTimes} />
               Water in a Bottle: Throughout the trek, no bottled water will be
               provided.
-            </span>{" "}
+            </span>{" "} */}
+            {dataValue.price_exclusion}
             <br />
           </p>
         </div>
         <div className="SidebarBook">
           <h1>
-            7,999 INR
+            {dataValue.price} INR
             <span style={{ fontSize: "18px", color: "crimson" }}>
               /per person
             </span>
@@ -426,7 +426,7 @@ function TreksPage(props) {
           </Collapsible>
           <div className="BookNow">
             <Form>
-              <h2 className="mt-4 mb-3" style={{color: "#064663"}}>
+              <h2 className="mt-4 mb-3" style={{ color: "#064663" }}>
                 Booking<span className="duo">Form</span>
               </h2>
               <Form.Group className="mb-4">
@@ -479,18 +479,16 @@ function TreksPage(props) {
         </div>
       </section>
       <section className="TrekGallery">
-        <h1 style={{ color: "#064663", fontSize: "30px", }} className="mb-4">Gallery</h1>
+        <h1 style={{ color: "#064663", fontSize: "30px" }} className="mb-4">
+          Gallery
+        </h1>
         <div className="GalleryImages">
-          <img src="https://cdn.kapwing.com/collections/video_image--ksRh0WJQI.jpeg" />
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cetmYEv9DLBbaEDtMnWhqVSgF9ea-al_Uw&usqp=CAU" />
-          <img src="https://i.imgflip.com/6aejt6.jpg" />
-          <img src="https://preview.redd.it/1eyjsftl4bh81.jpg?auto=webp&s=6f6cc7cc4fbbd9af6bd61ef2685ad8159787e989" />
-          <img src="https://pics.me.me/profile-picture-vs-tagged-photo-35181553.png" />
-          <img src="https://www.meme-arsenal.com/memes/79b9c47e1e429d61d99571a7198da21c.jpg" />
-          {/* <img src="https://pics.me.me/when-someone-with-an-anime-profile-pic-says-they-hate-45710100.png"/>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPF7yGFuS2tmg0Qo37SBJYEYOjokI5tFw9lg&usqp=CAU"/>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUiJGO8fkOEVx8_865f7j2ODqLhHVe8ncM-wN2P22iT_YituBYS7_31pnAUdTNseePzj4&usqp=CAU"/>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSID6um_qUCdyZ57sqfJoBbqJBQTxV4Rc1Glg&usqp=CAU"/> */}
+          <img src={dataValue.gallery_img1 != "" ? `${dataValue.gallery_img1}` : "https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg?w=2000" } />
+          <img src={dataValue.gallery_img2 != "" ? `${dataValue.gallery_img2}` : "https://media.istockphoto.com/photos/travel-planning-background-picture-id1309040743?b=1&k=20&m=1309040743&s=170667a&w=0&h=eyIzT1oSW2B5gPMPqgybEseIYIUrY96cxPTE_B0ewVs=" } />
+          <img src={dataValue.gallery_img3 != "" ? `${dataValue.gallery_img3}` : "https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg" } />
+          <img src={dataValue.gallery_img4 != "" ? `${dataValue.gallery_img4}` : "https://thumbs.dreamstime.com/b/happy-couple-love-travel-raised-hands-cliff-happy-couple-love-travel-raised-hands-cliff-norway-man-woman-112188598.jpg" } />
+          <img src={dataValue.gallery_img5 != "" ? `${dataValue.gallery_img5}` : "https://thumbs.dreamstime.com/b/business-travel-concept-generic-design-white-luxury-private-jet-flying-blue-sky-sunset-uninhabited-desert-mountains-85089873.jpg" } />
+          <img src={dataValue.gallery_img6 != "" ? `${dataValue.gallery_img6}` : "https://media.istockphoto.com/photos/passenger-airplane-flying-above-clouds-during-sunset-picture-id155439315?k=20&m=155439315&s=612x612&w=0&h=BvXCpRLaP5h1NnvyYI_2iRtSM0Xsz2jQhAmZ7nA7abA=" } />
         </div>
       </section>
     </div>

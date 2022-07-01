@@ -14,7 +14,7 @@ function BlogsCard() {
       });
       setData(resp.data);
     } catch (err) {
-      alert("Something went wrong");
+      console.log("Something went wrong");
       return [];
     }
   }
