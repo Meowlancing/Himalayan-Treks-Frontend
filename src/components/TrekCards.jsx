@@ -28,11 +28,7 @@ function TrekCards() {
         <div className="trekCard">
           <a href="/treks-id">
             <img
-              src={
-                item.img != ""
-                  ? `${item.img}`
-                  : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg"
-              }
+              src={"http://localhost:8000/" + item.img}
             />
           </a>
           <div className="topLeft">

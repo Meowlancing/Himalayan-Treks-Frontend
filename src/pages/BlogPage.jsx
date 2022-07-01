@@ -13,7 +13,7 @@ function BlogPage() {
       <div className="blogPage">
         <div className="blogImg">
           <img
-             src={dataValue.banner != "" ? `${dataValue.banner}` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" }
+            src={"http://localhost:8000/" + dataValue.banner}
             alt="blog image"
           />
         </div>
@@ -25,7 +25,7 @@ function BlogPage() {
         </div>
         <div className="paragraph">
           <p>
-          {dataValue.desp}
+            {dataValue.desp}
             {/* The Uttarakhand government made it mandatory for people arriving
             from a dozen states to provide negative RT-PCR test reports not
             older than 72 hours on arrival, citing an increase in COVID-19

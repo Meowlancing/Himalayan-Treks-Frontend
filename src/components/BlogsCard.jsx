@@ -30,7 +30,7 @@ function BlogsCard() {
           <Card.Body className="blogCardBody">
             <a href="/id">
               <img
-                src={item.banner != "" ? `${item.banner}` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" }
+                src={"http://localhost:8000/" + item.banner}
                 alt="banner"
               />
             </a>
