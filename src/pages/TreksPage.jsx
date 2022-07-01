@@ -16,6 +16,7 @@ import {
   faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 
 
@@ -24,7 +25,8 @@ import axios from "axios";
 
 function TreksPage(props) {
 
-
+  const dataValue = useLocation().state.prop;
+  console.log(dataValue);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
