@@ -1,27 +1,32 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 import BlogsCard from "../components/BlogsCard";
 import "./styles/blogPage.css";
 
 function BlogPage() {
+  const dataValue = useLocation().state.prop;
+  console.log(dataValue);
+
   return (
     <>
       <div className="blogPage">
         <div className="blogImg">
           <img
-            src="https://himalayandreamtreks.in/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-09-at-16.20.08-min.jpeg"
+             src={dataValue.banner != "" ? `${dataValue.banner}` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" }
             alt="blog image"
           />
         </div>
         <div className="title">
           <h2>
-            Covid-19 Report is <br />
-            <span className="duo">Mandatory in Uttarakhand</span>
+            {dataValue.title} is <br />
+            {/* <span className="duo">Mandatory in Uttarakhand</span> */}
           </h2>
         </div>
         <div className="paragraph">
           <p>
-            The Uttarakhand government made it mandatory for people arriving
+          {dataValue.desp}
+            {/* The Uttarakhand government made it mandatory for people arriving
             from a dozen states to provide negative RT-PCR test reports not
             older than 72 hours on arrival, citing an increase in COVID-19
             cases. From April 1, those traveling by road, air, or train from
@@ -55,7 +60,7 @@ function BlogPage() {
             +91-8089693825 +91-6395932971 Email info@himalayandreamtreks.in
             Office Address Address I Adarsh Cyber Cafe, near Nagar Palika
             Office, Chinyalisour, Uttarakhand 249196 © All rights reserved 2021
-            @ Himalayan Dreamtreks Designed By Yourdigishell
+            @ Himalayan Dreamtreks Designed By Yourdigishell */}
           </p>
         </div>
         <div style={{ textAlign: "center" }}>
