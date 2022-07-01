@@ -61,7 +61,7 @@ function TreksPage(props) {
     <div>
       <section className="TrkHeader">
         <h2 className="headerH2">{dataValue.title}</h2>
-        <h3 className="headerH3">Best Winter Treks In The Himalayas</h3>
+        <h3 className="headerH3">{dataValue.img_desp}</h3>
       </section>
       <section className="trekDets">
         <div style={{ display: "flex" }}>

@@ -19,7 +19,7 @@ function BlogPage() {
         </div>
         <div className="title">
           <h2>
-            {dataValue.title} is <br />
+            {dataValue.title} <br />
             {/* <span className="duo">Mandatory in Uttarakhand</span> */}
           </h2>
         </div>
