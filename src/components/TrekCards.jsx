@@ -22,32 +22,32 @@ function TrekCards() {
     getData();
   }, []);
 
-  return data.map((item) => {
-    return (
-      <div className="treks">
-        <div className="trekCard">
-          <a href="/treks-id">
-            <img
-              src={"http://localhost:8000/" + item.img}
-            />
-          </a>
-          <div className="topLeft">
-            <span>{item.days} </span>
-            <span>Days</span>
+  return (
+    <div className="treks">
+      {data.map((item) => {
+        return (
+          <div className="trekCard">
+            <a href="/treks-id">
+              <img src={"http://localhost:8000/" + item.img} />
+            </a>
+            <div className="topLeft">
+              <span>{item.days} </span>
+              <span>Days</span>
+            </div>
+            <div className="topRight">
+              <span>Rs. </span>
+              <span>{item.price}</span>
+            </div>
+            <div className="bottom">
+              <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                <button className="trekName">{item.title}</button>
+              </Link>
+            </div>
           </div>
-          <div className="topRight">
-            <span>Rs. </span>
-            <span>{item.price}</span>
-          </div>
-          <div className="bottom">
-            <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-              <button className="trekName">{item.title}</button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  });
+        );
+      })}
+    </div>
+  );
 }
 
 export default TrekCards;
