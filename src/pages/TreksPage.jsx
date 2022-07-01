@@ -22,7 +22,7 @@ import axios from "axios";
 
 
 
-function TreksPage() {
+function TreksPage(props) {
 
 
   const [formData, setFormData] = useState({

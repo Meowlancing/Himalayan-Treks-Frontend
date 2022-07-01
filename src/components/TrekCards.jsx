@@ -1,6 +1,7 @@
 import "./styles/trekcards.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function TrekCards() {
   const [data, setData] = useState([]);
@@ -21,12 +22,18 @@ function TrekCards() {
     getData();
   }, []);
 
-  return data.map(item => {
+  return data.map((item) => {
     return (
       <div className="treks">
         <div className="trekCard">
           <a href="/treks-id">
-            <img src= {item.img != "" ? `${item.img}` : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg" } />
+            <img
+              src={
+                item.img != ""
+                  ? `${item.img}`
+                  : "https://www.emergingedtech.com/wp/wp-content/uploads/2018/04/blogging.jpg"
+              }
+            />
           </a>
           <div className="topLeft">
             <span>{item.days} </span>
@@ -37,15 +44,14 @@ function TrekCards() {
             <span>{item.price}</span>
           </div>
           <div className="bottom">
-            <a href="/treks-id">
+            <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
               <button className="trekName">{item.title}</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
     );
-  })
-
+  });
 }
 
 export default TrekCards;
