@@ -2,6 +2,7 @@ import { Card } from "react-bootstrap";
 import "./styles/blogsCard.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function BlogsCard() {
   const [data, setData] = useState([]);
@@ -34,9 +35,9 @@ function BlogsCard() {
               />
             </a>
             <h3>{item.title}</h3>
-            <a href="/id">
+            <Link to={item.title} state={{prop:item}}>
               <button>Read More</button>
-            </a>
+            </Link>
             <span className="muted-text">{item.date}</span>
           </Card.Body>
         </Card>
