@@ -1,9 +1,11 @@
 .blogContainer{
   padding: 10px 100px;
+  display: flex;
 }
 .blogCard {
   width: 22rem;
   text-align: left;
+  margin: 0 10px;
 }
 .blogCard img {
   width: 100%;

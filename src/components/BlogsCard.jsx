@@ -23,27 +23,29 @@ function BlogsCard() {
     getData();
   }, []);
 
-  return data.map(item => {
-    return (
-      <div className="blogContainer">
-        <Card className="blogCard">
-          <Card.Body className="blogCardBody">
-            <a href="/id">
-              <img
-                src={"http://localhost:8000/" + item.banner}
-                alt="banner"
-              />
-            </a>
-            <h3>{item.title}</h3>
-            <Link to={item.title} state={{prop:item}}>
-              <button>Read More</button>
-            </Link>
-            <span className="muted-text">{item.date}</span>
-          </Card.Body>
-        </Card>
-      </div>
-    );
-  });
+  return (
+    <div className="blogContainer">
+      {data.map((item) => {
+        return (
+          <Card className="blogCard">
+            <Card.Body className="blogCardBody">
+              <a href="/id">
+                <img
+                  src={"http://localhost:8000/" + item.banner}
+                  alt="banner"
+                />
+              </a>
+              <h3>{item.title}</h3>
+              <Link to={item.title} state={{ prop: item }}>
+                <button>Read More</button>
+              </Link>
+              <span className="muted-text">{item.date}</span>
+            </Card.Body>
+          </Card>
+        );
+      })}
+    </div>
+  );
 }
 
 export default BlogsCard;
