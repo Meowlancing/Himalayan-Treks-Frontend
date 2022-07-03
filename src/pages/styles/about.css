@@ -126,53 +126,51 @@
   transform: scaleY(1.5);
   transform: scaleX(1.8);
 }
-.AboutUs .FounderCards{
+.AboutUs .FounderCards {
   margin: 4rem 1rem;
   display: flex;
   flex-direction: row;
 }
-.AboutUs .FounderCards .FounderImg img{
+.AboutUs .FounderCards .FounderImg img {
   margin-left: 15vw;
   height: 45vh;
   width: 33vw;
 }
-.AboutUs .FounderInfo{
+.AboutUs .FounderInfo {
   margin-left: 3rem;
 }
-.AboutUs .ChefCards{
+.AboutUs .ChefCards {
   margin: 9rem 16rem;
   display: flex;
   flex-direction: row-reverse;
 }
-.AboutUs .ChefCards .ChefImg img{
+.AboutUs .ChefCards .ChefImg img {
   margin-left: 5vw;
   height: 50vh;
   width: 28vw;
 }
 
-
 @media only screen and (max-width: 500px) {
-  .AboutUs .AboutHeader img{
+  .AboutUs .AboutHeader img {
     height: 40vh;
   }
-  .AboutUs .AbtUsContainer{
+  .AboutUs .AbtUsContainer {
     flex-direction: column;
     margin: 20px;
   }
-  .AboutUs  h2{
+  .AboutUs h2 {
     font-size: 30px;
     line-height: 38px;
-    margin-bottom: 30px;
     font-weight: 600;
   }
-  .AboutUs .trekspan{
+  .AboutUs .trekspan {
     font-size: 37px;
   }
-  .AboutUs p{
+  .AboutUs p {
     line-height: 27px;
     width: 100%;
   }
-  .AboutUs .ExploreImg{
+  .AboutUs .ExploreImg {
     margin: 20px 0;
   }
   .AboutUs .ExploreImg img {
@@ -180,14 +178,31 @@
     width: 100%;
     transform: scale(1);
   }
-    .AboutUs .WhyUs h2{
-      font-size: 35px;
-    }
-    .AboutUs .WhyUs .cards{
-      margin: 10px;
-      flex-direction: column;
-    }
-    .AboutUs .ImgGallery{
-      
-    }
+  .AboutUs .WhyUs h2 {
+    font-size: 35px;
+  }
+  .AboutUs .WhyUs .cards {
+    margin: 10px;
+    flex-direction: column;
+  }
+  .AboutUs .FounderCards{
+    flex-direction: column;
+  } 
+  .AboutUs .FounderCards .FounderImg img{
+    width: 100%;
+    margin: 0 0 10px;
+    border-radius: 30px;
+  }
+  .AboutUs .FounderInfo{
+    margin: 0;
+  }
+  .AboutUs .ChefCards{
+    margin: 10px;
+    flex-direction: column;
+  }
+  .AboutUs .ChefCards .ChefImg img{
+    margin: 0;
+    width: 100%;
+    border-radius: 30px;
+  }
 }
