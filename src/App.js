@@ -5,6 +5,7 @@ import NavbarCompo from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
 import BlogPage from "./pages/BlogPage";
 import Blogs from "./pages/Blogs";
+import CancelPage from "./pages/CancelPage";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Treks from "./pages/Treks";
@@ -22,6 +23,7 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/:id" element={<BlogPage />} />
       <Route path="/treks:type" element={<TreksPage/>} />
+      <Route path="/cancellation" element={<CancelPage />} />
      </Routes>
      <Footer />
      </>

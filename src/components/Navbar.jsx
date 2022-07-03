@@ -21,7 +21,7 @@ function NavbarCompo() {
           </span>
         </div>
         <div>
-          <a href="#">Cancellation Policy</a>
+          <a href="/cancellation" target="_blank">Cancellation Policy</a>
           <a href="#">Terms and Conditions</a>
           <a href="#">Privacy Policy</a>
         </div>
