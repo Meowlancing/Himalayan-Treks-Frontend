@@ -10,6 +10,7 @@
 .AboutUs .ExploreImg img {
   height: 50vh;
   width: 35vw;
+  transform: scale(1.2);
 }
 .AboutUs .ExploreImg {
   margin-left: 5rem;
@@ -30,6 +31,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 27px;
+  width: 80%;
 }
 .AboutUs h2 {
   color: #110729;
@@ -148,3 +150,44 @@
   width: 28vw;
 }
 
+
+@media only screen and (max-width: 500px) {
+  .AboutUs .AboutHeader img{
+    height: 40vh;
+  }
+  .AboutUs .AbtUsContainer{
+    flex-direction: column;
+    margin: 20px;
+  }
+  .AboutUs  h2{
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  .AboutUs .trekspan{
+    font-size: 37px;
+  }
+  .AboutUs p{
+    line-height: 27px;
+    width: 100%;
+  }
+  .AboutUs .ExploreImg{
+    margin: 20px 0;
+  }
+  .AboutUs .ExploreImg img {
+    height: 50vh;
+    width: 100%;
+    transform: scale(1);
+  }
+    .AboutUs .WhyUs h2{
+      font-size: 35px;
+    }
+    .AboutUs .WhyUs .cards{
+      margin: 10px;
+      flex-direction: column;
+    }
+    .AboutUs .ImgGallery{
+      
+    }
+}

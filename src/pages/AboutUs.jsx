@@ -25,14 +25,13 @@ const AboutUs = () => {
             <span className="trekspan">trekking experience</span>
           </h2>
           <p>
-            Himalayan Dreamtreks is a mission-driven outdoor adventure <br />{" "}
-            company. The aim is to make destinations that aren't always <br />{" "}
-            found on standard maps available to people who enjoy visiting <br />{" "}
-            new locations. Outdoors Enthusiasts will enjoy some of the best{" "}
-            <br /> outdoor travel opportunities in the Indian Himalayas – lush{" "}
-            <br /> valleys, craggy mountains, high altitude cold deserts,
-            winding <br /> rivers, thick forests – a smorgasbord of sensory
-            experiences <br /> that can only be found in the outdoors.
+            Himalayan Dreamtreks is a mission-driven outdoor adventure company.
+            The aim is to make destinations that aren't always found on standard
+            maps available to people who enjoy visiting new locations. Outdoors
+            Enthusiasts will enjoy some of the best outdoor travel opportunities
+            in the Indian Himalayas – lush valleys, craggy mountains, high
+            altitude cold deserts, winding rivers, thick forests – a smorgasbord
+            of sensory experiences that can only be found in the outdoors.
           </p>
         </div>
         <div className="ExploreImg">
@@ -119,7 +118,7 @@ const AboutUs = () => {
           <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/1614603112788-min-1-1-min.jpeg" />
         </div>
         <div className="FounderInfo">
-          <span></span> <p>Founder</p> <br /> <h2>SOBENDRA SINGH</h2> <br />{" "}
+          <span></span> <p>Founder</p> <br /> <h2>SOBENDRA SINGH</h2>
           <p>
             Our founder Mr. Sobendra Singh is an outdoor enthusiast & wanderlust{" "}
             <br /> nature person. Continuously working hard for the growth of{" "}
