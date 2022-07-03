@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
-import GoogleMapReact from 'google-map-react';
+import GoogleMapReact from "google-map-react";
 import "./styles/bookNow.css";
 import axios from "axios";
 
@@ -25,24 +25,21 @@ function BookNow() {
     console.log(value);
     console.log(formData);
   };
- 
-  async function postData(){
-    try{
+
+  async function postData() {
+    try {
       const res = await axios({
-        method:"POST",
-        url:"http://localhost:8000/api/bookNow",
+        method: "POST",
+        url: "http://localhost:8000/api/bookNow",
         data: formData,
       });
       console.log(res);
       alert("Form submitted successfully");
-    }
-    catch(err){
+    } catch (err) {
       alert("Opps something went wrong");
       return [];
     }
-
   }
-
 
   return (
     <>
@@ -94,18 +91,35 @@ function BookNow() {
                 />
               </Form.Group>
               <div style={{ textAlign: "center" }}>
-                <Button className="formBtn" onClick={postData}>Submit</Button>
+                <Button className="formBtn" onClick={postData}>
+                  Submit
+                </Button>
               </div>
             </Form>
           </Col>
 
-          <Col>{/* google map integration  */}
-          <GoogleMapReact  />
+          <Col>
+            {/* google map integration  */}
+            <div className="MAP">
+              <div className="mapouter">
+                <div className="gmap_canvas">
+                  <iframe
+                    className="gmap_iframe"
+                    width="100%"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Himalayan Treks, Chinyalisour&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </Col>
         </Row>
       </div>
     </>
-  ); 
+  );
 }
 
 export default BookNow;

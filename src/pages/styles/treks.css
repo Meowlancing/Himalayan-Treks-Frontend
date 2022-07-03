@@ -30,29 +30,7 @@
   color: var(--red);
   margin: 0 15px;
 }
-.BooknMap {
-  display: flex;
-  flex-direction: row;
-}
-.MAP{
-  margin: 20vw 0 0 -20vw;
-  padding: 30px;
-}
-.mapouter {
-  position: relative;
-  text-align: right;
-  width: 100%;
-  height: 400px;
-}
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  width: 100%;
-  height: 400px;
-}
-.gmap_iframe {
-  height: 400px !important;
-}
+
 @media only screen and (max-width: 500px) {
   .trekHeader h2,
   .duo {
