@@ -22,8 +22,8 @@ function NavbarCompo() {
         </div>
         <div>
           <a href="/cancellation" target="_blank">Cancellation Policy</a>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Privacy Policy</a>
+          <a href="/terms-conditions" target="_blank">Terms and Conditions</a>
+          {/* <a href="#">Privacy Policy</a> */}
         </div>
       </div>
       <Navbar expand="lg" variant="danger" className="navBar">

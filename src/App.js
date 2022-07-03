@@ -14,20 +14,47 @@ import TreksPage from "./pages/TreksPage";
 function App() {
   return (
     <>
-    <NavbarCompo />
-     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/treks" element={<Treks />} />
-      <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/blogs" element={<Blogs />} />
-      <Route path="/contact" element={<Contact/>} />
-      <Route path="/:id" element={<BlogPage />} />
-      <Route path="/treks:type" element={<TreksPage/>} />
-      <Route path="/cancellation" element={<CancelPage />} />
-     </Routes>
-     <Footer />
-     </>
+      <NavbarCompo />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/treks" element={<Treks />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/:id" element={<BlogPage />} />
+        <Route path="/treks:type" element={<TreksPage />} />
+        <Route
+          path="/cancellation"
+          element={
+            <CancelPage
+              title1="Our"
+              title2="Cancellation"
+              title3="Policy"
+              point1="Before 30 days: 90% of the total Land Package Cost is refundable"
+              point2="Between 21-30 days: 75% of the total Land Package Cost is refundable."
+              point3=" Between 11-20 days: 50% of the total Land Package Cost is refundable."
+              point4="Less than 10 days: No refund."
+            />
+          }
+        />
+        <Route
+          path="/terms-conditions"
+          element={
+            <CancelPage
+              title1="Terms &"
+              title2="Conditions"
+              point1="50% of payment to be made in advance at the time of booking the trek."
+              point2="Last date of booking will be closed before7 days of prior."
+              point3="Team THE has right to change the itinerary and schedule without any notice."
+              point4="Payment to be made by case /bank transfer in favour of The Himalayan Exploration."
+              point5="If treks get canceled for any reason then Payment for this trip will be adjusted against any further trips."
+            />
+          }
+        />
+      </Routes>
+      <Footer />
+    </>
   );
 }
-  
+
 export default App;

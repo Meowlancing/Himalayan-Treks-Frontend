@@ -262,7 +262,7 @@ function TreksPage(props) {
               fantastic journey comes to an end.
             </span>
           </p> */}
-          {dataValue.iternery_days}
+          {dataValue.iternery_desp}
           </div>
           <h1>Price Inclusion</h1>
           <p>
