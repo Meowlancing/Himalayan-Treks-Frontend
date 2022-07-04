@@ -15,7 +15,7 @@ import TreksPage from "./pages/TreksPage";
 function App() {
   return (
     <>
-      <Navbar1 />
+      <NavbarCompo />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/treks" element={<Treks />} />
