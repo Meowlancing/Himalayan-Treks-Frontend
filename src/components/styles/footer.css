@@ -22,7 +22,7 @@
   color: rgb(255, 255, 255);
   margin: 10px;
   text-align: center;
-  width: 19rem;
+  width: 24rem;
   padding: 1rem;
 }
 
@@ -59,6 +59,9 @@
   .Footer .cards {
     padding: 20px;
     flex-direction: column;
+  }
+  .Footer .CardSec{
+    width: 19rem;
   }
   .Footer .caption {
     flex-direction: column;
