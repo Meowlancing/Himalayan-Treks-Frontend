@@ -87,4 +87,7 @@
   .topBar {
     display: none;
   }
+  .Desktop{
+    display: none;
+  }
 }
