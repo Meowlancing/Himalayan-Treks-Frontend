@@ -120,207 +120,152 @@ function TreksPage(props) {
             Short <span className="duo">Itinerary</span>
           </h1>
           <p>
-            {/* <strong>Day 1:</strong> Dehradun - Sankri (nine-hour drive) <br />
-            <strong>Day 2:</strong> Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
-            <strong>Day 3:</strong> Shepherd Camp – Kedarkantha Base Camp (Trek
-            4-5 Hrs) <br />
-            <strong>Day 4:</strong> Kedar Kantha Peak from Base Camp (3800m) -
-            Juda Ka Talab <br />
-            <strong>Day 5:</strong> Juda Ka Talab – Sankri – Dehradun (2 hours
-            trekking / 8 hours driving) <br /> */}
-            {dataValue.iternery}
+            <strong>{dataValue.iternery_day1}</strong> <br />
+            <strong>{dataValue.iternery_day2}</strong> <br />
+            <strong>{dataValue.iternery_day3}</strong> <br />
+            <strong>{dataValue.iternery_day4}</strong> <br />
+            <strong>{dataValue.iternery_day5}</strong> <br />
           </p>
           <h1>
             Detail <span className="duo">Itinerary</span>
           </h1>
           <div>
-            {/* <p>
-            <span
-              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
-            >
-              <FontAwesomeIcon
-                icon={faMapMarked}
-                style={{ color: "#FF6060", fontSize: "24px" }}
-              />{" "}
-              Day 1: Dehradun - Sankri (nine-hour drive){" "}
-            </span>
-            <br />
-            <span>
-              Early in the morning, meet us in Dehradun. From here, we'll embark
-              on a scenic drive to Sankri, where we'll set up camp at 6,400
-              feet. Along the way, you'll pass through lovely cities like
-              Mussoorie, Naitwar, and others. You'll be on a once-in-a-lifetime
-              scenic trip to get to base camp. You will be surrounded by nature
-              during the drive, with stunning scenery and the smell of pinewood
-              and Himalayan flora and fauna. The journey will take approximately
-              7-8 hours to complete. The breathtaking and majestic drive will
-              capture your heart right away. Pine and oak trees will greet you,
-              and your path will take you alongside the raging Yamuna & Tons
-              river.
-            </span>
-          </p>
-          <p>
-            <span
-              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
-            >
-              <FontAwesomeIcon
-                icon={faMapMarked}
-                style={{ color: "#FF6060", fontSize: "24px" }}
-              />{" "}
-              Day 02 : Sankri – Shepherd Camp (Trek/3-4 Hrs) <br />
-            </span>
-            <span>
-              After breakfast, we'll go on a short hike that will mostly take us
-              through the forest. We'll walk to Saur village and then ascend to
-              Juda-ka-Talab, a small pond that freezes over during the winter.
-              This lake has religious significance and offers breathtaking views
-              of snow-capped mountains. It has the ability to enchant visitors
-              with its views. You won't be able to take your eyes off it until
-              you see it. You won't be able to express your feelings. Because
-              the words will be brief, only you will be able to sense it. As we
-              continue climbing, we will get glimpses of the snow-capped
-              Himalayan peaks. We'll arrive at the meadows after another hour of
-              hiking, where we'll pitch our tents for the night.
-            </span>
-          </p>
-          <p>
-            <span
-              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
-            >
-              <FontAwesomeIcon
-                icon={faMapMarked}
-                style={{ color: "#FF6060", fontSize: "24px" }}
-              />{" "}
-              Day 3: Shepherd Camp – Kedarkantha Base Camp (Trek 4-5 Hrs){" "}
-            </span>{" "}
-            <br />
-            <span>
-              Begin your day early to catch a glimpse of the brilliant sunrise.
-              We will begin our journey to the Kedarkantha foundation, which is
-              situated at an elevation of 11,250 feet, after a wonderful
-              breakfast. The trek should take about 4-5 hours to complete if you
-              take enough breaks. At first, the trail is almost level, and it
-              follows a well-marked path. It does, however, quickly enter a
-              dense pine and oak forest before opening into beautiful meadows
-              dotted with small shepherds' huts. The imposing view of
-              snow-capped Himalayan peaks Bandarpoonch, Swargarohini, Kala Nag,
-              and Ranglana will take your breath away. The spectacular views
-              from these mountains are well-known. When you look up at the tops
-              of these hills, there is no space between them and the heavens.
-              These peaks were created by Mother Nature's wonders. These are
-              irreplaceable natural wonders. Once you've seen it, the view will
-              leave an indelible effect on your mind and spirit. The view from
-              these peaks will be with you for the rest of your life.
-              Swargarohini Peak stands at 6,252 metres, Bandarpunch stands at
-              6,316 metres, Kalanag stands at 6,387 metres, and Ranglana stands
-              at 5,554 metres. Both of these heights are covered by the Garhwal
-              Himalaya. In your comfortable tents, you'll enjoy your tasty meal
-              and your night by sharing your adventures with your travel
-              companions.
-            </span>
-          </p>
-          <p>
-            <span
-              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18px" }}
-            >
-              <FontAwesomeIcon
-                icon={faMapMarked}
-                style={{ color: "#FF6060", fontSize: "24px" }}
-              />{" "}
-              Day 4: Kedar Kantha Peak from Base Camp (3800m) - Juda Ka Talab{" "}
-            </span>
-            <br />
-            <span>
-              Consider the view from the summit if the Kedar Kantha base is as
-              lovely as it is. The ascent to the summit is not long, but it is
-              steep, and we will choose the best path based on the snow
-              conditions, which will take about 4-5 hours. From the peak, you'll
-              be able to see the entire Yamunotri, Gangotri, and Kinner Kailash
-              ranges, as well as the valleys. Then, depending on our path, we'll
-              descend the peak and trek all the way down to JudakaTalab or
-              another campsite. We'll sleep in tents there that night.
-            </span>
-          </p>
-          <p>
-            <span
-              style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18" }}
-            >
-              <FontAwesomeIcon
-                icon={faMapMarked}
-                style={{ color: "#FF6060", fontSize: "24px" }}
-              />{" "}
-              Day 05: Juda Ka Talab – Sankri – Dehradun (2 hours trekking / 8
-              hours driving)
-            </span>{" "}
-            <br />
-            <span>
-              Today we'll go on a short hike before driving straight to
-              Dehradun. In the splendour of the Himalayas, rise with the sun and
-              enjoy your meal. After that, we'll start our descent to Sankri,
-              and it'll be time to bid Kedarkantha Trek farewell. Around 9 p.m.,
-              you can arrive in Dehradun. This is the point at which the
-              fantastic journey comes to an end.
-            </span>
-          </p> */}
-          {dataValue.iternery_desp}
+            <p>
+              <span
+                style={{
+                  fontWeight: "bold",
+                  color: "#3254ce",
+                  fontSize: "18px",
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={faMapMarked}
+                  style={{ color: "#FF6060", fontSize: "24px" }}
+                />{" "}
+                {dataValue.iternery_day1}{" "}
+              </span>
+              <br />
+              <span>{dataValue.iternery_day1_desp}</span>
+            </p>
+            <p>
+              <span
+                style={{
+                  fontWeight: "bold",
+                  color: "#3254ce",
+                  fontSize: "18px",
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={faMapMarked}
+                  style={{ color: "#FF6060", fontSize: "24px" }}
+                />{" "}
+                {dataValue.iternery_day2} <br />
+              </span>
+              <span>{dataValue.iternery_day2_desp}</span>
+            </p>
+            <p>
+              <span
+                style={{
+                  fontWeight: "bold",
+                  color: "#3254ce",
+                  fontSize: "18px",
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={faMapMarked}
+                  style={{ color: "#FF6060", fontSize: "24px" }}
+                />{" "}
+                {dataValue.iternery_day3}{" "}
+              </span>{" "}
+              <br />
+              <span>{dataValue.iternery_day3_desp}</span>
+            </p>
+            <p>
+              <span
+                style={{
+                  fontWeight: "bold",
+                  color: "#3254ce",
+                  fontSize: "18px",
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={faMapMarked}
+                  style={{ color: "#FF6060", fontSize: "24px" }}
+                />{" "}
+                {dataValue.iternery_day4}{" "}
+              </span>
+              <br />
+              <span>{dataValue.iternery_day4_desp}</span>
+            </p>
+            <p>
+              <span
+                style={{ fontWeight: "bold", color: "#3254ce", fontSize: "18" }}
+              >
+                <FontAwesomeIcon
+                  icon={faMapMarked}
+                  style={{ color: "#FF6060", fontSize: "24px" }}
+                />{" "}
+                {dataValue.iternery_day5}
+              </span>{" "}
+              <br />
+              <span>{dataValue.iternery_day5_desp}</span>
+            </p>
           </div>
           <h1>Price Inclusion</h1>
           <p>
-            {/* <span>
-              <FontAwesomeIcon icon={faCheck} />
+            <span>
+              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}} />
               For the duration of your trek, you will be staying in hotels and
               camps from day one to day five.
             </span>{" "}
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} />
+              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
               Meals: From the first supper to the fifth morning, all meals are
               included. We offer easy, nutritious vegetarian food on all days of
               the trek.
             </span>
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} />
+              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
               Transportation: We will provide round-trip transportation from
               Dehradun to Dehradun.
             </span>
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} />
+              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
               Camping fees: Both trekking permits and woodland camping fees are
               included in the price.
             </span>
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} />
+              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
               All of the camps will provide you with high-quality tents and
               sleeping bags for your trek. We have high-altitude sleeping bags
               that can withstand temperatures as low as -10°C. Ropes,
               microspikes, and gaiters are all available.
-            </span> */}
-            {dataValue.price_inclusion}
+            </span>
             <br />
           </p>
           <h1>Price Exclusion</h1>
           <p>
-            {/* <span>
-              <FontAwesomeIcon icon={faTimes} />
+            <span>
+              <FontAwesomeIcon icon={faTimes} style={{marginRight: "5px", color:"#FF6060"}} />
               Expenses for personal reasons: For instance, during the trek,
               personal bags must be transported.
             </span>{" "}
             <br />
             <span>
-              <FontAwesomeIcon icon={faTimes} />
+              <FontAwesomeIcon icon={faTimes} style={{marginRight: "5px", color:"#FF6060"}}/>
               Emergency Costs: Any expense arises as a result of any kind of
               emergency.
             </span>{" "}
             <br />
             <span>
-              <FontAwesomeIcon icon={faTimes} />
+              <FontAwesomeIcon icon={faTimes} style={{marginRight: "5px", color:"#FF6060"}}/>
               Water in a Bottle: Throughout the trek, no bottled water will be
               provided.
-            </span>{" "} */}
-            {dataValue.price_exclusion}
+            </span>{" "}
             <br />
           </p>
         </div>
@@ -483,12 +428,13 @@ function TreksPage(props) {
           Gallery
         </h1>
         <div className="GalleryImages">
-          <img src={dataValue.gallery_img1 != "" ? `${dataValue.gallery_img1}` : "https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg?w=2000" } />
-          <img src={dataValue.gallery_img2 != "" ? `${dataValue.gallery_img2}` : "https://media.istockphoto.com/photos/travel-planning-background-picture-id1309040743?b=1&k=20&m=1309040743&s=170667a&w=0&h=eyIzT1oSW2B5gPMPqgybEseIYIUrY96cxPTE_B0ewVs=" } />
-          <img src={dataValue.gallery_img3 != "" ? `${dataValue.gallery_img3}` : "https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg" } />
-          <img src={dataValue.gallery_img4 != "" ? `${dataValue.gallery_img4}` : "https://thumbs.dreamstime.com/b/happy-couple-love-travel-raised-hands-cliff-happy-couple-love-travel-raised-hands-cliff-norway-man-woman-112188598.jpg" } />
-          <img src={dataValue.gallery_img5 != "" ? `${dataValue.gallery_img5}` : "https://thumbs.dreamstime.com/b/business-travel-concept-generic-design-white-luxury-private-jet-flying-blue-sky-sunset-uninhabited-desert-mountains-85089873.jpg" } />
-          <img src={dataValue.gallery_img6 != "" ? `${dataValue.gallery_img6}` : "https://media.istockphoto.com/photos/passenger-airplane-flying-above-clouds-during-sunset-picture-id155439315?k=20&m=155439315&s=612x612&w=0&h=BvXCpRLaP5h1NnvyYI_2iRtSM0Xsz2jQhAmZ7nA7abA=" } />
+          <img src={"http://localhost:8000/" + dataValue.gallery_img1} />
+          <img src={"http://localhost:8000/" + dataValue.gallery_img2} />
+          <img src={"http://localhost:8000/" + dataValue.gallery_img3} />
+          <img src={"http://localhost:8000/" + dataValue.gallery_img4} />
+          <img src={"http://localhost:8000/" + dataValue.gallery_img5} />
+          <img src={"http://localhost:8000/" + dataValue.gallery_img6} />
+         
         </div>
       </section>
     </div>

@@ -27,9 +27,9 @@ function TrekCards() {
       {data.map((item) => {
         return (
           <div className="trekCard">
-            <a href="/treks-id">
+          <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
               <img src={"http://localhost:8000/" + item.img} />
-            </a>
+            </Link>
             <div className="topLeft">
               <span>{item.days} </span>
               <span>Days</span>
