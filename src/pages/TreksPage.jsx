@@ -60,6 +60,7 @@ function TreksPage(props) {
   return (
     <div>
       <section className="TrkHeader">
+        <img src={"http://localhost:8000/" + dataValue.img} alt="Banner image"></img>
         <h2 className="headerH2">{dataValue.title}</h2>
         <h3 className="headerH3">{dataValue.img_desp}</h3>
       </section>
@@ -87,33 +88,6 @@ function TreksPage(props) {
             Brief <span className="duo">Description</span>
           </h1>
           <p>
-            {/* The Kedarkantha trek is the best option for winter trekking because
-            it features new powder-soft sparkling snow. It's a year-round hike,
-            but it's especially well-known and popular during the winter months.
-            For trekkers who want to blend adventure with a simple approach, it
-            is the best option for winter trekking. It is one of Uttarakhand's
-            most well-known treks, and it is rich in natural beauty. This
-            journey has mythological significance, with some linking it to the
-            ancient Indian epic "The Mahabharata." The alias name of Lord Shiva
-            is Kedar, and the word Kantha means neck. It's the subject of those
-            stories. Some people believe the rumours, while others do not, but
-            one thing is certain: participating in this trek will provide you
-            with inner peace. If you stick to the freeway, you'll get closer to
-            your destination. The Kedarkantha walk leads to the Kedarkantha
-            Peak, which is 12,500 ft above sea level. The walk takes place in
-            Uttarakhand's Western Garhwal, in the Uttarakashi district. The
-            temperature at Kedarkantha approaches 20 degrees during the summer
-            months of April to June. The weather blankets the mountains in pure
-            white snow in the winter, making it an interesting destination for
-            skiing or even trekking! The temperature will plummet to -10 degrees
-            between November and February, with the weather being chilly. It's
-            one of the few Himalayan treks where trekkers will see snow before
-            April. The trek's main attraction is this. This walk takes place in
-            Govind Ballabh Pant National Park, also known as Govind National
-            Park. The snow leopard, Golden Eagle, Brown Bear, Moschus, Western
-            Tragopan, and other endangered Himalayan species are protected in
-            this national park. The route begins in a dense pine forest and
-            continues through it. */}
             {dataValue.desp}
           </p>
           <h1>
@@ -432,8 +406,8 @@ function TreksPage(props) {
           <img src={"http://localhost:8000/" + dataValue.gallery_img2} />
           <img src={"http://localhost:8000/" + dataValue.gallery_img3} />
           <img src={"http://localhost:8000/" + dataValue.gallery_img4} />
-          <img src={"http://localhost:8000/" + dataValue.gallery_img5} />
-          <img src={"http://localhost:8000/" + dataValue.gallery_img6} />
+          <img src={"http://localhost:8000/" + dataValue.gallery_img5} className="mobileGallery"/>
+          <img src={"http://localhost:8000/" + dataValue.gallery_img6} className="mobileGallery"/>
          
         </div>
       </section>

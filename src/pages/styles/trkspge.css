@@ -1,13 +1,17 @@
 .TrkHeader {
-  background-image: url(https://himalayandreamtreks.in/wp-content/uploads/2021/03/Kedarkantha-13.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 70vh;
   width: 100vw;
   text-align: center;
+  position: relative;
 }
-
+.TrkHeader img {
+  width: 100%;
+  height: 100%;
+}
 .TrkHeader .headerH2 {
+  position: absolute;
+  top: 0;
+  left: 450px;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
   font-family: "Poppins", Sans-serif;
@@ -15,6 +19,9 @@
   padding: 70px 0 0 0;
 }
 .TrkHeader .headerH3 {
+  position: absolute;
+  top: 150px;
+  left: 220px;
   color: #ffffff;
   font-family: "Poppins", Sans-serif;
   font-size: 20px;
@@ -95,7 +102,7 @@
   margin-bottom: 3rem;
   padding: 0 100px;
 }
-.GalleryImages{
+.GalleryImages {
   text-align: center;
 }
 .GalleryImages img {
@@ -158,20 +165,67 @@
   font-size: "24px";
   text-align: "center";
 }
-.BookNow .formBtn{
+.BookNow .formBtn {
   background-color: var(--base-color);
   border: none;
 }
-.BookNow .formBtn:hover{
+.BookNow .formBtn:hover {
   background-color: var(--red);
 }
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   .GalleryImages img {
     height: 150px;
-    width: 250px;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .mobileGallery{
+    display: none;
   }
   .TrekGallery {
-    display: flex;
-    flex-direction: row;
+    padding: 0;
+    margin: 20px 45px;
+  }
+  .TrkHeader .headerH2 {
+    left: 40px;
+    font-size: 55px;
+  }
+  .TrkHeader .headerH3 {
+    left: 0;
+    font-size: 16px;
+  }
+  .trekDets {
+    padding: 10px 2px;
+  }
+  .trekDets .icon {
+    font-size: 12px;
+  }
+  .trekDets .trekHeadDetails {
+    font-size: 8px;
+  }
+  .Panel {
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Panel .LeftPane {
+    order: 2;
+    width: 90%;
+  }
+  .Panel .LeftPane h1{
+    display: inline;
+    width: 100%;
+  }
+  .Panel .SidebarBook {
+    order: 1;
+  }
+  .BookNow {
+    display: none;
+  }
+  .LeftPane p{
+    width: 100%;
+  }
+  .SidebarBook .BookNowBtn{
+    width: 18rem;
   }
 }
