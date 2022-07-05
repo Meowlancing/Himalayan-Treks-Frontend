@@ -60,7 +60,10 @@ function TreksPage(props) {
   return (
     <div>
       <section className="TrkHeader">
-        <img src={"http://localhost:8000/" + dataValue.img} alt="Banner image"></img>
+        <img
+          src={"http://localhost:8000/" + dataValue.img}
+          alt="Banner image"
+        ></img>
         <h2 className="headerH2">{dataValue.title}</h2>
         <h3 className="headerH3">{dataValue.img_desp}</h3>
       </section>
@@ -87,20 +90,18 @@ function TreksPage(props) {
           <h1>
             Brief <span className="duo">Description</span>
           </h1>
-          <p>
-            {dataValue.desp}
-          </p>
+          <p>{dataValue.desp}</p>
           <h1>
-            Short <span className="duo">Itinerary</span>
+            Itinerary <span className="duo">Description</span>
           </h1>
           <p>
-            <strong>{dataValue.iternery_day1}</strong> <br />
-            <strong>{dataValue.iternery_day2}</strong> <br />
+            <strong>{dataValue.iternery}</strong> <br />
+            {/* <strong>{dataValue.iternery_day2}</strong> <br />
             <strong>{dataValue.iternery_day3}</strong> <br />
             <strong>{dataValue.iternery_day4}</strong> <br />
-            <strong>{dataValue.iternery_day5}</strong> <br />
+            <strong>{dataValue.iternery_day5}</strong> <br /> */}
           </p>
-          <h1>
+          {/* <h1>
             Detail <span className="duo">Itinerary</span>
           </h1>
           <div>
@@ -184,36 +185,51 @@ function TreksPage(props) {
               <br />
               <span>{dataValue.iternery_day5_desp}</span>
             </p>
-          </div>
+          </div> */}
           <h1>Price Inclusion</h1>
           <p>
             <span>
-              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}} />
+              <FontAwesomeIcon
+                icon={faCheck}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               For the duration of your trek, you will be staying in hotels and
               camps from day one to day five.
             </span>{" "}
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
+              <FontAwesomeIcon
+                icon={faCheck}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               Meals: From the first supper to the fifth morning, all meals are
               included. We offer easy, nutritious vegetarian food on all days of
               the trek.
             </span>
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
+              <FontAwesomeIcon
+                icon={faCheck}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               Transportation: We will provide round-trip transportation from
               Dehradun to Dehradun.
             </span>
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
+              <FontAwesomeIcon
+                icon={faCheck}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               Camping fees: Both trekking permits and woodland camping fees are
               included in the price.
             </span>
             <br />
             <span>
-              <FontAwesomeIcon icon={faCheck} style={{marginRight: "5px", color:"#FF6060"}}/>
+              <FontAwesomeIcon
+                icon={faCheck}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               All of the camps will provide you with high-quality tents and
               sleeping bags for your trek. We have high-altitude sleeping bags
               that can withstand temperatures as low as -10°C. Ropes,
@@ -224,19 +240,28 @@ function TreksPage(props) {
           <h1>Price Exclusion</h1>
           <p>
             <span>
-              <FontAwesomeIcon icon={faTimes} style={{marginRight: "5px", color:"#FF6060"}} />
+              <FontAwesomeIcon
+                icon={faTimes}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               Expenses for personal reasons: For instance, during the trek,
               personal bags must be transported.
             </span>{" "}
             <br />
             <span>
-              <FontAwesomeIcon icon={faTimes} style={{marginRight: "5px", color:"#FF6060"}}/>
+              <FontAwesomeIcon
+                icon={faTimes}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               Emergency Costs: Any expense arises as a result of any kind of
               emergency.
             </span>{" "}
             <br />
             <span>
-              <FontAwesomeIcon icon={faTimes} style={{marginRight: "5px", color:"#FF6060"}}/>
+              <FontAwesomeIcon
+                icon={faTimes}
+                style={{ marginRight: "5px", color: "#FF6060" }}
+              />
               Water in a Bottle: Throughout the trek, no bottled water will be
               provided.
             </span>{" "}
@@ -406,9 +431,14 @@ function TreksPage(props) {
           <img src={"http://localhost:8000/" + dataValue.gallery_img2} />
           <img src={"http://localhost:8000/" + dataValue.gallery_img3} />
           <img src={"http://localhost:8000/" + dataValue.gallery_img4} />
-          <img src={"http://localhost:8000/" + dataValue.gallery_img5} className="mobileGallery"/>
-          <img src={"http://localhost:8000/" + dataValue.gallery_img6} className="mobileGallery"/>
-         
+          <img
+            src={"http://localhost:8000/" + dataValue.gallery_img5}
+            className="mobileGallery"
+          />
+          <img
+            src={"http://localhost:8000/" + dataValue.gallery_img6}
+            className="mobileGallery"
+          />
         </div>
       </section>
     </div>
