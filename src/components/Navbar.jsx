@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { fa2, faPhone, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes, faPhone, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/navbar.css";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import Logo from "../Assets/himalayan_exploration-Logo.png";
+import { Link } from "react-router-dom";
 
 function NavbarCompo() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div className="Desktop">
@@ -89,6 +93,22 @@ function NavbarCompo() {
           </div>
         </Navbar>
       </div>
+      <div className="MobNavbar">
+      <span className="Mobnav-logo">DevLHB</span>
+      <div className={`Mobnav-items ${isOpen && "open"}`}>
+        <a href="/">Home</a>
+        <a href="/about-us">About Us</a>
+        <a href="/treks">Treks</a>
+        <a href="/blogs">Blogs</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+      <div
+        className={`Mobnav-toggle ${isOpen && "open"}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="bar"></div>
+      </div>
+    </div>
     </>
   );
 }
