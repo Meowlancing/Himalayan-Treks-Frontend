@@ -10,6 +10,7 @@ import Img2 from "../Assets/Kedarkantha12.jpg";
 import Img3 from "../Assets/Kedarkantha7.jpg";
 import Img4 from "../Assets/KEDARTAL2.jpg";
 import Img5 from "../Assets/KEDARTAL4.jpg";
+import Founder from "../Assets/founder.jpeg";
 
 const AboutUs = () => {
   return (
@@ -115,38 +116,35 @@ const AboutUs = () => {
       </div>
       <div className="FounderCards">
         <div className="FounderImg">
-          <img src="https://himalayandreamtreks.in/wp-content/uploads/2021/03/1614603112788-min-1-1-min.jpeg" />
+          <img src={Founder} />
         </div>
         <div className="FounderInfo">
-          <p>Founder</p>  <h2>SOBENDRA SINGH</h2>
+          <p>Founder</p> <h2>Vijay Singh</h2>
           <p>
-            Our founder Mr. Sobendra Singh is an outdoor enthusiast & wanderlust{" "}
-            nature person. Continuously working hard for the growth of{" "}
-            Himalayan Dreamtreks. He had dreamed of showing people the{" "}
-           
-            beauty of the Himalayas. That's why after graduation, he learned{" "}
-            about the mountains & how to climb them. He had complete both{" "}
-            Basic & Advanced mountaineering course from Nehru Institute
-            Of Mountaineering
+            Our founder Mr. Vijay Singh is an outdoor enthusiast & wanderlust{" "}
+            nature person. Continuously working hard for the growth of Himalayan
+            Dreamtreks. He had dreamed of showing people the beauty of the
+            Himalayas. That's why after graduation, he learned about the
+            mountains & how to climb them. He had complete both Basic & Advanced
+            mountaineering course from Nehru Institute Of Mountaineering
           </p>
         </div>
       </div>
-      <div className="ChefCards">
+      {/* <div className="ChefCards">
         <div className="ChefImg">
           <img src="https://himalayandreamtreks.in/wp-content/uploads/elementor/thumbs/IMG-20210301-WA0013-min-1-1-pdteyd0v7vqcy1vrfq0dcuk0q6e2umzztj2omk858o.jpg" />
         </div>
         <div className="ChefInfo">
-          <p>Chef</p>  <h2>VIRENDRA RANA</h2> {" "}
+          <p>Chef</p> <h2>VIRENDRA RANA</h2>{" "}
           <p>
             A native of Uttarkashi, Uttarakhand, Virendra Rana is a small town{" "}
-             men with a big city attitude.  Our chef Virendra Rana
-            is a talented & experienced chef. He had exp.  of more than
-            10+ years in cooking. Already worked for many hotels & {" "}
-            reputed trekking agency.  He is well qualified in making all
-            types of cuisine.{" "}
+            men with a big city attitude. Our chef Virendra Rana is a talented &
+            experienced chef. He had exp. of more than 10+ years in cooking.
+            Already worked for many hotels & reputed trekking agency. He is well
+            qualified in making all types of cuisine.{" "}
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
