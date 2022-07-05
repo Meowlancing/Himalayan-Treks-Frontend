@@ -94,7 +94,7 @@ function NavbarCompo() {
         </Navbar>
       </div>
       <div className="MobNavbar">
-      <span className="Mobnav-logo">DevLHB</span>
+      <span className="Mobnav-logo">Himalayan Explorations</span>
       <div className={`Mobnav-items ${isOpen && "open"}`}>
         <a href="/">Home</a>
         <a href="/about-us">About Us</a>
