@@ -94,7 +94,8 @@ function NavbarCompo() {
         </Navbar>
       </div>
       <div className="MobNavbar">
-      <span className="Mobnav-logo">Himalayan Explorations</span>
+      <span className="Mobnav-logo">
+              <img src={Logo} alt="logo" style={{height:"38px", width:"33px", marginRight:"5px"}} />Himalayan Explorations</span>
       <div className={`Mobnav-items ${isOpen && "open"}`}>
         <a href="/">Home</a>
         <a href="/about-us">About Us</a>

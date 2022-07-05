@@ -94,11 +94,11 @@
 
 /*Mobile Navbar*/
 .MobNavbar {
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #5265c4;
+  background: var(--base-color);
 }
 
 .MobNavbar > .Mobnav-logo {
@@ -147,10 +147,10 @@
 @media (max-width: 500px) {
   .MobNavbar > .Mobnav-items {
     position: absolute;
-    top: 60px;
+    top: 70px;
     display: flex;
     flex-direction: column;
-    background: #3b4da7;
+    background: var(--base-color);
     left: 0;
     width: 100%;
     height: 100%;
