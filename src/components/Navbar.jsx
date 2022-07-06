@@ -18,11 +18,11 @@ function NavbarCompo() {
           <div className="topDetails">
             <span>
               <FontAwesomeIcon icon={faPhone} className="icon" />
-              91531234567
+              9021779329
             </span>
             <span>
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
-              info@mail.com
+              info.thehimalayan@gmail.com
             </span>
           </div>
           <div>

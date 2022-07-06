@@ -30,7 +30,7 @@ function BookNow() {
     try {
       const res = await axios({
         method: "POST",
-        url: "http://localhost:8000/api/bookNow",
+        url: "https://himalyan-explorations.herokuapp.com/api/bookNow",
         data: formData,
       });
       console.log(res);

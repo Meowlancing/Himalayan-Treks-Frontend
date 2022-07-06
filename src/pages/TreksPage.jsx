@@ -95,7 +95,7 @@ function TreksPage(props) {
             Itinerary <span className="duo">Description</span>
           </h1>
           <p>
-            <strong>{dataValue.iternery}</strong> <br />
+            {dataValue.iternery}<br />
             {/* <strong>{dataValue.iternery_day2}</strong> <br />
             <strong>{dataValue.iternery_day3}</strong> <br />
             <strong>{dataValue.iternery_day4}</strong> <br />
@@ -330,7 +330,7 @@ function TreksPage(props) {
                 icon={faSquarePhoneFlip}
               />{" "}
             </button>{" "}
-            TALK TO AN EXPERT <br /> +91-8089693825{" "}
+            TALK TO AN EXPERT <br /> +91-9021779329{" "}
           </h3>{" "}
           <br />
           <div
@@ -353,7 +353,7 @@ function TreksPage(props) {
             </span>
           </div>{" "}
           <br />
-          <button className="BarsBook email">Email Us</button> <br />
+          <button className="BarsBook email" mailto= "info.thehimalayan@gmail.com">Email Us</button> <br />
           <button className="BarsBook">Departure Date</button>
           <Collapsible className="collapseBar" trigger="April 2021">
             <p>

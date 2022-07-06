@@ -10,7 +10,7 @@ function BlogsCard() {
     try {
       const resp = await axios({
         method: "GET",
-        url: "http://localhost:8000/api/blogList",
+        url: "https://himalyan-explorations.herokuapp.com/api/blogList",
       });
       setData(resp.data);
     } catch (err) {
@@ -31,7 +31,7 @@ function BlogsCard() {
             <Card.Body className="blogCardBody">
               <a href="/id">
                 <img
-                  src={"http://localhost:8000/" + item.banner}
+                  src={"https://himalyan-explorations.herokuapp.com/" + item.banner}
                   alt="banner"
                 />
               </a>

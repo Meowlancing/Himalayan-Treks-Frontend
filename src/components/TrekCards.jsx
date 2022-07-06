@@ -9,7 +9,7 @@ function TrekCards() {
     try {
       const resp = await axios({
         method: "GET",
-        url: "http://localhost:8000/api/treksList",
+        url: "https://himalyan-explorations.herokuapp.com/api/treksList",
       });
       setData(resp.data);
     } catch (err) {
@@ -28,7 +28,7 @@ function TrekCards() {
         return (
           <div className="trekCard">
           <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-              <img src={"http://localhost:8000/" + item.img} />
+              <img src={"https://himalyan-explorations.herokuapp.com/" + item.img} />
             </Link>
             <div className="topLeft">
               <span>{item.days} </span>
