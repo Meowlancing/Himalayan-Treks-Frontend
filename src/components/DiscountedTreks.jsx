@@ -9,7 +9,7 @@ function DiscountedTreks() {
     try {
       const resp = await axios({
         method: "GET",
-        url: "http://localhost:8000/api/discountList",
+        url: "https://himalyan-explorations.herokuapp.com/api/discountList",
       });
       setData(resp.data);
     } catch (err) {
@@ -28,7 +28,7 @@ function DiscountedTreks() {
         return (
           <div className="distrekCard">
             <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-              <img src={"http://localhost:8000/" + item.img} />
+              <img src={"https://himalyan-explorations.herokuapp.com" + item.img} />
               <div>
                 <button className="distrekName">View More </button>
               </div>

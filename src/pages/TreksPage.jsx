@@ -47,7 +47,7 @@ function TreksPage(props) {
     try {
       const res = await axios({
         method: "POST",
-        url: "http://localhost:8000/api/bookNow",
+        url: "https://himalyan-explorations.herokuapp.com/api/bookNow",
         data: formData,
       });
       console.log(res);
@@ -61,7 +61,7 @@ function TreksPage(props) {
     <div>
       <section className="TrkHeader">
         <img
-          src={"http://localhost:8000/" + dataValue.img}
+          src={"https://himalyan-explorations.herokuapp.com/" + dataValue.img}
           alt="Banner image"
         ></img>
         <h2 className="headerH2">{dataValue.title}</h2>
@@ -427,16 +427,16 @@ function TreksPage(props) {
           Gallery
         </h1>
         <div className="GalleryImages">
-          <img src={"http://localhost:8000/" + dataValue.gallery_img1} />
-          <img src={"http://localhost:8000/" + dataValue.gallery_img2} />
-          <img src={"http://localhost:8000/" + dataValue.gallery_img3} />
-          <img src={"http://localhost:8000/" + dataValue.gallery_img4} />
+          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img1} />
+          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img2} />
+          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img3} />
+          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img4} />
           <img
-            src={"http://localhost:8000/" + dataValue.gallery_img5}
+            src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img5}
             className="mobileGallery"
           />
           <img
-            src={"http://localhost:8000/" + dataValue.gallery_img6}
+            src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img6}
             className="mobileGallery"
           />
         </div>
