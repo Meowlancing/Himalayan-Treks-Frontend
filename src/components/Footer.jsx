@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Logo from "../Assets/himalayan_exploration-Logo.png";
 
 function Footer() {
   var date = new Date();
@@ -41,8 +42,8 @@ function Footer() {
           <Card.Body>
             <Card.Title className="title">
               <img
-                src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/HDT-01.2.1-01-min-1024x332.png"
-                style={{ width: "105px", height: "50.8px" }}
+                src={Logo}
+                style={{ width: "50px", height: "50.8px" }}
               ></img>
             </Card.Title>
             <Card.Text className="purpose">
@@ -146,7 +147,7 @@ function Footer() {
         <h4>
           ©All rights reserved {date.getFullYear()} @Himalyan Explorations
         </h4>{" "}
-        <p>Designed and Developed By PracharMore</p>
+        <a style={{textDecoration:"none"}} target="_blank" href="https://pracharmore.com/">Designed and Developed By PracharMore</a>
       </div>
     </div>
   );
