@@ -147,7 +147,7 @@ function Footer() {
         <h4>
           ©All rights reserved {date.getFullYear()} @Himalyan Explorations
         </h4>{" "}
-        <a style={{textDecoration:"none"}} target="_blank" href="https://pracharmore.com/">Designed and Developed By PracharMore</a>
+        <a style={{color:"#fff" ,textDecoration:"none"}} target="_blank" href="https://pracharmore.com/">Designed and Developed By PracharMore</a>
       </div>
     </div>
   );
