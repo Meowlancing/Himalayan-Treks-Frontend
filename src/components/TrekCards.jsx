@@ -22,9 +22,13 @@ function TrekCards() {
     getData();
   }, []);
 
+  var items = data.map((item) => item);
+  var sliceitem = items.slice(0, 4);
+  console.log(sliceitem)
+
   return (
     <div className="treks">
-      {data.map((item) => {
+      {sliceitem.map((item) => {
         return (
           <div className="trekCard">
           <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
