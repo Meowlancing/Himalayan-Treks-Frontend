@@ -13,7 +13,7 @@ function BlogPage() {
       <div className="blogPage">
         <div className="blogImg">
           <img
-            src={"https://himalyan-explorations.herokuapp.com" + dataValue.banner}
+            src={dataValue.banner}
             alt="blog image"
           />
         </div>

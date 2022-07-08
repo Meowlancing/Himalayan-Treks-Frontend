@@ -28,7 +28,7 @@ function TrekCards() {
         return (
           <div className="trekCard">
           <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-              <img src={"https://himalyan-explorations.herokuapp.com/" + item.img} />
+              <img src={item.img} />
             </Link>
             <div className="topLeft">
               <span>{item.days} </span>

@@ -60,10 +60,7 @@ function TreksPage(props) {
   return (
     <div>
       <section className="TrkHeader">
-        <img
-          src={"https://himalyan-explorations.herokuapp.com/" + dataValue.img}
-          alt="Banner image"
-        ></img>
+        <img src={dataValue.img} alt="Banner image"></img>
         <h2 className="headerH2">{dataValue.title}</h2>
         <h3 className="headerH3">{dataValue.img_desp}</h3>
       </section>
@@ -95,7 +92,8 @@ function TreksPage(props) {
             Itinerary <span className="duo">Description</span>
           </h1>
           <p>
-            {dataValue.iternery}<br />
+            {dataValue.iternery}
+            <br />
             {/* <strong>{dataValue.iternery_day2}</strong> <br />
             <strong>{dataValue.iternery_day3}</strong> <br />
             <strong>{dataValue.iternery_day4}</strong> <br />
@@ -353,7 +351,13 @@ function TreksPage(props) {
             </span>
           </div>{" "}
           <br />
-          <button className="BarsBook email" mailto= "info.thehimalayan@gmail.com">Email Us</button> <br />
+          <button
+            className="BarsBook email"
+            mailto="info.thehimalayan@gmail.com"
+          >
+            Email Us
+          </button>{" "}
+          <br />
           <button className="BarsBook">Departure Date</button>
           <Collapsible className="collapseBar" trigger="April 2021">
             <p>
@@ -427,18 +431,12 @@ function TreksPage(props) {
           Gallery
         </h1>
         <div className="GalleryImages">
-          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img1} />
-          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img2} />
-          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img3} />
-          <img src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img4} />
-          <img
-            src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img5}
-            className="mobileGallery"
-          />
-          <img
-            src={"https://himalyan-explorations.herokuapp.com/" + dataValue.gallery_img6}
-            className="mobileGallery"
-          />
+          <img src={dataValue.gallery_img1} />
+          <img src={dataValue.gallery_img2} />
+          <img src={dataValue.gallery_img3} />
+          <img src={dataValue.gallery_img4} />
+          <img src={dataValue.gallery_img5} className="mobileGallery" />
+          <img src={dataValue.gallery_img6} className="mobileGallery" />
         </div>
       </section>
     </div>

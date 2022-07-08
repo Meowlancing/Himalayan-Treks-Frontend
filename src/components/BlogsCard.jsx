@@ -31,7 +31,7 @@ function BlogsCard() {
             <Card.Body className="blogCardBody">
               <a href="/id">
                 <img
-                  src={"https://himalyan-explorations.herokuapp.com/" + item.banner}
+                  src={item.banner}
                   alt="banner"
                 />
               </a>

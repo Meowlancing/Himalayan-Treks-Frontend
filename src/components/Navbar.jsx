@@ -1,15 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faBars, faTimes, faPhone, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faPhone,
+  faShoppingBag,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/navbar.css";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import Logo from "../Assets/himalayan_exploration-Logo.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function NavbarCompo() {
-
   const [isOpen, setIsOpen] = useState(false);
+  const [data, setData] = useState([]);
+  async function getData() {
+    try {
+      const resp = await axios({
+        method: "GET",
+        url: "https://himalyan-explorations.herokuapp.com/api/treksList",
+      });
+      setData(resp.data);
+    } catch (err) {
+      console.log("Something went wrong");
+      return [];
+    }
+  }
+  console.log(data);
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <>
@@ -53,19 +75,13 @@ function NavbarCompo() {
                 <Nav.Link href="/treks" className="navItem dropMenu">
                   Treks
                   <NavDropdown id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">
-                      items
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">
-                      Something
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">
-                      Separated link
-                    </NavDropdown.Item>
+                    {data.map((item) => {
+                      return (
+                        <NavDropdown.Item href="#action/3.1">
+                          {item.title}
+                        </NavDropdown.Item>
+                      );
+                    })}
                   </NavDropdown>
                 </Nav.Link>
 
@@ -94,22 +110,28 @@ function NavbarCompo() {
         </Navbar>
       </div>
       <div className="MobNavbar">
-      <span className="Mobnav-logo">
-              <img src={Logo} alt="logo" style={{height:"38px", width:"33px", marginRight:"5px"}} />Himalayan Explorations</span>
-      <div className={`Mobnav-items ${isOpen && "open"}`}>
-        <a href="/">Home</a>
-        <a href="/about-us">About Us</a>
-        <a href="/treks">Treks</a>
-        <a href="/blogs">Blogs</a>
-        <a href="/contact">Contact Us</a>
+        <span className="Mobnav-logo">
+          <img
+            src={Logo}
+            alt="logo"
+            style={{ height: "38px", width: "33px", marginRight: "5px" }}
+          />
+          Himalayan Explorations
+        </span>
+        <div className={`Mobnav-items ${isOpen && "open"}`}>
+          <a href="/">Home</a>
+          <a href="/about-us">About Us</a>
+          <a href="/treks">Treks</a>
+          <a href="/blogs">Blogs</a>
+          <a href="/contact">Contact Us</a>
+        </div>
+        <div
+          className={`Mobnav-toggle ${isOpen && "open"}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div className="bar"></div>
+        </div>
       </div>
-      <div
-        className={`Mobnav-toggle ${isOpen && "open"}`}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div className="bar"></div>
-      </div>
-    </div>
     </>
   );
 }
