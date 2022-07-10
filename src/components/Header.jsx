@@ -1,8 +1,8 @@
 import {
-  faMapLocation,
-  faRectangleAd,
-  faTriangleCircleSquare,
-  faUserFriends,
+  faCampground,
+  faMapMarkedAlt,
+  faMoneyBill,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -25,19 +25,19 @@ function Header() {
         <div className="cards">
           <Row>
             <Col>
-              <FontAwesomeIcon icon={faUserFriends} className="icon" />
+              <FontAwesomeIcon icon={faUsers} className="icon" />
               <h4>Experienced Team</h4>
             </Col>
             <Col>
-              <FontAwesomeIcon icon={faTriangleCircleSquare} className="icon" />
+              <FontAwesomeIcon icon={faCampground} className="icon" />
               <h4>Quality Equipment</h4>
             </Col>
             <Col>
-              <FontAwesomeIcon icon={faMapLocation} className="icon" />
+              <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" />
               <h4>Planned Itinerary</h4>
             </Col>
             <Col>
-              <FontAwesomeIcon icon={faRectangleAd} className="icon" />
+              <FontAwesomeIcon icon={faMoneyBill} className="icon" />
               <h4>Affordable Rates</h4>
             </Col>
           </Row>
