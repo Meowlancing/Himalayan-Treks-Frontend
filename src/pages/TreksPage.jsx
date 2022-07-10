@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styles/trkspge.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MarkdownView from "react-showdown";
 import Collapsible from "react-collapsible";
 import { Button, Card, Form } from "react-bootstrap";
 import {
@@ -87,12 +88,12 @@ function TreksPage(props) {
           <h1>
             Brief <span className="duo">Description</span>
           </h1>
-          <p>{dataValue.desp}</p>
+          <p><MarkdownView markdown={dataValue.desp} /></p>
           <h1>
             Itinerary <span className="duo">Description</span>
           </h1>
           <p>
-            {dataValue.iternery}
+            <MarkdownView markdown={dataValue.iternery} />
             <br />
             {/* <strong>{dataValue.iternery_day2}</strong> <br />
             <strong>{dataValue.iternery_day3}</strong> <br />
