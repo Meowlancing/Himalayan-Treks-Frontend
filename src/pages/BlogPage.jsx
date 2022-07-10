@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import MarkdownView from "react-showdown";
 import BlogsCard from "../components/BlogsCard";
 import "./styles/blogPage.css";
 
@@ -25,7 +26,7 @@ function BlogPage() {
         </div>
         <div className="paragraph">
           <p>
-            {dataValue.desp}
+            <MarkdownView markdown={dataValue.desp} />
             {/* The Uttarakhand government made it mandatory for people arriving
             from a dozen states to provide negative RT-PCR test reports not
             older than 72 hours on arrival, citing an increase in COVID-19
