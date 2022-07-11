@@ -201,7 +201,7 @@ function TreksPage(props) {
                 icon={faCheck}
                 style={{ marginRight: "5px", color: "#FF6060" }}
               />
-              Meals: From the first supper to the fifth morning, all meals are
+              Meals: From the first supper to the departure day morning, all meals are
               included. We offer easy, nutritious vegetarian food on all days of
               the trek.
             </span>
@@ -212,7 +212,7 @@ function TreksPage(props) {
                 style={{ marginRight: "5px", color: "#FF6060" }}
               />
               Transportation: We will provide round-trip transportation from
-              Dehradun to Dehradun.
+              pickup point to drop point .
             </span>
             <br />
             <span>
