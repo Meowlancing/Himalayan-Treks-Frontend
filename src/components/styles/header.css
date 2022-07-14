@@ -36,6 +36,24 @@
   padding: 20px 0;
   box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
 }
+.whyUs .cards .icon{
+  animation: blinkers 1.5s infinite forwards;
+}
+
+@keyframes blinkers {
+  0% {
+    background-color: #a80505;
+    box-shadow: 0 0 3px #a80505;
+  }
+  50% {
+    background-color: #e81919;
+    box-shadow: 0 0 10px #e81919;
+  }
+  100% {
+    background-color: #a80505;
+    box-shadow: 0 0 3px #a80505;
+  }
+}
 .whyUs .icon {
   font-size: 20px;
   background-color: var(--red);
@@ -112,7 +130,7 @@
     font-size: 40px;
   }
   .whyUs .cards{
-    margin: 70px 37px;
+    margin: 70px 35px;
   }
 }
 
