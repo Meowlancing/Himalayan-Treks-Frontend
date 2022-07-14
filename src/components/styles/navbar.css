@@ -137,16 +137,16 @@
 }
 @keyframes bonk {
   0% {
-    background-color: #0a05a8;
-    box-shadow: 0 0 3px #0a05a8;
+    background-color: var(--base-color);
+    box-shadow: 0 0 3px var(--base-color);
   }
   50% {
-    background-color: #195ee8;
-    box-shadow: 0 0 10px #195ee8;
+    background-color: #1d19e8;
+    box-shadow: 0 0 10px #1d19e8;
   }
   100% {
-    background-color: #0a05a8;
-    box-shadow: 0 0 3px #0a05a8;
+    background-color: var(--base-color);
+    box-shadow: 0 0 3px var(--base-color);
   }
 }
 
