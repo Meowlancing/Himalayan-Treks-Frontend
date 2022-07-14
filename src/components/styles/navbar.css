@@ -131,6 +131,25 @@
 .bookBtn .icon {
   margin-left: 10px;
 }
+
+.socials .socialIcon{
+  animation: bonk 1.5s infinite forwards;
+}
+@keyframes bonk {
+  0% {
+    background-color: #0a05a8;
+    box-shadow: 0 0 3px #0a05a8;
+  }
+  50% {
+    background-color: #195ee8;
+    box-shadow: 0 0 10px #195ee8;
+  }
+  100% {
+    background-color: #0a05a8;
+    box-shadow: 0 0 3px #0a05a8;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .topBar {
     display: none;
