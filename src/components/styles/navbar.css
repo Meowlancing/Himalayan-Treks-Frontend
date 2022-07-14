@@ -28,11 +28,8 @@
   align-items: center;
   padding: 0 30px;
 }
-.navBar .logoContainer {
-  margin-right: 50px;
-}
 .navBar img {
-  width: 50px;
+  width: 100%;
 }
 .navBar .navItem,
 #basic-nav-dropdown {
@@ -66,7 +63,7 @@
   flex-direction: row;
 }
 .socials {
-  margin-left: 390px;
+  margin-left: 190px;
 }
 .bookBtn {
   background-color: var(--base-color);

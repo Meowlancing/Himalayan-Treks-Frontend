@@ -9,9 +9,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/navbar.css";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
-import Logo from "../Assets/himalayan_exploration-Logo.png";
-import { Link } from "react-router-dom";
+import Logo from "../Assets/logo.png";
 import axios from "axios";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 function NavbarCompo() {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,14 +54,17 @@ function NavbarCompo() {
             <a href="/terms-conditions" target="_blank">
               Terms and Conditions
             </a>
-            {/* <a href="#">Privacy Policy</a> */}
+            <a href="#">Privacy Policy</a>
           </div>
         </div>
-        <Navbar expand="lg" variant="danger" className="navBar">
+        <Navbar variant="danger" className="navBar">
           <div className="navContainer">
-            <Navbar.Brand href="/" className="logoContainer">
-              <img src={Logo} alt="logo" />
-            </Navbar.Brand>
+            <div style={{ width: "250px", marginRight: "30px" }}>
+              <Navbar.Brand href="/" className="logoContainer">
+                <img src={Logo} alt="logo" />
+              </Navbar.Brand>
+            </div>
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -95,8 +98,12 @@ function NavbarCompo() {
 
               <Nav className="socials">
                 {/* social media links if any */}
-                <Nav.Link href="#"></Nav.Link>
-                <Nav.Link href="#"></Nav.Link>
+                <Nav.Link href="#">
+                  <FaFacebook />
+                </Nav.Link>
+                <Nav.Link href="#">
+                  <FaInstagram />
+                </Nav.Link>
                 <Nav.Link href="#"></Nav.Link>
                 <a href="/contact">
                   <Button className="bookBtn">

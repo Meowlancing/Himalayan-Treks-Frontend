@@ -29,12 +29,9 @@ function BlogsCard() {
         return (
           <Card className="blogCard">
             <Card.Body className="blogCardBody">
-              <a href="/id">
-                <img
-                  src={item.banner}
-                  alt="banner"
-                />
-              </a>
+              <Link to={item.title} state={{ prop: item }}>
+                <img src={item.banner} alt="banner" />
+              </Link>
               <h3>{item.title}</h3>
               <Link to={item.title} state={{ prop: item }}>
                 <button>Read More</button>

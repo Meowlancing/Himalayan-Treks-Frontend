@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Logo from "../Assets/himalayan_exploration-Logo.png";
+import Logo from "../Assets/logo.png";
 
 function Footer() {
   var date = new Date();
