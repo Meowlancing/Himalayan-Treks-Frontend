@@ -14,7 +14,7 @@ function Header() {
     <>
       <div className="header">
         <h1 className="text">India's</h1> <br />
-        <h1 className="text1">Trekking Expert</h1>
+        <h1 className="text1">Trekking And Camping Expert</h1>
       </div>
       <div className="whyUs">
         <div>

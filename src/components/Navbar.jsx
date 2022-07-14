@@ -12,13 +12,11 @@ import {
   FaTripadvisor,
   FaArrowDown,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function NavbarCompo() {
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState([]);
-
-  const [hover, setHover] = useState(false);
 
   async function getData() {
     try {
@@ -36,7 +34,10 @@ function NavbarCompo() {
   useEffect(() => {
     getData();
   }, []);
-
+  const navigate = useNavigate();
+  function treks() {
+    navigate("/treks");
+  }
   return (
     <>
       <div className="Desktop">
@@ -80,7 +81,7 @@ function NavbarCompo() {
                 </Nav.Link>
 
                 <div class="dropdown">
-                  <button class="dropbtn navItem">
+                  <button class="dropbtn navItem" onClick={treks}>
                     Treks <FaArrowDown />
                   </button>
                   <div class="dropdown-content">
@@ -91,11 +92,14 @@ function NavbarCompo() {
                             to={"/treks-" + `${item.title}`}
                             state={{ prop: item }}
                           >
-                            <div style={{display: "flex"}}>
+                            <div style={{ display: "flex" }}>
                               <div className="dropdownImg">
                                 <img src={item.img} className="img" />
                               </div>
-                              <div style={{ marginLeft: "10px" }} className="dropDetails">
+                              <div
+                                style={{ marginLeft: "10px" }}
+                                className="dropDetails"
+                              >
                                 <p>{item.title}</p>
                                 <span>{item.days} days</span>
                               </div>
@@ -119,11 +123,14 @@ function NavbarCompo() {
                             to={"/treks-" + `${item.title}`}
                             state={{ prop: item }}
                           >
-                            <div style={{display: "flex"}}>
+                            <div style={{ display: "flex" }}>
                               <div className="dropdownImg">
                                 <img src={item.img} className="img" />
                               </div>
-                              <div style={{ marginLeft: "10px" }} className="dropDetails">
+                              <div
+                                style={{ marginLeft: "10px" }}
+                                className="dropDetails"
+                              >
                                 <p>{item.title}</p>
                                 <span>{item.days} days</span>
                               </div>

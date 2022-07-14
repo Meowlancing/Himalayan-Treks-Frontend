@@ -19,7 +19,7 @@ function Home() {
           <span className="duo">Popular </span>
           <span className="duo1">Treks</span>
         </div>
-        <TrekCards />
+        <TrekCards item="true" />
         <a href="/treks">
           <Button className="treksBtn">View More Treks</Button>
         </a>
@@ -38,12 +38,16 @@ function Home() {
         <div className="aboutDetails">
           <div style={{ width: "100%" }}>
             <p>About Us</p>
-            <h3>Himalyan Dreamtreks</h3>
+            <h3>Himalyan Explorations</h3>
             <span>
-              We organized treks that belong in the Indian Himalayas. Our main
-              aim is to provide a comfortable atmosphere with the highest degree
-              of protection. All treks are led by a certified mountaineer and
-              carefully planned to give trekkers the best possible experience.
+              The Himalayan Exploration Company is a boldly developed operator
+              considering on trips to the Himalaya. We have a strong track
+              record and extensive experience of our equipment, while still
+              advancing sufficiently to provide excellent budget service. We
+              focus on customizing each trip according to the interests and
+              expectations of our guests. Our troupes of excellent moments are
+              often exclusive to The Himalayan Exploration, promising a unique
+              adventure.
             </span>
             <br />
             <a href="/about-us">

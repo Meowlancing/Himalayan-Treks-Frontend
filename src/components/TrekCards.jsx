@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function TrekCards() {
+function TrekCards(props) {
   const [data, setData] = useState([]);
   async function getData() {
     try {
@@ -24,32 +24,55 @@ function TrekCards() {
 
   var items = data.map((item) => item);
   var sliceitem = items.slice(0, 4);
-  console.log(sliceitem)
+  console.log(sliceitem);
 
   return (
     <div className="treks">
-      {sliceitem.map((item) => {
-        return (
-          <div className="trekCard">
-          <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-              <img src={item.img} />
-            </Link>
-            <div className="topLeft">
-              <span>{item.days} </span>
-              <span>Days</span>
-            </div>
-            <div className="topRight">
-              <span>Rs. </span>
-              <span>{item.price}</span>
-            </div>
-            <div className="bottom">
-              <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-                <button className="trekName">{item.title}</button>
-              </Link>
-            </div>
-          </div>
-        );
-      })}
+      {props.item === "true"
+        ? sliceitem.map((item) => {
+            return (
+              <div className="trekCard">
+                <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                  <img src={item.img} />
+                </Link>
+                <div className="topLeft">
+                  <span>{item.days} </span>
+                  <span>Days</span>
+                </div>
+                <div className="topRight">
+                  <span>Rs. </span>
+                  <span>{item.price}</span>
+                </div>
+                <div className="bottom">
+                  <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                    <button className="trekName">{item.title}</button>
+                  </Link>
+                </div>
+              </div>
+            );
+          })
+        : data.map((item) => {
+            return (
+              <div className="trekCard">
+                <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                  <img src={item.img} />
+                </Link>
+                <div className="topLeft">
+                  <span>{item.days} </span>
+                  <span>Days</span>
+                </div>
+                <div className="topRight">
+                  <span>Rs. </span>
+                  <span>{item.price}</span>
+                </div>
+                <div className="bottom">
+                  <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                    <button className="trekName">{item.title}</button>
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
     </div>
   );
 }
