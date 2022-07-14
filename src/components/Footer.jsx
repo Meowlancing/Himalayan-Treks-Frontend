@@ -41,20 +41,15 @@ function Footer() {
           <div className="icons"></div>
           <Card.Body>
             <Card.Title className="title">
-              <img
-                src={Logo}
-                style={{ width: "50px", height: "50.8px" }}
-              ></img>
+              <img src={Logo} style={{ width: "50px", height: "50.8px" }}></img>
             </Card.Title>
             <Card.Text className="purpose">
-              Himalayan Dreamtreks is a <br />
-              mission-driven outdoor <br />
-              adventure company. The aim <br />
-              is to make destinations that <br />
-              aren’t always found on <br />
-              standard maps available to <br />
-              people who enjoy visiting new <br />
-              locations.
+              Welcome to The Himalayan Exploration! We offer topflight
+              hill-walking holidays across you. Many traveling companies focus
+              on multitudinous sports; we are 100% entire concentration on the
+              trekking experience. With unique guides, unbelievable support
+              staff, and award-winning routeways, we are dedicated about giving
+              memorable trekking experiences for guests all over the world!
               <div className="socialsicons"></div>
             </Card.Text>
           </Card.Body>
@@ -72,7 +67,7 @@ function Footer() {
                     <Link
                       to={"/treks-" + `${item.title}`}
                       state={{ prop: item }}
-                      style={{textDecoration: "none"}}
+                      style={{ textDecoration: "none" }}
                     >
                       <span>
                         <FontAwesomeIcon icon={faArrowRight} />
@@ -147,7 +142,13 @@ function Footer() {
         <h4>
           ©All rights reserved {date.getFullYear()} @Himalyan Explorations
         </h4>{" "}
-        <a style={{color:"#fff" ,textDecoration:"none"}} target="_blank" href="https://pracharmore.com/">Designed and Developed By PracharMore</a>
+        <a
+          style={{ color: "#fff", textDecoration: "none" }}
+          target="_blank"
+          href="https://pracharmore.com/"
+        >
+          Designed and Developed By PracharMore
+        </a>
       </div>
     </div>
   );

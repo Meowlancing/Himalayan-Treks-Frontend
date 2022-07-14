@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/about.css";
 import AboutHeaderImg from "../Assets/about.jpeg";
-import Explore from "../Assets/EXPLORE.png";
+import Explore from "../Assets/Explore.jpg";
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHiking } from "@fortawesome/free-solid-svg-icons";
@@ -22,17 +22,20 @@ const AboutUs = () => {
         <div className="AbtUS">
           <h3>About Us</h3>
           <h2>
-            Fully dedicated <br /> to provide best <br />{" "}
-            <span className="trekspan">trekking experience</span>
+            We are 100%
+            <br />
+            entire concentration <br />{" "}
+            <span className="trekspan">
+              on the trekking and Camping experience.
+            </span>
           </h2>
           <p>
-            Himalayan Dreamtreks is a mission-driven outdoor adventure company.
-            The aim is to make destinations that aren't always found on standard
-            maps available to people who enjoy visiting new locations. Outdoors
-            Enthusiasts will enjoy some of the best outdoor travel opportunities
-            in the Indian Himalayas – lush valleys, craggy mountains, high
-            altitude cold deserts, winding rivers, thick forests – a smorgasbord
-            of sensory experiences that can only be found in the outdoors.
+            Welcome to The Himalayan Exploration! We offer topflight
+            hill-walking holidays across you. Many traveling companies focus on
+            multitudinous sports; we are 100% entire concentration on the
+            trekking experience. With unique guides, unbelievable support staff,
+            and award-winning routeways, we are dedicated about giving memorable
+            trekking experiences for guests all over the world!
           </p>
         </div>
         <div className="ExploreImg">
@@ -49,14 +52,13 @@ const AboutUs = () => {
               <FontAwesomeIcon icon={faHiking} className="icon" />
             </div>
             <Card.Body>
-              <Card.Title className="title">Exp. Trek Guide </Card.Title>
-              <Card.Text className="purpose">
-                We are a community of people from the Indian Himalayas, mostly
-                from different villages. We have a team of qualified and
-                professional guides/trip leaders on board. The majority of the
-                instructors have received their training from well-known
-                mountain schools.
-              </Card.Text>
+              <Card.Title className="title">Heartbeat</Card.Title>
+              <span className="purpose">
+                Our core values of "Protection of the Earth and the People"
+                promote all that we do. If you continue with us you make a small
+                contribution to the "Trek for a Cause" program that helps people
+                and the environment in remote areas.
+              </span>
             </Card.Body>
           </Card>
           <Card className="CardSec">
@@ -64,14 +66,12 @@ const AboutUs = () => {
               <FontAwesomeIcon icon={faHiking} className="icon" />
             </div>
             <Card.Body>
-              <Card.Title className="title">Affordable Rates </Card.Title>
-              <Card.Text className="purpose">
-                We believe in affordable trekking, not money-making. Our founder
-                Sobhinder Singh believes in making relationships, not gaining
-                profit. Due to in-house equipment & an in-house team, we are
-                able to provide affordable rates to our clients. Due to these
-                reason clients love us.
-              </Card.Text>
+              <Card.Title className="title">Finest Guides</Card.Title>
+              <span className="purpose">
+                You can expect excellent information from our independent
+                leaders, travel experts and trainers, guides and local support
+                team.
+              </span>
             </Card.Body>
           </Card>
           <Card className="CardSec">
@@ -79,14 +79,15 @@ const AboutUs = () => {
               <FontAwesomeIcon icon={faHiking} className="icon" />
             </div>
             <Card.Body>
-              <Card.Title className="title">Best Equipments</Card.Title>
-              <Card.Text className="purpose">
-                To ensure great delivery, our team is ably supported by our
-                infrastructure. We have a large fleet of rafts, service
-                vehicles, imported cycles, top-of-the-line camping and climbing
-                equipment, as well as offices to assist you in planning and
-                booking your trips.
-              </Card.Text>
+              <Card.Title className="title">
+                Eco-friendly & Paperless
+              </Card.Title>
+              <span className="purpose">
+                We have absolutely no paperwork, you don’t need to print
+                anything; everything will be done online. All of our adventure
+                activities are eco-friendly and we have always tried not to be
+                plastic as part of our sustainable tourism path.
+              </span>
             </Card.Body>
           </Card>
         </section>
@@ -121,10 +122,10 @@ const AboutUs = () => {
         <div className="FounderInfo">
           <p>Founder</p> <h2>Vijay Singh</h2>
           <p>
-            Our founder Mr. Vijay Singh is an outdoor enthusiast & wanderlust{" "}
-            nature person. Continuously working hard for the growth of Himalayan
-            Dreamtreks. He had dreamed of showing people the beauty of the
-            Himalayas. That's why after graduation, he learned about the
+            Our founder Mr. Vijay Singh is an outdoor enthusiast & wanderlust
+            nature person. Continuously working hard for the growth of The
+            Himalayan Exploration. He had dreamed of showing people the beauty
+            of the Himalayas. That's why after graduation, he learned about the
             mountains & how to climb them. He had complete both Basic & Advanced
             mountaineering course from Nehru Institute Of Mountaineering
           </p>
