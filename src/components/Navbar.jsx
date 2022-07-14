@@ -1,21 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import {
-  faBars,
-  faTimes,
-  faPhone,
-  faShoppingBag,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/navbar.css";
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
 import Logo from "../Assets/logo.png";
 import axios from "axios";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTripadvisor,
+  FaArrowDown,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function NavbarCompo() {
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState([]);
+
+  const [hover, setHover] = useState(false);
+
   async function getData() {
     try {
       const resp = await axios({
@@ -59,7 +63,7 @@ function NavbarCompo() {
         </div>
         <Navbar variant="danger" className="navBar">
           <div className="navContainer">
-            <div style={{ width: "250px", marginRight: "30px" }}>
+            <div style={{ width: "200px", marginRight: "10px" }}>
               <Navbar.Brand href="/" className="logoContainer">
                 <img src={Logo} alt="logo" />
               </Navbar.Brand>
@@ -75,18 +79,61 @@ function NavbarCompo() {
                   About Us
                 </Nav.Link>
 
-                <Nav.Link href="/treks" className="navItem dropMenu">
-                  Treks
-                  <NavDropdown id="basic-nav-dropdown">
+                <div class="dropdown">
+                  <button class="dropbtn navItem">
+                    Treks <FaArrowDown />
+                  </button>
+                  <div class="dropdown-content">
                     {data.map((item) => {
                       return (
-                        <NavDropdown.Item href="#action/3.1">
-                          {item.title}
-                        </NavDropdown.Item>
+                        <div className="drowndownContainer">
+                          <Link
+                            to={"/treks-" + `${item.title}`}
+                            state={{ prop: item }}
+                          >
+                            <div style={{display: "flex"}}>
+                              <div className="dropdownImg">
+                                <img src={item.img} className="img" />
+                              </div>
+                              <div style={{ marginLeft: "10px" }} className="dropDetails">
+                                <p>{item.title}</p>
+                                <span>{item.days} days</span>
+                              </div>
+                            </div>
+                          </Link>
+                        </div>
                       );
                     })}
-                  </NavDropdown>
-                </Nav.Link>
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <button class="dropbtn navItem">
+                    Camping <FaArrowDown />
+                  </button>
+                  <div class="dropdown-content">
+                    {data.map((item) => {
+                      return (
+                        <div className="drowndownContainer">
+                          <Link
+                            to={"/treks-" + `${item.title}`}
+                            state={{ prop: item }}
+                          >
+                            <div style={{display: "flex"}}>
+                              <div className="dropdownImg">
+                                <img src={item.img} className="img" />
+                              </div>
+                              <div style={{ marginLeft: "10px" }} className="dropDetails">
+                                <p>{item.title}</p>
+                                <span>{item.days} days</span>
+                              </div>
+                            </div>
+                          </Link>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
 
                 <Nav.Link href="/blogs" className="navItem">
                   Blogs
@@ -98,20 +145,22 @@ function NavbarCompo() {
 
               <Nav className="socials">
                 {/* social media links if any */}
-                <Nav.Link href="#">
-                  <FaFacebook />
+                <Nav.Link href="https://www.instagram.com/the_himalayan_exploration/">
+                  <FaFacebookF className="socialIcon" />
                 </Nav.Link>
-                <Nav.Link href="#">
-                  <FaInstagram />
+                <Nav.Link href="https://www.instagram.com/the_himalayan_exploration/">
+                  <FaInstagram className="socialIcon" />
                 </Nav.Link>
-                <Nav.Link href="#"></Nav.Link>
-                <a href="/contact">
-                  <Button className="bookBtn">
-                    Book Now
-                    <FontAwesomeIcon icon={faShoppingBag} className="icon" />
-                  </Button>
-                </a>
+                <Nav.Link href="https://www.tripadvisor.in/Profile/thehimalayanex">
+                  <FaTripadvisor className="socialIcon" />
+                </Nav.Link>
               </Nav>
+              <a href="/contact">
+                <Button className="bookBtn">
+                  Book Now
+                  <FontAwesomeIcon icon={faShoppingBag} className="icon" />
+                </Button>
+              </a>
             </Navbar.Collapse>
           </div>
         </Navbar>

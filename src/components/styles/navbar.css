@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 .navBar img {
   width: 100%;
@@ -34,7 +34,7 @@
 .navBar .navItem,
 #basic-nav-dropdown {
   padding: 0;
-  font-size: 18px;
+  font-size: 17px;
   margin-right: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -53,17 +53,68 @@
 .navbar-toggler-icon {
   color: var(--base-color);
 }
-.dropMenu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
+/* Dropdown Button */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.drowndownContainer{
+  display: flex;
+  min-width: 300px;
+}
+.drowndownContainer .dropdownImg{
+  width: 80px;
+  display: flex;
+}
+.drowndownContainer .dropDetails p{
+  margin: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--base-color);
+}
+
 #basic-navbar-nav {
   flex-direction: row;
 }
 .socials {
-  margin-left: 190px;
+  margin: 0 50px 0 40px;
+}
+.socials .socialIcon {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 5px;
+  background-color: var(--base-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+.socials .socialIcon:hover {
+  background-color: var(--red);
 }
 .bookBtn {
   background-color: var(--base-color);
@@ -84,7 +135,7 @@
   .topBar {
     display: none;
   }
-  .Desktop{
+  .Desktop {
     display: none;
   }
 }
@@ -136,9 +187,9 @@
 .MobNavbar > .Mobnav-toggle {
   display: none;
 }
-@media (min-width:501px) {
-  .MobNavbar{
-      display: none;
+@media (min-width: 501px) {
+  .MobNavbar {
+    display: none;
   }
 }
 @media (max-width: 500px) {
@@ -152,15 +203,15 @@
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
-    transition: all .45s;
+    transition: all 0.45s;
   }
 
   .MobNavbar > .Mobnav-items > a::before {
-      background: transparent;
+    background: transparent;
   }
 
   .MobNavbar > .Mobnav-items.open {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 
   .MobNavbar > .Mobnav-toggle {
@@ -202,13 +253,13 @@
   }
 
   .Mobnav-toggle.open > .bar {
-      transform: translateX(-40px);
-      background: transparent;
+    transform: translateX(-40px);
+    background: transparent;
   }
 
   .Mobnav-toggle.open > .bar::before {
-      width: 32px;
-      transform: rotate(45deg) translate(26px, -26px);
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
   }
 
   .Mobnav-toggle.open > .bar::after {
