@@ -1,0 +1,6 @@
+.hYBuTn{
+    background: #0f0 !important;
+}
+.hYBuTn:is(:hover,:focus,:active){
+    background: rgb(255, 34, 0) !important;
+}
