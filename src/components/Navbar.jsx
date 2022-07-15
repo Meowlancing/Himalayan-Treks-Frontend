@@ -177,9 +177,8 @@ function NavbarCompo() {
           <img
             src={Logo}
             alt="logo"
-            style={{ height: "38px", width: "33px", marginRight: "5px" }}
+            style={{ height: "70px", width: "170px", marginRight: "5px", marginTop:"4px" }}
           />
-          Himalayan Explorations
         </span>
         <div className={`Mobnav-items ${isOpen && "open"}`}>
           <a href="/">Home</a>
