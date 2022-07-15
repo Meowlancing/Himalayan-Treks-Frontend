@@ -11,7 +11,7 @@ import WPbuttons from "../components/WPbuttons";
 function Home() {
   return (
     <div>
-    <WPbuttons/>
+      <WPbuttons />
       <Header />
       {/* treksection */}
       <div style={{ textAlign: "center" }}>
@@ -82,7 +82,7 @@ function Home() {
           <span className="duo">Our </span>
           <span className="duo1">Certification</span>
         </div>
-        <div className="certificate">
+        <div className="certificate desktop">
           <Row>
             <Col lg="3" md="4" className="certificateContainer">
               <img
@@ -110,6 +110,41 @@ function Home() {
             </Col>
           </Row>
         </div>
+        <section className="MobCertificate">
+          <div style={{display:"flex", flexDirection:"row"}}>
+          <div className="RoWCont1" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)"}}>
+            <img
+              style={{ height: "100%", width: "100%" }}
+              src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/msme-min.jpg"
+              alt="certificates"
+            />
+          </div>
+          <div className="RoWCont2" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
+            <img
+              style={{ height: "100%", width: "100%" }}
+              src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/TC-Winner1-min.gif"
+              alt="certificates"
+            />
+          </div>
+          </div>
+          <div style={{display:"flex", flexDirection:"row"}}>
+          <div className="RoWCont3" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
+            <img
+              style={{ height: "100%", width: "100%" }}
+              src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/startupindia-min.jpg"
+              alt="certificates"
+            />
+          </div>
+          <div className="RowCont4" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
+            <img
+              style={{ height: "100%", width: "100%" }}
+              src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/UK-Logo-min.jpg"
+              alt="certificates"
+            />
+          </div>
+          </div>
+          
+        </section>
       </div>
     </div>
   );
