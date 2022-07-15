@@ -8,22 +8,22 @@ import {
 import "./styles/wpbutton.css"
 const WPbuttons = () => {
   return (
-    <div style={{position:"fixed", zIndex:"100", marginLeft:"75vw"}}>
-      <CircleMenu style={{color:"#0f0"}}
-        startAngle={-90}
-        rotationAngle={360}
+    <div style={{position:"fixed", zIndex:"100", marginLeft:"80vw", marginTop:"65vh"}}>
+      <CircleMenu
+        startAngle={180}
+        rotationAngle={180}
         itemSize={2}
         radius={5}
         rotationAngleInclusive={false}
       >
         <CircleMenuItem
           onClick={() => alert("Clicked the item")}
-          tooltip="Email"
+          tooltip="Phone Number"
           tooltipPlacement={TooltipPlacement.Right}
         >
           <FaPhone />
         </CircleMenuItem>
-        <CircleMenuItem tooltip="Help">
+        <CircleMenuItem tooltip="WhatsApp">
           <FaWhatsapp />
         </CircleMenuItem>
       </CircleMenu>

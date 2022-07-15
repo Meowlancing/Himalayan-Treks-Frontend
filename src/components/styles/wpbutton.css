@@ -1,6 +1,8 @@
 .hYBuTn{
     background: #0f0 !important;
+    border: none !important;
+    outline: none !important;
 }
 .hYBuTn:is(:hover,:focus,:active){
-    background: rgb(255, 34, 0) !important;
+    background: var(--red) !important;
 }
