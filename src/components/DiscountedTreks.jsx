@@ -22,13 +22,19 @@ function DiscountedTreks() {
     getData();
   }, []);
 
+  var items = data.map((item) => item);
+  var sliceitem = items.slice(0, 4);
+  console.log(sliceitem);
+
   return (
     <div className="distreks">
-      {data.map((item) => {
+      {sliceitem.map((item) => {
         return (
           <div className="distrekCard">
             <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-              <img src={"https://himalyan-explorations.herokuapp.com" + item.img} />
+              <img
+                src={item.img}
+              />
               <div>
                 <button className="distrekName">View More </button>
               </div>
