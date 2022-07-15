@@ -70,7 +70,7 @@ function BlogPage() {
             <span className="duo1">Blogs</span>
           </div>
           {/* display 3 blogs only by slice method */}
-          <BlogsCard />
+          <BlogsCard item="true" />
           <a href="/blogs">
             <Button className="treksBtn">View More</Button>
           </a>
