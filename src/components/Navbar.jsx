@@ -61,7 +61,7 @@ function NavbarCompo() {
             <a href="/terms-conditions" target="_blank">
               Terms and Conditions
             </a>
-            <a href="#">Privacy Policy</a>
+            <a href="/privacy-policy">Privacy Policy</a>
           </div>
         </div>
         <Navbar variant="danger" className="navBar">

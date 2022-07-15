@@ -10,7 +10,8 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Treks from "./pages/Treks";
 import TreksPage from "./pages/TreksPage";
-import Camping from "./pages/Camping"
+import Camping from "./pages/Camping";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
@@ -51,6 +52,12 @@ function App() {
               point4="Payment to be made by case /bank transfer in favour of The Himalayan Exploration."
               point5="If treks get canceled for any reason then Payment for this trip will be adjusted against any further trips."
             />
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+          <Privacy/>
           }
         />
       </Routes>

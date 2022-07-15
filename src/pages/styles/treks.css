@@ -32,6 +32,16 @@
   margin: 0 15px;
 }
 
+/* privacy */
+.privacy h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.privacy p{
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 500px) {
   .trekHeader h2,
   .duo {
