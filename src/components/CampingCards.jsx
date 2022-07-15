@@ -10,7 +10,7 @@ function CampingCards(props) {
     try {
       const resp = await axios({
         method: "GET",
-        url: "https://himalyan-explorations.herokuapp.com/api/treksList",
+        url: "https://himalyan-explorations.herokuapp.com/api/campingList",
       });
       setData(resp.data);
     } catch (err) {

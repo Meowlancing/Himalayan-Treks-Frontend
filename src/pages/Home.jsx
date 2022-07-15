@@ -33,7 +33,7 @@ function Home() {
         </div>
         <CampingCards item="true" />
         <a href="/camping">
-          <Button className="treksBtn">View More Treks</Button>
+          <Button className="treksBtn">View More</Button>
         </a>
       </div>
       {/* discounted treks section */}
