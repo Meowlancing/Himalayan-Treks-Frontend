@@ -31,61 +31,60 @@ function TrekCards(props) {
   var sliceitem = items.slice(0, 4);
   console.log(sliceitem);
 
-  return (
-    // <div className="treks">
-    // {props.item === "true"
-    //   ? sliceitem.map((item) => {
-    //       return (
-    //         <div className="trekCard">
-    //           <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-    //             <img src={item.img} />
-    //           </Link>
-    //           <div className="topLeft">
-    //             <span>{item.days} </span>
-    //             <span>Days</span>
-    //           </div>
-    //           <div className="topRight">
-    //             <span>Rs. </span>
-    //             <span>{item.price}</span>
-    //           </div>
-    //           <div className="bottom">
-    //             <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-    //               <button className="trekName">{item.title}</button>
-    //             </Link>
-    //           </div>
-    //         </div>
-    //       );
-    //     })
-    //   :
+  return props.item === "true" ? (
+    <div className="treks">
+      {sliceitem.map((item) => {
+        return (
+          <div className="trekCard">
+            <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+              <img src={item.img} />
+            </Link>
+            <div className="topLeft">
+              <span>{item.days} </span>
+              <span>Days</span>
+            </div>
+            <div className="topRight">
+              <span>Rs. </span>
+              <span>{item.price}</span>
+            </div>
+            <div className="bottom">
+              <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                <button className="trekName">{item.title}</button>
+              </Link>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  ) : (
     productRows.map((row, idx) => (
       <div className="row" key={idx}>
         {row.map((item) => {
           return (
             <Col md="3" key={idx} className="mb-3 mt-3 ">
-            <div className="trekCard">
-              <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-                <img src={item.img} />
-              </Link>
-              <div className="topLeft">
-                <span>{item.days} </span>
-                <span>Days</span>
-              </div>
-              <div className="topRight">
-                <span>Rs. </span>
-                <span>{item.price}</span>
-              </div>
-              <div className="bottom">
+              <div className="trekCard">
                 <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
-                  <button className="trekName">{item.title}</button>
+                  <img src={item.img} />
                 </Link>
+                <div className="topLeft">
+                  <span>{item.days} </span>
+                  <span>Days</span>
+                </div>
+                <div className="topRight">
+                  <span>Rs. </span>
+                  <span>{item.price}</span>
+                </div>
+                <div className="bottom">
+                  <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                    <button className="trekName">{item.title}</button>
+                  </Link>
+                </div>
               </div>
-            </div>
             </Col>
           );
         })}
       </div>
     ))
-    // </div>
   );
 }
 
