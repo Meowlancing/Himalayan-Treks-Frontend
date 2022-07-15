@@ -17,6 +17,7 @@ import { Link, useNavigate } from "react-router-dom";
 function NavbarCompo() {
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState([]);
+  const [campdata, setCampData] = useState([]);
 
   async function getData() {
     try {
@@ -30,9 +31,23 @@ function NavbarCompo() {
       return [];
     }
   }
+
+  async function getCampData() {
+    try {
+      const resp = await axios({
+        method: "GET",
+        url: "https://himalyan-explorations.herokuapp.com/api/campingList",
+      });
+      setCampData(resp.data);
+    } catch (err) {
+      console.log("Something went wrong");
+      return [];
+    }
+  }
   console.log(data);
   useEffect(() => {
     getData();
+    getCampData();
   }, []);
 
   const navigate = useNavigate();
@@ -110,7 +125,7 @@ function NavbarCompo() {
                         </div>
                       );
                     })}
-                  </div>  
+                  </div>
                 </div>
 
                 <div class="dropdown">
@@ -120,7 +135,7 @@ function NavbarCompo() {
                     </button>
                   </Link>
                   <div class="dropdown-content">
-                    {data.map((item) => {
+                    {campdata.map((item) => {
                       return (
                         <div className="drowndownContainer">
                           <Link
