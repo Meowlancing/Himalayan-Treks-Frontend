@@ -6,6 +6,7 @@ import DiscountedTreks from "../components/DiscountedTreks";
 import TrekCards from "../components/TrekCards";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlogsCard from "../components/BlogsCard";
+import CampingCards from "../components/CampingCards"
 import WPbuttons from "../components/WPbuttons";
 
 function Home() {
@@ -21,6 +22,17 @@ function Home() {
         </div>
         <TrekCards item="true" />
         <a href="/treks">
+          <Button className="treksBtn">View More Treks</Button>
+        </a>
+      </div>
+      {/* campingsection */}
+      <div style={{ textAlign: "center" }}>
+        <div className="treksSection">
+          <span className="duo">Camping </span>
+          <span className="duo1">Treks</span>
+        </div>
+        <CampingCards item="true" />
+        <a href="/camping">
           <Button className="treksBtn">View More Treks</Button>
         </a>
       </div>

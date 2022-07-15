@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Treks from "./pages/Treks";
 import TreksPage from "./pages/TreksPage";
+import Camping from "./pages/Camping"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/treks" element={<Treks />} />
+        <Route path="/camping" element={<Camping />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
