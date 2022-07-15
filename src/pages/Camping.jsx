@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import CampingCards from "../components/CampingCards";
 import "./styles/treks.css";
 
-function Treks() {
+function Camping() {
   return (
     <div>
       <div className="trekHeader">
         <div className="layer">
           <h2>
             Our
-            <span className="duo">Treks</span>{" "}
+            <span className="duo"></span>{" "}
           </h2>
         </div>
       </div>
@@ -18,4 +18,4 @@ function Treks() {
   );
 }
 
-export default Treks;
+export default Camping;
