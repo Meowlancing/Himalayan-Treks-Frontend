@@ -3,7 +3,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faPhone, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/navbar.css";
-import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Button, Col } from "react-bootstrap";
 import Logo from "../Assets/logo.png";
 import axios from "axios";
 import {
@@ -34,10 +34,12 @@ function NavbarCompo() {
   useEffect(() => {
     getData();
   }, []);
+
   const navigate = useNavigate();
   function treks() {
     navigate("/treks");
   }
+
   return (
     <>
       <div className="Desktop">
@@ -177,7 +179,12 @@ function NavbarCompo() {
           <img
             src={Logo}
             alt="logo"
-            style={{ height: "70px", width: "170px", marginRight: "5px", marginTop:"4px" }}
+            style={{
+              height: "70px",
+              width: "170px",
+              marginRight: "5px",
+              marginTop: "4px",
+            }}
           />
         </span>
         <div className={`Mobnav-items ${isOpen && "open"}`}>

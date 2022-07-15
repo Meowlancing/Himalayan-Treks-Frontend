@@ -5,12 +5,12 @@
   margin-top: 65vh;
 }
 .hYBuTn {
-  background: #0f0 !important;
+  background: var(--red) !important;
   border: none !important;
   outline: none !important;
 }
 .hYBuTn:is(:hover, :focus, :active) {
-  background: var(--red) !important;
+  background: rgb(17, 219, 118) !important;
 }
 
 @media only screen and (max-width: 500px) {
