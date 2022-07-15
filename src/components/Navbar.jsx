@@ -110,13 +110,15 @@ function NavbarCompo() {
                         </div>
                       );
                     })}
-                  </div>
+                  </div>  
                 </div>
 
                 <div class="dropdown">
-                  <button class="dropbtn navItem">
-                    Camping <FaArrowDown />
-                  </button>
+                  <Link to="/camping">
+                    <button class="dropbtn navItem">
+                      Camping <FaArrowDown />
+                    </button>
+                  </Link>
                   <div class="dropdown-content">
                     {data.map((item) => {
                       return (

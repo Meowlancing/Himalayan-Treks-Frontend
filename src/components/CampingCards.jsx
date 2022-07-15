@@ -36,7 +36,7 @@ function CampingCards(props) {
       {sliceitem.map((item) => {
         return (
           <div className="trekCard">
-            <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+            <Link to={"/camping-" + `${item.title}`} state={{ prop: item }}>
               <img src={item.img} />
             </Link>
             <div className="topLeft">
@@ -48,7 +48,7 @@ function CampingCards(props) {
               <span>{item.price}</span>
             </div>
             <div className="bottom">
-              <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+              <Link to={"/camping-" + `${item.title}`} state={{ prop: item }}>
                 <button className="trekName">{item.title}</button>
               </Link>
             </div>
@@ -63,7 +63,7 @@ function CampingCards(props) {
           return (
             <Col md="3" key={idx} className="mb-3 mt-3 ">
               <div className="trekCard">
-                <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                <Link to={"/camping-" + `${item.title}`} state={{ prop: item }}>
                   <img src={item.img} />
                 </Link>
                 <div className="topLeft">
@@ -75,7 +75,7 @@ function CampingCards(props) {
                   <span>{item.price}</span>
                 </div>
                 <div className="bottom">
-                  <Link to={"/treks-" + `${item.title}`} state={{ prop: item }}>
+                  <Link to={"/camping-" + `${item.title}`} state={{ prop: item }}>
                     <button className="trekName">{item.title}</button>
                   </Link>
                 </div>
