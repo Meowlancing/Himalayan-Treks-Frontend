@@ -2,11 +2,13 @@
   margin: 20px 10px;
   display: flex;
 }
-.treks .trekCard {
+.treks .row{
+  display: block;
+}
+.trekCard {
   position: relative;
-  height: 400px;
+  height: 360px;
   margin: 0 10px;
-  width: 330px;
   color: #fff;
 }
 .trekCard img {

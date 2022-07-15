@@ -8,7 +8,7 @@ import {
 import "./styles/wpbutton.css"
 const WPbuttons = () => {
   return (
-    <div style={{position:"fixed", zIndex:"100", marginLeft:"80vw", marginTop:"65vh"}}>
+    <div className="contacts">
       <CircleMenu
         startAngle={180}
         rotationAngle={180}

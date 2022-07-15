@@ -1,8 +1,21 @@
-.hYBuTn{
-    background: #0f0 !important;
-    border: none !important;
-    outline: none !important;
+.contacts {
+  position: fixed;
+  z-index: 100;
+  margin-left: 93vw;
+  margin-top: 65vh;
 }
-.hYBuTn:is(:hover,:focus,:active){
-    background: var(--red) !important;
+.hYBuTn {
+  background: #0f0 !important;
+  border: none !important;
+  outline: none !important;
+}
+.hYBuTn:is(:hover, :focus, :active) {
+  background: var(--red) !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .contacts{
+        margin-top: 75vh;
+        margin-left: 83vw;
+    }
 }
