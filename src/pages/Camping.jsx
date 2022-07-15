@@ -9,7 +9,7 @@ function Camping() {
         <div className="layer">
           <h2>
             Our
-            <span className="duo"></span>{" "}
+            <span className="duo">Camping</span>{" "}
           </h2>
         </div>
       </div>
