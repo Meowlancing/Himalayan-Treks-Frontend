@@ -4,7 +4,6 @@ import BookNow from "../components/Forms/BookNow";
 import "./styles/treks.css";
 
 
-
 function Contact() {
   return (
     <div>
