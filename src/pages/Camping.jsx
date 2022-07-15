@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TrekCards from "../components/TrekCards";
+import CampingCards from "../components/CampingCards";
 import "./styles/treks.css";
 
 function Treks() {
@@ -13,7 +13,7 @@ function Treks() {
           </h2>
         </div>
       </div>
-      <TrekCards />
+      <CampingCards />
     </div>
   );
 }
