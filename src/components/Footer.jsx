@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 import "./styles/footer.css";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMobile,
@@ -12,6 +12,7 @@ import {
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/logo.png";
+import { FaFacebookF, FaInstagram, FaTripadvisor } from "react-icons/fa";
 
 function Footer() {
   var date = new Date();
@@ -43,6 +44,7 @@ function Footer() {
             <Card.Title className="title">
               <img src={Logo} style={{ width: "50px", height: "50.8px" }}></img>
             </Card.Title>
+
             <Card.Text className="purpose">
               Welcome to The Himalayan Exploration! We offer topflight
               hill-walking holidays across you. Many traveling companies focus
@@ -50,7 +52,18 @@ function Footer() {
               trekking experience. With unique guides, unbelievable support
               staff, and award-winning routeways, we are dedicated about giving
               memorable trekking experiences for guests all over the world!
-              <div className="socialsicons"></div>
+              <Nav className="socials footerSocials">
+                {/* social media links if any */}
+                <Nav.Link href="https://www.instagram.com/the_himalayan_exploration/" className="footerLink">
+                  <FaFacebookF className="socialIcon" />
+                </Nav.Link>
+                <Nav.Link href="https://www.instagram.com/the_himalayan_exploration/" className="footerLink">
+                  <FaInstagram className="socialIcon" />
+                </Nav.Link>
+                <Nav.Link href="https://www.tripadvisor.in/Profile/thehimalayanex" className="footerLink">
+                  <FaTripadvisor className="socialIcon" />
+                </Nav.Link>
+              </Nav>
             </Card.Text>
           </Card.Body>
         </Card>
@@ -130,9 +143,7 @@ function Footer() {
                 </span>
                 Address
               </h5>
-              <p>
-              Kalawati Chauraha Nawabi Road Haldwani 263139
-              </p>
+              <p>Kalawati Chauraha Nawabi Road Haldwani 263139</p>
             </Card.Text>
           </Card.Body>
         </Card>

@@ -83,15 +83,15 @@
   display: block;
 }
 
-.drowndownContainer{
+.drowndownContainer {
   display: flex;
   min-width: 300px;
 }
-.drowndownContainer .dropdownImg{
+.drowndownContainer .dropdownImg {
   width: 80px;
   display: flex;
 }
-.drowndownContainer .dropDetails p{
+.drowndownContainer .dropDetails p {
   margin: 0;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -132,7 +132,7 @@
   margin-left: 10px;
 }
 
-.socials .socialIcon{
+.socials .socialIcon {
   animation: bonk 1.5s infinite forwards;
 }
 @keyframes bonk {
@@ -240,15 +240,16 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: turquoise;
-    padding-left: 8px;
+    background-color: var(--base-color);
+    padding: 0 8px;
+    margin-right: 10px;
   }
 
   .Mobnav-toggle > .bar {
     position: relative;
     width: 32px;
     height: 4px;
-    background: #fe0000;
+    background: var(--red);
     transition: all 0.45s ease-in-out;
   }
 

@@ -5,11 +5,11 @@ import Explore from "../Assets/Explore.jpg";
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHiking } from "@fortawesome/free-solid-svg-icons";
-import Img1 from "../Assets/Kedarkantha1.jpg";
-import Img2 from "../Assets/Kedarkantha12.jpg";
-import Img3 from "../Assets/Kedarkantha7.jpg";
-import Img4 from "../Assets/KEDARTAL2.jpg";
-import Img5 from "../Assets/KEDARTAL4.jpg";
+import Img1 from "../Assets/DSC_0389 (1).jpg";
+import Img2 from "../Assets/DSCN9145.JPG";
+import Img3 from "../Assets/IMG-20210223-WA0023.jpg";
+import Img4 from "../Assets/IMG-20210720-WA0000.jpg";
+import Img5 from "../Assets/kedarkantha.jpg";
 import Founder from "../Assets/founder.jpeg";
 
 const AboutUs = () => {

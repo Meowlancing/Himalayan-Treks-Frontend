@@ -25,6 +25,14 @@
   width: 24rem;
   padding: 1rem;
 }
+.Footer .footerLink{
+  padding: 0.5rem 0;
+}
+.Footer .footerSocials {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
 
 .Footer .CardSec a {
   color: #fff;
@@ -60,13 +68,13 @@
     padding: 20px;
     flex-direction: column;
   }
-  .Footer .CardSec{
+  .Footer .CardSec {
     width: 19rem;
   }
   .Footer .caption {
     flex-direction: column;
   }
-  .Footer .caption h4{
+  .Footer .caption h4 {
     font-size: 14px;
   }
 }
