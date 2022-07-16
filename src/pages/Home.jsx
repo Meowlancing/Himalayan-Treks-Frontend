@@ -124,14 +124,14 @@ function Home() {
         </div>
         <section className="MobCertificate">
           <div style={{display:"flex", flexDirection:"row"}}>
-          <div className="RoWCont1" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)"}}>
+          <div className="RoWCont1" style={{ width: "250px", margin:"10px", height: "96px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)"}}>
             <img
               style={{ height: "100%", width: "100%" }}
               src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/msme-min.jpg"
               alt="certificates"
             />
           </div>
-          <div className="RoWCont2" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
+          <div className="RoWCont2" style={{ width: "250px", margin:"10px", height: "96px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
             <img
               style={{ height: "100%", width: "100%" }}
               src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/TC-Winner1-min.gif"
@@ -140,14 +140,14 @@ function Home() {
           </div>
           </div>
           <div style={{display:"flex", flexDirection:"row"}}>
-          <div className="RoWCont3" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
+          <div className="RoWCont3" style={{ width: "250px", margin:"10px", height: "96px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
             <img
               style={{ height: "100%", width: "100%" }}
               src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/startupindia-min.jpg"
               alt="certificates"
             />
           </div>
-          <div className="RowCont4" style={{ width: "250px", margin:"10px", height: "160px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
+          <div className="RowCont4" style={{ width: "250px", margin:"10px", height: "96px", boxShadow: "0px 0px 10px 0px rgb(0 0 0 / 50%)" }}>
             <img
               style={{ height: "100%", width: "100%" }}
               src="https://himalayandreamtreks.in/wp-content/uploads/2021/02/UK-Logo-min.jpg"
