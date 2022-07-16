@@ -42,7 +42,7 @@ function Footer() {
           <div className="icons"></div>
           <Card.Body>
             <Card.Title className="title">
-              <img src={Logo} style={{ width: "50px", height: "50.8px" }}></img>
+              <img src={Logo} style={{ width: "200px", height: "92.8px" }}></img>
             </Card.Title>
 
             <Card.Text className="purpose">
