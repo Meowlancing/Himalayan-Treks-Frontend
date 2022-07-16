@@ -80,7 +80,7 @@ function TreksPage(props) {
         </div>
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon className="icon" icon={faBuilding} />
-          <p className="trekHeadDetails">Feet - {dataValue.height}</p>
+          <p className="trekHeadDetails">Metre - {dataValue.height}</p>
         </div>
       </section>
       <section className="Panel">
