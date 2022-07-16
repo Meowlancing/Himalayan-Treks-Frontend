@@ -11,6 +11,12 @@ import Img3 from "../Assets/IMG-20210223-WA0023.jpg";
 import Img4 from "../Assets/IMG-20210720-WA0000.jpg";
 import Img5 from "../Assets/kedarkantha.jpg";
 import Founder from "../Assets/founder.jpeg";
+import { Nav } from "react-bootstrap";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTripadvisor,
+} from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -120,7 +126,16 @@ const AboutUs = () => {
           <img src={Founder} />
         </div>
         <div className="FounderInfo">
-          <p>Founder</p> <h2>Vijay Singh</h2>
+          <p>Founder</p> <Nav className="socials foundersc">
+                {/* social media links if any */}
+                <Nav.Link href="https://www.facebook.com/vicky.lodhiyal.5">
+                  <FaFacebookF className="socialIcon" />
+                </Nav.Link>
+                <Nav.Link href="https://www.instagram.com/invites/contact/?i=1mdc340mxr8ms&utm_content=1eywxrg">
+                  <FaInstagram className="socialIcon" />
+                </Nav.Link>
+              </Nav>
+              <h2>Vijay Singh</h2>
           <p>
             Our founder Mr. Vijay Singh is an outdoor enthusiast & wanderlust
             nature person. Continuously working hard for the growth of The

@@ -7,12 +7,12 @@ import TrekCards from "../components/TrekCards";
 import ClientTestimonials from "../components/ClientTestimonials";
 import BlogsCard from "../components/BlogsCard";
 import CampingCards from "../components/CampingCards"
-import WPbuttons from "../components/WPbuttons";
+
+
 
 function Home() {
   return (
     <div>
-      <WPbuttons />
       <Header />
       {/* treksection */}
       <div style={{ textAlign: "center" }}>

@@ -140,6 +140,10 @@
 .AboutUs .FounderInfo {
   margin-left: 3rem;
 }
+.AboutUs .FounderInfo .foundersc{
+  float: right;
+  margin: -17px 0 -1px 0;
+}
 .AboutUs .ChefCards {
   margin: 9rem 16rem;
   display: flex;

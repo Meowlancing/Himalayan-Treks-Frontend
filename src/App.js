@@ -12,11 +12,22 @@ import Treks from "./pages/Treks";
 import TreksPage from "./pages/TreksPage";
 import Camping from "./pages/Camping";
 import Privacy from "./pages/Privacy";
+import ScrollToTop from "react-scroll-to-top";
+import WPbuttons from "./components/WPbuttons";
+import SvgComponent from "./components/Svgr"
 
 function App() {
   return (
     <>
       <NavbarCompo />
+      <ScrollToTop
+        style={{position:"fixed", left:"15px", backgroundColor:"#DA0037",zIndex:"100"}}
+        smooth
+        viewBox="0 0 24 24"
+        fill="#fff !important"
+        svgPath={SvgComponent}
+      />
+      <WPbuttons />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/treks" element={<Treks />} />
