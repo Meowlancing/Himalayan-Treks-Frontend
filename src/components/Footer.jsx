@@ -131,8 +131,7 @@ function Footer() {
                 Address
               </h5>
               <p>
-                Adarsh Cyber Cafe, near Nagar <br /> Palika Office,
-                Chinyalisour, <br /> Uttarakhand 249196
+              Kalawati Chauraha Nawabi Road Haldwani 263139
               </p>
             </Card.Text>
           </Card.Body>
