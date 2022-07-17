@@ -60,11 +60,13 @@ function TreksPage(props) {
   }
   return (
     <div>
-      <section className="TrkHeader">
+      <div className="TrkHeader">
         <img src={dataValue.img} alt="Banner image"></img>
-        <h2 className="headerH2">{dataValue.title}</h2>
-        <h3 className="headerH3">{dataValue.img_desp}</h3>
-      </section>
+        <div className="headings">
+          <h2 className="headerH2">{dataValue.title}</h2>
+          <h3 className="headerH3">{dataValue.img_desp}</h3>
+        </div>
+      </div>
       <section className="trekDets">
         <div style={{ display: "flex" }}>
           <FontAwesomeIcon className="icon" icon={faLocation} />
@@ -85,10 +87,12 @@ function TreksPage(props) {
       </section>
       <section className="Panel">
         <div className="LeftPane">
-          <h1>
+          <h1 id="briefDescription">
             Brief <span className="duo">Description</span>
           </h1>
-          <p><MarkdownView markdown={dataValue.desp} /></p>
+          <p>
+            <MarkdownView markdown={dataValue.desp} />
+          </p>
           <h1>
             Itinerary <span className="duo">Description</span>
           </h1>
@@ -201,9 +205,9 @@ function TreksPage(props) {
                 icon={faCheck}
                 style={{ marginRight: "5px", color: "#FF6060" }}
               />
-              Meals: From the first supper to the departure day morning, all meals are
-              included. We offer easy, nutritious vegetarian food on all days of
-              the trek.
+              Meals: From the first supper to the departure day morning, all
+              meals are included. We offer easy, nutritious vegetarian food on
+              all days of the trek.
             </span>
             <br />
             <span>
@@ -283,36 +287,84 @@ function TreksPage(props) {
             <Card.Body>
               <Card.Title className="title"></Card.Title>
               <Card.Text className="purpose">
-                <FontAwesomeIcon
-                  style={{ color: "crimson" }}
-                  icon={faArrowRight}
-                />{" "}
-                <a href="">Brief Description</a> <br />
-                <FontAwesomeIcon
-                  style={{ color: "crimson" }}
-                  icon={faArrowRight}
-                />{" "}
-                <a href="">Short Itinerary</a> <br />
-                <FontAwesomeIcon
-                  style={{ color: "crimson" }}
-                  icon={faArrowRight}
-                />{" "}
-                <a href="">Detailed Itinerary</a> <br />
-                <FontAwesomeIcon
-                  style={{ color: "crimson" }}
-                  icon={faArrowRight}
-                />{" "}
-                <a href="">Price Inclusion</a> <br />
-                <FontAwesomeIcon
-                  style={{ color: "crimson" }}
-                  icon={faArrowRight}
-                />{" "}
-                <a href="">Price Exclusion</a> <br />
-                <FontAwesomeIcon
-                  style={{ color: "crimson" }}
-                  icon={faArrowRight}
-                />{" "}
-                <a href="">Departure Date</a> <br />
+                <div
+                  style={{
+                    paddingBottom: "5px",
+                    borderBottom: "1px solid #fff",
+                    margin: "5px 0",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{ color: "crimson" }}
+                    icon={faArrowRight}
+                  />{" "}
+                  <a href="">Brief Description</a> <br />
+                </div>
+                <div
+                  style={{
+                    paddingBottom: "5px",
+                    borderBottom: "1px solid #fff",
+                    margin: "5px 0",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{ color: "crimson" }}
+                    icon={faArrowRight}
+                  />{" "}
+                  <a href="">Short Itinerary</a> <br />
+                </div>
+                <div
+                  style={{
+                    paddingBottom: "5px",
+                    borderBottom: "1px solid #fff",
+                    margin: "5px 0",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{ color: "crimson" }}
+                    icon={faArrowRight}
+                  />{" "}
+                  <a href="">Detailed Itinerary</a> <br />
+                </div>
+                <div
+                  style={{
+                    paddingBottom: "5px",
+                    borderBottom: "1px solid #fff",
+                    margin: "5px 0",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{ color: "crimson" }}
+                    icon={faArrowRight}
+                  />{" "}
+                  <a href="">Price Inclusion</a> <br />
+                </div>
+                <div
+                  style={{
+                    paddingBottom: "5px",
+                    borderBottom: "1px solid #fff",
+                    margin: "5px 0",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{ color: "crimson" }}
+                    icon={faArrowRight}
+                  />{" "}
+                  <a href="">Price Exclusion</a> <br />
+                </div>
+                <div
+                  style={{
+                    paddingBottom: "5px",
+                    borderBottom: "1px solid #fff",
+                    margin: "5px 0",
+                  }}
+                >
+                  <FontAwesomeIcon
+                    style={{ color: "crimson" }}
+                    icon={faArrowRight}
+                  />{" "}
+                  <a href="">Departure Date</a> <br />
+                </div>
                 <FontAwesomeIcon
                   style={{ color: "crimson" }}
                   icon={faArrowRight}
