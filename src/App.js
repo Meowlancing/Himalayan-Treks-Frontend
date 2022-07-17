@@ -15,17 +15,23 @@ import Privacy from "./pages/Privacy";
 import ScrollToTop from "react-scroll-to-top";
 import WPbuttons from "./components/WPbuttons";
 import SvgComponent from "./components/Svgr"
+// import { ReactComponent as SvgComponent } from "./Assets/arrow-up.svg";
 
 function App() {
   return (
     <>
       <NavbarCompo />
       <ScrollToTop
-        style={{position:"fixed", left:"15px", backgroundColor:"#DA0037",zIndex:"100"}}
+        style={{
+          position: "fixed",
+          left: "15px",
+          backgroundColor: "#DA0037",
+          zIndex: "100",
+        }}
         smooth
         viewBox="0 0 24 24"
-        fill="#fff !important"
-        svgPath={SvgComponent}
+        // fill="#fff !important"
+        component={<SvgComponent />}
       />
       <WPbuttons />
       <Routes>
@@ -66,12 +72,7 @@ function App() {
             />
           }
         />
-        <Route
-          path="/privacy-policy"
-          element={
-          <Privacy/>
-          }
-        />
+        <Route path="/privacy-policy" element={<Privacy />} />
       </Routes>
       <Footer />
     </>
