@@ -14,7 +14,7 @@
 .header .text1 {
   font-size: 77px;
   color: #e10021;
-    text-shadow: 2px 1px 1px #ffffff;
+  text-shadow: 2px 1px 1px #ffffff;
   font-weight: 800;
 }
 .whyUs {
@@ -37,7 +37,7 @@
   padding: 20px 0;
   box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
 }
-.whyUs .cards .icon {
+.whyUs .cards .whyusCard {
   animation: blinkers 1.5s infinite forwards;
 }
 
@@ -55,16 +55,23 @@
     box-shadow: 0 0 3px #a80505;
   }
 }
+.whyUs .whyusCard {
+  background-color: var(--red);
+  display: inline-block;
+  border-radius: 50%;
+}
+.whyUs .icon.user{
+  font-size: 18px;
+  padding: 17px 16px;
+}
 .whyUs .icon {
   font-size: 20px;
-  background-color: var(--red);
   color: #fff;
-  padding: 15px;
-  border-radius: 50px;
+  padding: 16px;
 }
-.whyUs .icon:hover {
+/* .whyUs .icon:hover {
   background-color: var(--base-color);
-}
+} */
 .whyUs h4 {
   margin-top: 10px;
   color: var(--base-color);

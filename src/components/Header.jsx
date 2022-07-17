@@ -25,19 +25,28 @@ function Header() {
         <div className="cards">
           <Row>
             <Col>
-              <FontAwesomeIcon icon={faUsers} className="icon" />
+              <div className="whyusCard">
+                <FontAwesomeIcon icon={faUsers} className="icon user" />
+              </div>
+
               <h4>Experienced Team</h4>
             </Col>
             <Col>
-              <FontAwesomeIcon icon={faCampground} className="icon" />
+              <div className="whyusCard">
+                <FontAwesomeIcon icon={faCampground} className="icon" />
+              </div>
               <h4>Quality Equipment</h4>
             </Col>
             <Col>
-              <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" />
+              <div className="whyusCard">
+                <FontAwesomeIcon icon={faMapMarkedAlt} className="icon" />
+              </div>
               <h4>Planned Itinerary</h4>
             </Col>
             <Col>
-              <FontAwesomeIcon icon={faMoneyBill} className="icon" />
+              <div className="whyusCard">
+                <FontAwesomeIcon icon={faMoneyBill} className="icon" />
+              </div>
               <h4>Affordable Rates</h4>
             </Col>
           </Row>
