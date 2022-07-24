@@ -298,7 +298,7 @@ function TreksPage(props) {
                     style={{ color: "crimson" }}
                     icon={faArrowRight}
                   />{" "}
-                  <a href="briefdescription">Brief Description</a> <br />
+                  <a href="">Brief Description</a> <br />
                 </div>
                 <div
                   style={{
@@ -337,7 +337,7 @@ function TreksPage(props) {
                     style={{ color: "crimson" }}
                     icon={faArrowRight}
                   />{" "}
-                  <a href="#priceinclusion">Price Inclusion</a> <br />
+                  <a href="">Price Inclusion</a> <br />
                 </div>
                 <div
                   style={{
