@@ -6,7 +6,7 @@ const SvgComponent = (props) => (
     <path
       d="m16.707 13.293-4-4a1 1 0 0 0-1.414 0l-4 4A1 1 0 0 0 8 15h8a1 1 0 0 0 .707-1.707Z"
       style={{
-        fill: "#F2DF3A",
+        fill: "#fff",
       }}
       data-name="Up"
     />

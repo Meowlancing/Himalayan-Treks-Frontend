@@ -25,7 +25,7 @@ function App() {
         style={{
           position: "fixed",
           left: "15px",
-          backgroundColor: "#DA0037",
+          backgroundColor: "#0078AA ",
           zIndex: "100",
         }}
         smooth

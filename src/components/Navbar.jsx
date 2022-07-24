@@ -99,7 +99,7 @@ function NavbarCompo() {
 
                 <div class="dropdown">
                   <button class="dropbtn navItem" onClick={treks}>
-                    Treks <FaArrowDown />
+                    Treks 
                   </button>
                   <div class="dropdown-content">
                     {data.map((item) => {
@@ -131,7 +131,7 @@ function NavbarCompo() {
                 <div class="dropdown">
                   <Link to="/camping">
                     <button class="dropbtn navItem">
-                      Camping <FaArrowDown />
+                      Camping 
                     </button>
                   </Link>
                   <div class="dropdown-content">

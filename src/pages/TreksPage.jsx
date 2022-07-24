@@ -3,7 +3,7 @@ import "./styles/trkspge.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MarkdownView from "react-showdown";
 import Collapsible from "react-collapsible";
-import { Button, Card, Form } from "react-bootstrap";
+import { Button, Card, Form, Nav, NavLink } from "react-bootstrap";
 import {
   faLocation,
   faCampground,
@@ -189,7 +189,7 @@ function TreksPage(props) {
               <span>{dataValue.iternery_day5_desp}</span>
             </p>
           </div> */}
-          <h1>Price Inclusion</h1>
+          <h1 id="priceinclusion">Price Inclusion</h1>
           <p>
             <span>
               <FontAwesomeIcon
@@ -240,7 +240,7 @@ function TreksPage(props) {
             </span>
             <br />
           </p>
-          <h1>Price Exclusion</h1>
+          <h1 id="priceexclusion">Price Exclusion</h1>
           <p>
             <span>
               <FontAwesomeIcon
@@ -298,7 +298,7 @@ function TreksPage(props) {
                     style={{ color: "crimson" }}
                     icon={faArrowRight}
                   />{" "}
-                  <a href="">Brief Description</a> <br />
+                  <a href="briefdescription">Brief Description</a> <br />
                 </div>
                 <div
                   style={{
@@ -337,7 +337,7 @@ function TreksPage(props) {
                     style={{ color: "crimson" }}
                     icon={faArrowRight}
                   />{" "}
-                  <a href="">Price Inclusion</a> <br />
+                  <a href="#priceinclusion">Price Inclusion</a> <br />
                 </div>
                 <div
                   style={{

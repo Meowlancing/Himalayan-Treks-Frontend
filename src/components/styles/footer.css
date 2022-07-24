@@ -33,7 +33,12 @@
   justify-content: center;
   margin: 0;
 }
-
+.Footer .CardSec{
+  text-align: justify;
+}
+/* .Footer .CardSec .title{
+  text-align: center;
+} */
 .Footer .CardSec a {
   color: #fff;
 }

@@ -104,7 +104,7 @@ function Footer() {
               <h5>
                 <span>
                   <FontAwesomeIcon
-                    style={{ color: "#fff" }}
+                    style={{ color: "#fff", marginRight: "8px" }}
                     icon={faMobileAndroid}
                   />
                 </span>
@@ -117,7 +117,7 @@ function Footer() {
               <h5>
                 <span>
                   <FontAwesomeIcon
-                    style={{ color: "#fff" }}
+                    style={{ color: "#fff", marginRight: "8px"}}
                     icon={faMailBulk}
                   />
                 </span>
