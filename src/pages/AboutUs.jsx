@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/about.css";
 import AboutHeaderImg from "../Assets/about.jpeg";
-import Explore from "../Assets/Explore.jpg";
+import Explore from "../Assets/Explore.jpeg";
 import { Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHiking } from "@fortawesome/free-solid-svg-icons";
